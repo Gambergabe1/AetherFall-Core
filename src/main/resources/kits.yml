@@ -1,0 +1,140 @@
+# EssentialsX kit configuration.
+# Bundled template for Aetherfall rank kits.
+kits:
+  starter:
+    delay: 604800
+    items:
+      - stone_sword 1 name:&aStarter_Sword
+      - stone_pickaxe 1 name:&aStarter_Pickaxe
+      - stone_axe 1 name:&aStarter_Axe
+      - stone_shovel 1
+      - shield 1 name:&aStarter_Shield
+      - leather_chestplate 1 name:&aStarter_Tunic
+      - golden_shovel 1 name:&eClaim_Tool lore:&7Right-click_two_corners|&7to_protect_your_land.
+      - stick 1 name:&eClaim_Inspector lore:&7Right-click_to_see_claims.
+      - bread 32
+      - apple 16
+      - torch 32
+      - oak_log 32
+      - red_bed 1
+      - /aegive {USERNAME} speed_talisman 1
+      - /eco give {USERNAME} 150
+
+  settler:
+    delay: 604800
+    items:
+      - iron_sword 1 name:&aSettler_Blade
+      - iron_pickaxe 1 name:&aSettler_Pickaxe
+      - iron_axe 1 name:&aSettler_Axe
+      - iron_shovel 1 name:&aSettler_Shovel
+      - iron_chestplate 1 name:&aSettler_Cuirass
+      - iron_boots 1 name:&aSettler_Boots
+      - cooked_beef 32
+      - torch 48
+      - oak_log 48
+      - iron_ingot 16
+      - /aegive {USERNAME} mithril 24
+      - /aegive {USERNAME} night_vision_charm 1
+      - /aegive {USERNAME} grappling_hook 1
+      - /eco give {USERNAME} 500
+
+  citizen:
+    delay: 604800
+    items:
+      - diamond_axe 1 efficiency:3 unbreaking:3 name:&bCitizen_Lumber_Axe
+      - diamond_shovel 1 efficiency:3 unbreaking:3 name:&bCitizen_Spade
+      - chainmail_helmet 1 protection:2 unbreaking:3 name:&bCitizen_Coif
+      - chainmail_leggings 1 protection:2 unbreaking:3 name:&bCitizen_Greaves
+      - golden_carrot 32
+      - bone_meal 64
+      - stone_bricks 64
+      - oak_planks 64
+      - glass 64
+      - lantern 16
+      - scaffolding 32
+      - /aegive {USERNAME} mithril_pickaxe 1
+      - /aegive {USERNAME} harvester_hoe 1
+      - /aegive {USERNAME} haste_talisman 1
+      - /aegive {USERNAME} golden_seed 2
+      - /eco give {USERNAME} 1250
+
+  veteran:
+    delay: 604800
+    items:
+      - diamond_pickaxe 1 efficiency:4 fortune:2 unbreaking:3 name:&9Veteran_Pickaxe
+      - diamond_sword 1 sharpness:3 unbreaking:3 name:&9Veteran_Sidearm
+      - diamond_chestplate 1 protection:3 unbreaking:3 name:&9Veteran_Chestplate
+      - diamond_leggings 1 protection:3 unbreaking:3 name:&9Veteran_Leggings
+      - torch 64
+      - cooked_porkchop 32
+      - ender_pearl 8
+      - experience_bottle 32
+      - /aegive {USERNAME} wisdom_tome 1
+      - /aegive {USERNAME} titanium_drill 1
+      - /aegive {USERNAME} excavator 1
+      - /aegive {USERNAME} magnet_talisman 1
+      - /aegive {USERNAME} jump_talisman 1
+      - /aegive {USERNAME} titanium 16
+      - /aegive {USERNAME} enchanted_iron 8
+      - /eco give {USERNAME} 2500
+
+  elder:
+    delay: 604800
+    items:
+      - bow 1 power:4 flame:1 punch:1 unbreaking:3 name:&dElder_Longbow
+      - arrow 64
+      - diamond_helmet 1 protection:3 unbreaking:3 name:&dElder_Crown
+      - diamond_boots 1 protection:3 feather_falling:3 unbreaking:3 name:&dElder_Striders
+      - golden_carrot 32
+      - golden_apple 4
+      - ender_pearl 12
+      - firework_rocket 16
+      - experience_bottle 48
+      - name_tag 2
+      - /aegive {USERNAME} wisdom_tome 2
+      - /aegive {USERNAME} frostbite_blade 1
+      - /aegive {USERNAME} vampiric_fang 1
+      - /aegive {USERNAME} lucky_charm 1
+      - /aegive {USERNAME} sunken_treasure 2
+      - /aegive {USERNAME} voidstone 4
+      - /aegive {USERNAME} emberite 8
+      - /aegive {USERNAME} ember_core 4
+      - /eco give {USERNAME} 5000
+
+  legend:
+    delay: 604800
+    items:
+      - netherite_sword 1 sharpness:5 looting:3 unbreaking:3 name:&6Blade_of_Legends
+      - netherite_chestplate 1 protection:4 unbreaking:3 name:&6Cuirass_of_Legends
+      - lapis_lazuli 64
+      - bookshelf 16
+      - golden_apple 8
+      - experience_bottle 64
+      - /aegive {USERNAME} wisdom_tome 3
+      - /aegive {USERNAME} aether_apple 2
+      - /aegive {USERNAME} void_blade 1
+      - /aegive {USERNAME} hurricane_bow 1
+      - /aegive {USERNAME} infernal_sigil 1
+      - /aegive {USERNAME} infernium 12
+      - /aegive {USERNAME} soulite 6
+      - /aegive {USERNAME} enchanted_diamond_block 1
+      - /eco give {USERNAME} 10000
+
+  mythic:
+    delay: 604800
+    items:
+      - elytra 1 unbreaking:3 mending:1 name:&5Wings_of_the_Aether
+      - purple_shulker_box 1 name:&dMythic_Vault
+      - totem_of_undying 1
+      - firework_rocket 64
+      - ender_pearl 16
+      - golden_apple 16
+      - /aegive {USERNAME} aether_apple 4
+      - /aegive {USERNAME} wisdom_tome 5
+      - /aegive {USERNAME} starfall_blade 1
+      - /aegive {USERNAME} astral_staff 1
+      - /aegive {USERNAME} void_sigil 1
+      - /aegive {USERNAME} astralite 12
+      - /aegive {USERNAME} starlight 6
+      - /aegive {USERNAME} dragon_scale 2
+      - /eco give {USERNAME} 25000

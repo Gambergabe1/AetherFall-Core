@@ -1,0 +1,125 @@
+# ─────────────────────────────────────────────────────────────
+#  /shop — the NPC shop. buy = price per item players pay, sell = price per item players receive.
+#  Leave out buy (or 0) for sell-only items. Custom items not listed here use their `sell` from items.yml.
+#  Keep sell prices low: the NPC price is the market's floor; the Bazaar is where real prices form.
+# ─────────────────────────────────────────────────────────────
+categories:
+  blocks:
+    name: "Building Blocks"
+    icon: BRICKS
+    items:
+      COBBLESTONE:     { buy: 1.5, sell: 0.3 }
+      STONE:           { buy: 2, sell: 0.5 }
+      STONE_BRICKS:    { buy: 3 }
+      DEEPSLATE_BRICKS: { buy: 4 }
+      OAK_PLANKS:      { buy: 1.5 }
+      SPRUCE_PLANKS:   { buy: 1.5 }
+      BIRCH_PLANKS:    { buy: 1.5 }
+      DARK_OAK_PLANKS: { buy: 2 }
+      CHERRY_PLANKS:   { buy: 3 }
+      BRICKS:          { buy: 4 }
+      GLASS:           { buy: 2, sell: 0.4 }
+      WHITE_WOOL:      { buy: 3, sell: 0.8 }
+      TERRACOTTA:      { buy: 3 }
+      QUARTZ_BLOCK:    { buy: 12 }
+      SANDSTONE:       { buy: 2 }
+      SAND:            { buy: 1.5, sell: 0.3 }
+      GRAVEL:          { buy: 1.5, sell: 0.3 }
+      DIRT:            { buy: 1, sell: 0.1 }
+      GRASS_BLOCK:     { buy: 4 }
+      MOSS_BLOCK:      { buy: 4 }
+      LANTERN:         { buy: 12 }
+      TORCH:           { buy: 1 }
+  wood:
+    name: "Logs & Saplings"
+    icon: OAK_LOG
+    items:
+      OAK_LOG:         { buy: 6, sell: 1.5 }
+      SPRUCE_LOG:      { buy: 6, sell: 1.5 }
+      BIRCH_LOG:       { buy: 6, sell: 1.5 }
+      JUNGLE_LOG:      { buy: 6, sell: 1.5 }
+      ACACIA_LOG:      { buy: 6, sell: 1.5 }
+      DARK_OAK_LOG:    { buy: 6, sell: 1.5 }
+      CHERRY_LOG:      { buy: 8, sell: 2 }
+      MANGROVE_LOG:    { buy: 6, sell: 1.5 }
+      OAK_SAPLING:     { buy: 10 }
+      SPRUCE_SAPLING:  { buy: 10 }
+      BIRCH_SAPLING:   { buy: 10 }
+      CHERRY_SAPLING:  { buy: 20 }
+  farming:
+    name: "Farming"
+    icon: WHEAT
+    items:
+      WHEAT_SEEDS:     { buy: 2, sell: 0.2 }
+      WHEAT:           { buy: 4, sell: 1 }
+      CARROT:          { buy: 4, sell: 1 }
+      POTATO:          { buy: 4, sell: 1 }
+      BEETROOT:        { buy: 4, sell: 1 }
+      SUGAR_CANE:      { buy: 5, sell: 1.5 }
+      PUMPKIN:         { buy: 10, sell: 3 }
+      MELON_SLICE:     { buy: 2, sell: 0.5 }
+      CACTUS:          { buy: 4, sell: 1 }
+      COCOA_BEANS:     { buy: 5, sell: 1.2 }
+      NETHER_WART:     { buy: 8, sell: 2 }
+      BONE_MEAL:       { buy: 3 }
+      EGG:             { buy: 4, sell: 1 }
+      LEATHER:         { buy: 8, sell: 2 }
+  food:
+    name: "Food"
+    icon: COOKED_BEEF
+    items:
+      BREAD:           { buy: 6, sell: 1 }
+      COOKED_BEEF:     { buy: 10, sell: 2 }
+      COOKED_PORKCHOP: { buy: 10, sell: 2 }
+      COOKED_CHICKEN:  { buy: 8, sell: 1.5 }
+      BAKED_POTATO:    { buy: 6, sell: 1 }
+      GOLDEN_CARROT:   { buy: 30, sell: 6 }
+      COD:             { buy: 8, sell: 2 }
+      SALMON:          { buy: 10, sell: 3 }
+      APPLE:           { buy: 8, sell: 1.5 }
+  mining:
+    name: "Ores & Minerals"
+    icon: DIAMOND
+    items:
+      COAL:            { buy: 6, sell: 1.5 }
+      IRON_INGOT:      { buy: 20, sell: 4 }
+      COPPER_INGOT:    { buy: 8, sell: 1.5 }
+      GOLD_INGOT:      { buy: 25, sell: 5 }
+      REDSTONE:        { buy: 5, sell: 1 }
+      LAPIS_LAZULI:    { buy: 5, sell: 1 }
+      QUARTZ:          { buy: 8, sell: 2 }
+      AMETHYST_SHARD:  { buy: 12, sell: 3 }
+      DIAMOND:         { buy: 150, sell: 25 }
+      EMERALD:         { buy: 80, sell: 15 }
+      OBSIDIAN:        { buy: 20, sell: 4 }
+      NETHERITE_SCRAP: { sell: 250 }
+  mobdrops:
+    name: "Mob Drops"
+    icon: ROTTEN_FLESH
+    items:
+      ROTTEN_FLESH:    { sell: 0.5 }
+      BONE:            { buy: 5, sell: 1 }
+      STRING:          { buy: 5, sell: 1 }
+      SPIDER_EYE:      { buy: 8, sell: 2 }
+      GUNPOWDER:       { buy: 10, sell: 2 }
+      ENDER_PEARL:     { buy: 30, sell: 6 }
+      SLIME_BALL:      { buy: 15, sell: 3 }
+      BLAZE_ROD:       { buy: 30, sell: 6 }
+      GHAST_TEAR:      { buy: 60, sell: 12 }
+      PHANTOM_MEMBRANE: { buy: 25, sell: 5 }
+      PRISMARINE_SHARD: { buy: 8, sell: 2 }
+  utility:
+    name: "Utility"
+    icon: ENDER_CHEST
+    items:
+      EXPERIENCE_BOTTLE: { buy: 25 }
+      NAME_TAG:        { buy: 150 }
+      SADDLE:          { buy: 200 }
+      ENDER_CHEST:     { buy: 350 }
+      SHULKER_SHELL:   { buy: 500, sell: 60 }
+      ELYTRA:          { sell: 2500 }
+      TOTEM_OF_UNDYING: { buy: 3000, sell: 400 }
+      GOLDEN_APPLE:    { buy: 200, sell: 30 }
+      FIREWORK_ROCKET: { buy: 6 }
+      ARROW:           { buy: 1.5 }
+      SPYGLASS:        { buy: 60 }

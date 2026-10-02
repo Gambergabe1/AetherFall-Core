@@ -1,0 +1,123 @@
+# ─────────────────────────────────────────────────────────────
+#  /bazaar — a player-driven order book for MATERIALS (like Hypixel's).
+#  • Sell offers: list items at your price; buyers take the cheapest first. Coins go straight to your purse.
+#  • Buy orders: pre-pay coins; sellers fill the highest first. Claim items in "Manage Orders".
+#  • Instant buy/sell trade against the best existing orders. tax is taken from every sale (coin sink).
+#  Gear (weapons, armor, tools, talismans, relics) can't be listed here — it goes to the Auction House (/ah).
+#
+#  Category tree: category → groups → groups → … (any depth). Any node may have `products` and/or `groups`.
+#  A group with a single product opens that product directly. Product keys: lowercase = custom, UPPERCASE = vanilla.
+#  `pane` is the coloured glass frame for the whole category.
+# ─────────────────────────────────────────────────────────────
+tax: 0.0125
+max-orders: 21
+max-amount: 10240
+min-price: 0.1
+max-price: 100000000
+
+categories:
+  farming:
+    name: "Farming"
+    icon: GOLDEN_HOE
+    color: "<yellow>"
+    pane: YELLOW_STAINED_GLASS_PANE
+    groups:
+      wheat:      { name: "Wheat & Seeds", icon: WHEAT, products: [WHEAT, enchanted_wheat, enchanted_hay_bale, WHEAT_SEEDS, golden_seed] }
+      carrot:     { name: "Carrot", icon: CARROT, products: [CARROT, enchanted_carrot] }
+      potato:     { name: "Potato", icon: POTATO, products: [POTATO, enchanted_potato] }
+      pumpkin:    { name: "Pumpkin", icon: PUMPKIN, products: [PUMPKIN, enchanted_pumpkin] }
+      melon:      { name: "Melon", icon: MELON_SLICE, products: [MELON_SLICE, enchanted_melon] }
+      sugar:      { name: "Sugar Cane", icon: SUGAR_CANE, products: [SUGAR_CANE, enchanted_sugar_cane] }
+      cactus:     { name: "Cactus", icon: CACTUS, products: [CACTUS, enchanted_cactus] }
+      other:      { name: "Other Crops", icon: BEETROOT, products: [BEETROOT, NETHER_WART, COCOA_BEANS] }
+      animal:
+        name: "Animal Products"
+        icon: LEATHER
+        groups:
+          leather: { name: "Leather", icon: LEATHER, products: [LEATHER, enchanted_leather] }
+          wool:    { name: "Wool", icon: WHITE_WOOL, products: [WHITE_WOOL] }
+          eggs:    { name: "Eggs & Feathers", icon: EGG, products: [EGG, FEATHER] }
+          meat:    { name: "Raw Meat", icon: BEEF, products: [BEEF, PORKCHOP, CHICKEN, MUTTON] }
+  mining:
+    name: "Mining"
+    icon: DIAMOND_PICKAXE
+    color: "<aqua>"
+    pane: CYAN_STAINED_GLASS_PANE
+    groups:
+      cobblestone: { name: "Cobblestone", icon: COBBLESTONE, products: [COBBLESTONE, enchanted_cobblestone] }
+      coal:        { name: "Coal", icon: COAL, products: [COAL, enchanted_coal] }
+      iron:        { name: "Iron", icon: IRON_INGOT, products: [IRON_INGOT, enchanted_iron, enchanted_iron_block] }
+      gold:        { name: "Gold", icon: GOLD_INGOT, products: [GOLD_INGOT, enchanted_gold, enchanted_gold_block] }
+      diamond:     { name: "Diamond", icon: DIAMOND, products: [DIAMOND, enchanted_diamond, enchanted_diamond_block] }
+      emerald:     { name: "Emerald", icon: EMERALD, products: [EMERALD, enchanted_emerald] }
+      redstone:    { name: "Redstone", icon: REDSTONE, products: [REDSTONE, enchanted_redstone] }
+      lapis:       { name: "Lapis Lazuli", icon: LAPIS_LAZULI, products: [LAPIS_LAZULI, enchanted_lapis] }
+      copper:      { name: "Copper", icon: COPPER_INGOT, products: [COPPER_INGOT, enchanted_copper] }
+      quartz:      { name: "Nether Quartz", icon: QUARTZ, products: [QUARTZ, enchanted_quartz] }
+      obsidian:    { name: "Obsidian", icon: OBSIDIAN, products: [OBSIDIAN, enchanted_obsidian] }
+      stone:       { name: "Stone Types", icon: STONE, products: [STONE, COBBLED_DEEPSLATE, ANDESITE, DIORITE, GRANITE, TUFF] }
+      sand:        { name: "Sand & Gravel", icon: SAND, products: [SAND, RED_SAND, GRAVEL, FLINT] }
+      gems:
+        name: "Gems & Rare Minerals"
+        icon: AMETHYST_SHARD
+        groups:
+          amethyst:  { name: "Amethyst", icon: AMETHYST_SHARD, products: [AMETHYST_SHARD] }
+          netherite: { name: "Netherite", icon: NETHERITE_SCRAP, products: [NETHERITE_SCRAP] }
+  aether:
+    name: "Aether Resources"
+    icon: AMETHYST_CLUSTER
+    color: "<light_purple>"
+    pane: MAGENTA_STAINED_GLASS_PANE
+    groups:
+      mithril:  { name: "Mithril", icon: PRISMARINE_CRYSTALS, products: [mithril, enchanted_mithril] }
+      titanium: { name: "Titanium", icon: QUARTZ, products: [titanium, refined_titanium] }
+      frostite: { name: "Frostite", icon: LIGHT_BLUE_DYE, products: [frostite] }
+      emberite: { name: "Emberite", icon: BLAZE_POWDER, products: [emberite] }
+      deep:
+        name: "Deep Minerals"
+        icon: CRYING_OBSIDIAN
+        groups:
+          voidstone: { name: "Voidstone", icon: POPPED_CHORUS_FRUIT, products: [voidstone] }
+          starlight: { name: "Starlight", icon: GLOWSTONE_DUST, products: [starlight] }
+      essence:  { name: "Aether Essence", icon: AMETHYST_SHARD, products: [aether_shard, ancient_bark] }
+  combat:
+    name: "Combat"
+    icon: IRON_SWORD
+    color: "<red>"
+    pane: RED_STAINED_GLASS_PANE
+    groups:
+      rotten:    { name: "Rotten Flesh", icon: ROTTEN_FLESH, products: [ROTTEN_FLESH, enchanted_rotten_flesh] }
+      bone:      { name: "Bones", icon: BONE, products: [BONE, enchanted_bone, bone_shard] }
+      string:    { name: "String & Spider", icon: STRING, products: [STRING, enchanted_string, SPIDER_EYE, spider_silk] }
+      gunpowder: { name: "Gunpowder", icon: GUNPOWDER, products: [GUNPOWDER, enchanted_gunpowder, volatile_core] }
+      ender:     { name: "Ender Pearls", icon: ENDER_PEARL, products: [ENDER_PEARL, enchanted_ender_pearl, void_fragment] }
+      slime:     { name: "Slime", icon: SLIME_BALL, products: [SLIME_BALL, enchanted_slimeball, slime_core] }
+      blaze:     { name: "Blaze", icon: BLAZE_ROD, products: [BLAZE_ROD, enchanted_blaze_rod, ember_core] }
+      nether:    { name: "Nether Drops", icon: GHAST_TEAR, products: [GHAST_TEAR, MAGMA_CREAM, wither_essence] }
+      undead:    { name: "Undead Remains", icon: ZOMBIE_HEAD, products: [zombie_heart, phantom_wing, PHANTOM_MEMBRANE] }
+      ocean:     { name: "Ocean Monsters", icon: PRISMARINE_SHARD, products: [guardian_scale, drowned_pearl] }
+      trophies:  { name: "Legendary Trophies", icon: DRAGON_HEAD, products: [echo_heart, dragon_scale] }
+  woods:
+    name: "Woods & Fishes"
+    icon: FISHING_ROD
+    color: "<gold>"
+    pane: ORANGE_STAINED_GLASS_PANE
+    groups:
+      logs:
+        name: "Logs"
+        icon: OAK_LOG
+        groups:
+          oak:      { name: "Oak", icon: OAK_LOG, products: [OAK_LOG, enchanted_oak_log] }
+          spruce:   { name: "Spruce", icon: SPRUCE_LOG, products: [SPRUCE_LOG, enchanted_spruce_log] }
+          birch:    { name: "Birch", icon: BIRCH_LOG, products: [BIRCH_LOG, enchanted_birch_log] }
+          jungle:   { name: "Jungle", icon: JUNGLE_LOG, products: [JUNGLE_LOG] }
+          acacia:   { name: "Acacia", icon: ACACIA_LOG, products: [ACACIA_LOG] }
+          dark_oak: { name: "Dark Oak", icon: DARK_OAK_LOG, products: [DARK_OAK_LOG] }
+          cherry:   { name: "Cherry", icon: CHERRY_LOG, products: [CHERRY_LOG] }
+          mangrove: { name: "Mangrove", icon: MANGROVE_LOG, products: [MANGROVE_LOG] }
+      fishing:
+        name: "Fishing"
+        icon: COD
+        groups:
+          raw:      { name: "Raw Fish", icon: COD, products: [COD, enchanted_raw_fish, SALMON, TROPICAL_FISH, PUFFERFISH] }
+          treasure: { name: "Sea Treasures", icon: PRISMARINE_CRYSTALS, products: [PRISMARINE_SHARD, PRISMARINE_CRYSTALS, INK_SAC, sea_glass, prismatic_scale, kraken_ink] }

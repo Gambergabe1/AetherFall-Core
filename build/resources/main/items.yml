@@ -1,0 +1,561 @@
+# ─────────────────────────────────────────────────────────────
+#  Aetherfall custom items. Add your own freely — /aether reload applies changes.
+#
+#  material   vanilla base item (textures come from it; no resource pack needed)
+#  type       RESOURCE, ENCHANTED, TOOL, WEAPON, BOW, TALISMAN, CONSUMABLE
+#  rarity     COMMON, UNCOMMON, RARE, EPIC, LEGENDARY, MYTHIC
+#  recipe     crafted in /forge. Ingredient keys: lowercase = custom item id, UPPERCASE = vanilla item
+#  ability    built-in behaviours: prospector, drill, excavate, autosmelt, replenish, woodsman, grapple,
+#             sea_luck, heal, frostbite, ember, teleport, lifesteal, starfall, triple_shot, feast, treasure, wisdom
+#  effects    TALISMAN: potion effects while carried (amplifier 0 = level I)
+#  sell       NPC sell price used by /shop when the item isn't listed in shop.yml
+# ─────────────────────────────────────────────────────────────
+
+items:
+  # ── Mining resources (from custom ores) ─────────────────────
+  mithril:          { material: PRISMARINE_CRYSTALS, name: "Mithril", rarity: UNCOMMON, type: RESOURCE, sell: 12, lore: ["A shimmering teal metal found", "between Y -16 and 48."] }
+  titanium:         { material: QUARTZ, name: "Titanium", rarity: RARE, type: RESOURCE, sell: 30, lore: ["Incredibly strong and light.", "Found between Y -48 and 16."] }
+  emberite:         { material: BLAZE_POWDER, name: "Emberite", rarity: RARE, type: RESOURCE, sell: 35, lore: ["Still warm to the touch.", "Found deep, below Y -24."] }
+  frostite:         { material: LIGHT_BLUE_DYE, name: "Frostite", rarity: RARE, type: RESOURCE, sell: 30, lore: ["Never melts. Found in blue", "ice veins between Y -40 and 24."] }
+  voidstone:        { material: POPPED_CHORUS_FRUIT, name: "Voidstone", rarity: EPIC, type: RESOURCE, sell: 90, lore: ["Hums with the silence of the void.", "Found near bedrock."] }
+  starlight:        { material: GLOWSTONE_DUST, name: "Starlight Dust", rarity: LEGENDARY, type: RESOURCE, sell: 250, lore: ["A fallen star's remains.", "Glows in the deepest caves."] }
+  aether_shard:     { material: AMETHYST_SHARD, name: "Aether Shard", rarity: RARE, type: RESOURCE, sell: 60, lore: ["Rarely found while mining stone.", "The essence of Aetherfall itself."] }
+
+  # ── Combat drops ────────────────────────────────────────────
+  zombie_heart:     { material: RED_DYE, name: "Zombie Heart", rarity: UNCOMMON, type: RESOURCE, sell: 50, lore: ["Still beating... somehow."] }
+  volatile_core:    { material: FIREWORK_STAR, name: "Volatile Core", rarity: RARE, type: RESOURCE, sell: 60, lore: ["Handle with care."] }
+  void_fragment:    { material: ENDER_EYE, name: "Void Fragment", rarity: UNCOMMON, type: RESOURCE, sell: 15, lore: ["Dropped by Endermen."] }
+  ember_core:       { material: FIRE_CHARGE, name: "Ember Core", rarity: RARE, type: RESOURCE, sell: 40, lore: ["The burning heart of a Blaze."] }
+  spider_silk:      { material: COBWEB, name: "Spider Silk", rarity: UNCOMMON, type: RESOURCE, sell: 25, lore: ["Stronger than steel."] }
+  bone_shard:       { material: BONE_MEAL, name: "Bone Shard", rarity: UNCOMMON, type: RESOURCE, sell: 20, lore: ["Sharp enough to cut."] }
+  wither_essence:   { material: BLACK_DYE, name: "Wither Essence", rarity: RARE, type: RESOURCE, sell: 60, lore: ["Drains the life around it."] }
+  slime_core:       { material: LIME_DYE, name: "Slime Core", rarity: UNCOMMON, type: RESOURCE, sell: 30, lore: ["Bouncy."] }
+  phantom_wing:     { material: FEATHER, name: "Phantom Wing", rarity: UNCOMMON, type: RESOURCE, sell: 20, lore: ["Light as a nightmare."] }
+  guardian_scale:   { material: PRISMARINE_SHARD, name: "Guardian Scale", rarity: RARE, type: RESOURCE, sell: 40, lore: ["Glimmers underwater."] }
+  drowned_pearl:    { material: ENDER_PEARL, name: "Drowned Pearl", rarity: RARE, type: RESOURCE, sell: 50, lore: ["Found in the pockets of the drowned."] }
+  echo_heart:       { material: ECHO_SHARD, name: "Echo Heart", rarity: LEGENDARY, type: RESOURCE, sell: 5000, glint: true, lore: ["Torn from the Warden itself."] }
+  dragon_scale:     { material: PURPLE_DYE, name: "Dragon Scale", rarity: LEGENDARY, type: RESOURCE, sell: 3000, glint: true, lore: ["Proof you slew the Ender Dragon."] }
+
+  # ── Fishing & farming ───────────────────────────────────────
+  sea_glass:        { material: LIGHT_BLUE_STAINED_GLASS_PANE, name: "Sea Glass", rarity: UNCOMMON, type: RESOURCE, sell: 15, lore: ["Polished smooth by the tides."] }
+  prismatic_scale:  { material: TURTLE_SCUTE, name: "Prismatic Scale", rarity: RARE, type: RESOURCE, sell: 150, lore: ["Shimmers every colour at once."] }
+  kraken_ink:       { material: GLOW_INK_SAC, name: "Kraken Ink", rarity: EPIC, type: RESOURCE, sell: 800, lore: ["From something far larger than a squid."] }
+  golden_seed:      { material: WHEAT_SEEDS, name: "Golden Seed", rarity: RARE, type: RESOURCE, sell: 120, glint: true, lore: ["Found while harvesting crops."] }
+  ancient_bark:     { material: STICK, name: "Ancient Bark", rarity: RARE, type: RESOURCE, sell: 150, glint: true, lore: ["From a tree older than the world."] }
+
+  # ── Enchanted materials (160 → 1, like the classics) ────────
+  enchanted_cobblestone: { material: COBBLESTONE, name: "Enchanted Cobblestone", rarity: UNCOMMON, type: ENCHANTED, recipe: { ingredients: { COBBLESTONE: 160 } } }
+  enchanted_coal:        { material: COAL, name: "Enchanted Coal", rarity: UNCOMMON, type: ENCHANTED, recipe: { ingredients: { COAL: 160 } } }
+  enchanted_iron:        { material: IRON_INGOT, name: "Enchanted Iron", rarity: UNCOMMON, type: ENCHANTED, recipe: { ingredients: { IRON_INGOT: 160 } } }
+  enchanted_gold:        { material: GOLD_INGOT, name: "Enchanted Gold", rarity: UNCOMMON, type: ENCHANTED, recipe: { ingredients: { GOLD_INGOT: 160 } } }
+  enchanted_diamond:     { material: DIAMOND, name: "Enchanted Diamond", rarity: RARE, type: ENCHANTED, recipe: { ingredients: { DIAMOND: 160 } } }
+  enchanted_emerald:     { material: EMERALD, name: "Enchanted Emerald", rarity: RARE, type: ENCHANTED, recipe: { ingredients: { EMERALD: 160 } } }
+  enchanted_redstone:    { material: REDSTONE, name: "Enchanted Redstone", rarity: UNCOMMON, type: ENCHANTED, recipe: { ingredients: { REDSTONE: 160 } } }
+  enchanted_lapis:       { material: LAPIS_LAZULI, name: "Enchanted Lapis", rarity: UNCOMMON, type: ENCHANTED, recipe: { ingredients: { LAPIS_LAZULI: 160 } } }
+  enchanted_quartz:      { material: QUARTZ, name: "Enchanted Quartz", rarity: UNCOMMON, type: ENCHANTED, recipe: { ingredients: { QUARTZ: 160 } } }
+  enchanted_obsidian:    { material: OBSIDIAN, name: "Enchanted Obsidian", rarity: UNCOMMON, type: ENCHANTED, recipe: { ingredients: { OBSIDIAN: 160 } } }
+  enchanted_copper:      { material: COPPER_INGOT, name: "Enchanted Copper", rarity: UNCOMMON, type: ENCHANTED, recipe: { ingredients: { COPPER_INGOT: 160 } } }
+  enchanted_wheat:       { material: WHEAT, name: "Enchanted Wheat", rarity: UNCOMMON, type: ENCHANTED, recipe: { ingredients: { WHEAT: 160 } } }
+  enchanted_carrot:      { material: CARROT, name: "Enchanted Carrot", rarity: UNCOMMON, type: ENCHANTED, recipe: { ingredients: { CARROT: 160 } } }
+  enchanted_potato:      { material: POTATO, name: "Enchanted Potato", rarity: UNCOMMON, type: ENCHANTED, recipe: { ingredients: { POTATO: 160 } } }
+  enchanted_sugar_cane:  { material: SUGAR_CANE, name: "Enchanted Sugar Cane", rarity: UNCOMMON, type: ENCHANTED, recipe: { ingredients: { SUGAR_CANE: 160 } } }
+  enchanted_pumpkin:     { material: PUMPKIN, name: "Enchanted Pumpkin", rarity: UNCOMMON, type: ENCHANTED, recipe: { ingredients: { PUMPKIN: 160 } } }
+  enchanted_melon:       { material: MELON_SLICE, name: "Enchanted Melon", rarity: UNCOMMON, type: ENCHANTED, recipe: { ingredients: { MELON_SLICE: 160 } } }
+  enchanted_cactus:      { material: CACTUS, name: "Enchanted Cactus", rarity: UNCOMMON, type: ENCHANTED, recipe: { ingredients: { CACTUS: 160 } } }
+  enchanted_oak_log:     { material: OAK_LOG, name: "Enchanted Oak Log", rarity: UNCOMMON, type: ENCHANTED, recipe: { ingredients: { OAK_LOG: 160 } } }
+  enchanted_spruce_log:  { material: SPRUCE_LOG, name: "Enchanted Spruce Log", rarity: UNCOMMON, type: ENCHANTED, recipe: { ingredients: { SPRUCE_LOG: 160 } } }
+  enchanted_birch_log:   { material: BIRCH_LOG, name: "Enchanted Birch Log", rarity: UNCOMMON, type: ENCHANTED, recipe: { ingredients: { BIRCH_LOG: 160 } } }
+  enchanted_rotten_flesh: { material: ROTTEN_FLESH, name: "Enchanted Rotten Flesh", rarity: UNCOMMON, type: ENCHANTED, recipe: { ingredients: { ROTTEN_FLESH: 160 } } }
+  enchanted_bone:        { material: BONE, name: "Enchanted Bone", rarity: UNCOMMON, type: ENCHANTED, recipe: { ingredients: { BONE: 160 } } }
+  enchanted_string:      { material: STRING, name: "Enchanted String", rarity: UNCOMMON, type: ENCHANTED, recipe: { ingredients: { STRING: 160 } } }
+  enchanted_gunpowder:   { material: GUNPOWDER, name: "Enchanted Gunpowder", rarity: UNCOMMON, type: ENCHANTED, recipe: { ingredients: { GUNPOWDER: 160 } } }
+  enchanted_ender_pearl: { material: ENDER_PEARL, name: "Enchanted Ender Pearl", rarity: UNCOMMON, type: ENCHANTED, recipe: { ingredients: { ENDER_PEARL: 20 } } }
+  enchanted_leather:     { material: LEATHER, name: "Enchanted Leather", rarity: UNCOMMON, type: ENCHANTED, recipe: { ingredients: { LEATHER: 160 } } }
+  enchanted_raw_fish:    { material: COD, name: "Enchanted Raw Fish", rarity: UNCOMMON, type: ENCHANTED, recipe: { ingredients: { COD: 160 } } }
+  enchanted_slimeball:   { material: SLIME_BALL, name: "Enchanted Slimeball", rarity: UNCOMMON, type: ENCHANTED, recipe: { ingredients: { SLIME_BALL: 160 } } }
+  enchanted_blaze_rod:   { material: BLAZE_ROD, name: "Enchanted Blaze Rod", rarity: RARE, type: ENCHANTED, recipe: { ingredients: { BLAZE_ROD: 160 } } }
+  enchanted_mithril:     { material: PRISMARINE_CRYSTALS, name: "Enchanted Mithril", rarity: RARE, type: ENCHANTED, recipe: { ingredients: { mithril: 160 } } }
+  # tier 2
+  enchanted_iron_block:    { material: IRON_BLOCK, name: "Enchanted Iron Block", rarity: RARE, type: ENCHANTED, recipe: { ingredients: { enchanted_iron: 160 } } }
+  enchanted_gold_block:    { material: GOLD_BLOCK, name: "Enchanted Gold Block", rarity: RARE, type: ENCHANTED, recipe: { ingredients: { enchanted_gold: 160 } } }
+  enchanted_diamond_block: { material: DIAMOND_BLOCK, name: "Enchanted Diamond Block", rarity: EPIC, type: ENCHANTED, recipe: { ingredients: { enchanted_diamond: 160 } } }
+  enchanted_hay_bale:      { material: HAY_BLOCK, name: "Enchanted Hay Bale", rarity: RARE, type: ENCHANTED, recipe: { ingredients: { enchanted_wheat: 144 } } }
+  refined_titanium:        { material: NETHERITE_SCRAP, name: "Refined Titanium", rarity: EPIC, type: ENCHANTED, recipe: { ingredients: { titanium: 16, enchanted_iron: 4 } } }
+
+  # ── Tools ───────────────────────────────────────────────────
+  mithril_pickaxe:
+    material: DIAMOND_PICKAXE
+    name: "Mithril Pickaxe"
+    rarity: RARE
+    type: TOOL
+    enchants: { efficiency: 5, unbreaking: 3, fortune: 2 }
+    ability: prospector
+    ability-name: "Prospector"
+    ability-lore: ["<green>+50%</green> chance to double drops", "from custom ores."]
+    recipe: { ingredients: { mithril: 96, enchanted_diamond: 1, DIAMOND_PICKAXE: 1 } }
+  titanium_drill:
+    material: NETHERITE_PICKAXE
+    name: "Titanium Drill"
+    rarity: EPIC
+    type: TOOL
+    enchants: { efficiency: 6, unbreaking: 5, fortune: 3 }
+    ability: drill
+    ability-name: "Excavation Drill"
+    ability-lore: ["Mines a <yellow>3x3</yellow> area at once.", "<dark_gray>Sneak to mine a single block."]
+    recipe: { ingredients: { refined_titanium: 4, enchanted_mithril: 2, mithril_pickaxe: 1, enchanted_iron_block: 1 } }
+  ember_pickaxe:
+    material: GOLDEN_PICKAXE
+    name: "Molten Pickaxe"
+    rarity: RARE
+    type: TOOL
+    unbreakable: true
+    enchants: { efficiency: 5 }
+    ability: autosmelt
+    ability-name: "Molten Touch"
+    ability-lore: ["Ores drop <gold>smelted</gold> ingots."]
+    recipe: { ingredients: { emberite: 32, ember_core: 4, enchanted_gold: 4 } }
+  excavator:
+    material: DIAMOND_SHOVEL
+    name: "Excavator"
+    rarity: RARE
+    type: TOOL
+    enchants: { efficiency: 5, unbreaking: 3 }
+    ability: excavate
+    ability-name: "Earthmover"
+    ability-lore: ["Digs a <yellow>3x3</yellow> area of dirt, sand and gravel.", "<dark_gray>Sneak to dig a single block."]
+    recipe: { ingredients: { enchanted_iron: 8, titanium: 8, DIAMOND_SHOVEL: 1 } }
+  harvester_hoe:
+    material: DIAMOND_HOE
+    name: "Harvester's Hoe"
+    rarity: RARE
+    type: TOOL
+    attributes: { farming_fortune: 25, farming_speed: 30 }
+    enchants: { fortune: 3, unbreaking: 3 }
+    ability: replenish
+    ability-name: "Replenish"
+    ability-lore: ["Harvests a <yellow>3x3</yellow> area of crops", "and replants them for you."]
+    recipe: { ingredients: { enchanted_wheat: 16, golden_seed: 2, DIAMOND_HOE: 1 } }
+  mathematical_wheat_hoe:
+    material: DIAMOND_HOE
+    name: "Mathematical Hoe · Wheat"
+    rarity: EPIC
+    type: TOOL
+    attributes: { farming_fortune: 80, farming_speed: 35, wheat_fortune: 120 }
+    enchants: { unbreaking: 5, efficiency: 5, fortune: 4 }
+    ability: farming_blueprint
+    ability-name: "Wheat Blueprint"
+    ability-lore: ["Earns extra Wheat drops based on", "Farming Fortune and Cultivation."]
+    recipe: { ingredients: { enchanted_wheat: 64, golden_seed: 8, enchanted_diamond: 1, DIAMOND_HOE: 1 } }
+  mathematical_carrot_hoe:
+    material: DIAMOND_HOE
+    name: "Mathematical Hoe · Carrot"
+    rarity: EPIC
+    type: TOOL
+    attributes: { farming_fortune: 80, farming_speed: 35, carrot_fortune: 120 }
+    enchants: { unbreaking: 5, efficiency: 5, fortune: 4 }
+    ability: farming_blueprint
+    ability-name: "Carrot Blueprint"
+    ability-lore: ["Earns extra Carrot drops based on", "Farming Fortune and Cultivation."]
+    recipe: { ingredients: { enchanted_carrot: 64, golden_seed: 8, enchanted_diamond: 1, DIAMOND_HOE: 1 } }
+  mathematical_potato_hoe:
+    material: DIAMOND_HOE
+    name: "Mathematical Hoe · Potato"
+    rarity: EPIC
+    type: TOOL
+    attributes: { farming_fortune: 80, farming_speed: 35, potato_fortune: 120 }
+    enchants: { unbreaking: 5, efficiency: 5, fortune: 4 }
+    ability: farming_blueprint
+    ability-name: "Potato Blueprint"
+    ability-lore: ["Earns extra Potato drops based on", "Farming Fortune and Cultivation."]
+    recipe: { ingredients: { enchanted_potato: 64, golden_seed: 8, enchanted_diamond: 1, DIAMOND_HOE: 1 } }
+  mathematical_cane_hoe:
+    material: DIAMOND_HOE
+    name: "Mathematical Hoe · Sugar Cane"
+    rarity: EPIC
+    type: TOOL
+    attributes: { farming_fortune: 80, farming_speed: 45, sugar_cane_fortune: 120 }
+    enchants: { unbreaking: 5, efficiency: 5, fortune: 4 }
+    ability: farming_blueprint
+    ability-name: "Cane Blueprint"
+    ability-lore: ["Earns extra Sugar Cane drops based on", "Farming Fortune and Cultivation."]
+    recipe: { ingredients: { enchanted_sugar_cane: 64, golden_seed: 8, enchanted_diamond: 1, DIAMOND_HOE: 1 } }
+  mathematical_cactus_hoe:
+    material: DIAMOND_HOE
+    name: "Mathematical Hoe · Cactus"
+    rarity: EPIC
+    type: TOOL
+    attributes: { farming_fortune: 80, farming_speed: 45, cactus_fortune: 120 }
+    enchants: { unbreaking: 5, efficiency: 5, fortune: 4 }
+    ability: farming_blueprint
+    ability-name: "Cactus Blueprint"
+    ability-lore: ["Earns extra Cactus drops based on", "Farming Fortune and Cultivation."]
+    recipe: { ingredients: { enchanted_cactus: 64, golden_seed: 8, enchanted_diamond: 1, DIAMOND_HOE: 1 } }
+  lumber_axe:
+    material: DIAMOND_AXE
+    name: "Woodsman's Axe"
+    rarity: RARE
+    type: TOOL
+    enchants: { efficiency: 5, unbreaking: 3 }
+    ability: woodsman
+    ability-name: "Woodsman"
+    ability-lore: ["<green>Doubles</green> log drops."]
+    recipe: { ingredients: { enchanted_oak_log: 16, ancient_bark: 2, DIAMOND_AXE: 1 } }
+  grappling_hook:
+    material: FISHING_ROD
+    name: "Grappling Hook"
+    rarity: UNCOMMON
+    type: TOOL
+    unbreakable: true
+    ability: grapple
+    ability-name: "Grapple"
+    ability-trigger: "RIGHT CLICK"
+    ability-lore: ["Reel in to launch yourself", "towards the hook."]
+    recipe: { ingredients: { enchanted_string: 2, spider_silk: 4, FISHING_ROD: 1 } }
+  angler_rod:
+    material: FISHING_ROD
+    name: "Angler's Rod"
+    rarity: RARE
+    type: TOOL
+    enchants: { lure: 3, luck_of_the_sea: 3, unbreaking: 3 }
+    ability: sea_luck
+    ability-name: "Sea Luck"
+    ability-lore: ["<green>Doubles</green> your chance of", "rare fishing treasures."]
+    recipe: { ingredients: { enchanted_raw_fish: 8, prismatic_scale: 2, FISHING_ROD: 1 } }
+
+  # ── Weapons ─────────────────────────────────────────────────
+  zombie_sword:
+    material: IRON_SWORD
+    name: "Zombie Sword"
+    rarity: UNCOMMON
+    type: WEAPON
+    attributes: { attack_damage: 35, attack_speed: 1.6, strength: 15 }
+    ability: heal
+    ability-name: "Instant Heal"
+    ability-trigger: "RIGHT CLICK"
+    ability-lore: ["Heal <red>6❤</red> instantly.", "<dark_gray>Cooldown: 20s"]
+    recipe: { ingredients: { zombie_heart: 4, enchanted_rotten_flesh: 8, IRON_SWORD: 1 } }
+  frostbite_blade:
+    material: DIAMOND_SWORD
+    name: "Frostbite Blade"
+    rarity: RARE
+    type: WEAPON
+    attributes: { attack_damage: 70, attack_speed: 1.6, strength: 25, crit_chance: 5 }
+    enchants: { sharpness: 3 }
+    ability: frostbite
+    ability-name: "Frostbite"
+    ability-lore: ["Hits <aqua>slow</aqua> your enemies for 3s."]
+    recipe: { ingredients: { frostite: 24, enchanted_diamond: 1, DIAMOND_SWORD: 1 } }
+  ember_blade:
+    material: GOLDEN_SWORD
+    name: "Ember Blade"
+    rarity: RARE
+    type: WEAPON
+    unbreakable: true
+    attributes: { attack_damage: 80, attack_speed: 1.6, strength: 35 }
+    ability: ember
+    ability-name: "Scorch"
+    ability-lore: ["Sets enemies ablaze and deals", "<red>+50%</red> damage to burning foes."]
+    recipe: { ingredients: { emberite: 24, ember_core: 4, enchanted_gold: 8 } }
+  void_blade:
+    material: DIAMOND_SWORD
+    name: "Void Blade"
+    rarity: EPIC
+    type: WEAPON
+    attributes: { attack_damage: 110, attack_speed: 1.6, strength: 50, crit_chance: 10 }
+    enchants: { sharpness: 4 }
+    ability: teleport
+    ability-name: "Instant Transmission"
+    ability-trigger: "RIGHT CLICK"
+    ability-lore: ["Teleport <green>8 blocks</green> ahead.", "<dark_gray>Cooldown: 1.5s"]
+    recipe: { ingredients: { void_fragment: 32, voidstone: 8, enchanted_ender_pearl: 4, DIAMOND_SWORD: 1 } }
+  vampiric_fang:
+    material: IRON_SWORD
+    name: "Vampiric Fang"
+    rarity: EPIC
+    type: WEAPON
+    attributes: { attack_damage: 90, attack_speed: 2.0, strength: 40, crit_chance: 15 }
+    ability: lifesteal
+    ability-name: "Bloodthirst"
+    ability-lore: ["Heals you for <red>15%</red> of damage dealt."]
+    recipe: { ingredients: { wither_essence: 16, zombie_heart: 8, enchanted_bone: 8, IRON_SWORD: 1 } }
+  starfall_blade:
+    material: NETHERITE_SWORD
+    name: "Starfall"
+    rarity: LEGENDARY
+    type: WEAPON
+    unbreakable: true
+    attributes: { attack_damage: 180, attack_speed: 1.6, strength: 80, crit_chance: 15 }
+    enchants: { sharpness: 5, looting: 3 }
+    ability: starfall
+    ability-name: "Starfall"
+    ability-trigger: "RIGHT CLICK"
+    ability-lore: ["Call down a star where you look,", "dealing <red>8</red> damage to nearby mobs.", "<dark_gray>Cooldown: 10s"]
+    recipe: { ingredients: { starlight: 16, echo_heart: 1, void_blade: 1, enchanted_diamond_block: 1 } }
+  hurricane_bow:
+    material: BOW
+    name: "Hurricane Bow"
+    rarity: EPIC
+    type: BOW
+    enchants: { power: 5, unbreaking: 3 }
+    ability: triple_shot
+    ability-name: "Tempest"
+    ability-lore: ["Shoots <green>3</green> arrows at once."]
+    recipe: { ingredients: { phantom_wing: 16, enchanted_string: 8, BOW: 1 } }
+
+  # ── Talismans (carry in inventory) ──────────────────────────
+  speed_talisman:     { material: RABBIT_FOOT, name: "Speed Talisman", rarity: UNCOMMON, type: TALISMAN, effects: { speed: 0 }, recipe: { ingredients: { enchanted_sugar_cane: 8 } } }
+  night_vision_charm: { material: SPIDER_EYE, name: "Night Vision Charm", rarity: UNCOMMON, type: TALISMAN, effects: { night_vision: 0 }, recipe: { ingredients: { enchanted_carrot: 8 } } }
+  haste_talisman:     { material: GOLD_NUGGET, name: "Haste Talisman", rarity: RARE, type: TALISMAN, effects: { haste: 0 }, recipe: { ingredients: { enchanted_gold: 8, mithril: 32 } } }
+  jump_talisman:      { material: SLIME_BALL, name: "Frog Talisman", rarity: UNCOMMON, type: TALISMAN, effects: { jump_boost: 0 }, recipe: { ingredients: { enchanted_slimeball: 4, slime_core: 4 } } }
+  magnet_talisman:
+    material: IRON_NUGGET
+    name: "Magnet Talisman"
+    rarity: RARE
+    type: TALISMAN
+    ability: magnet
+    ability-name: "Magnetism"
+    ability-lore: ["Pulls nearby items towards you."]
+    recipe: { ingredients: { enchanted_iron: 16, enchanted_redstone: 8 } }
+  lucky_charm:
+    material: LILY_OF_THE_VALLEY
+    name: "Lucky Charm"
+    rarity: EPIC
+    type: TALISMAN
+    ability: luck
+    ability-name: "Fortune's Favour"
+    ability-lore: ["<green>+25%</green> chance for all rare drops."]
+    recipe: { ingredients: { enchanted_emerald: 16, aether_shard: 8 } }
+
+  # ── Consumables ─────────────────────────────────────────────
+  aether_apple:
+    material: GOLDEN_APPLE
+    name: "Aether Apple"
+    rarity: EPIC
+    type: CONSUMABLE
+    glint: true
+    ability: feast
+    ability-name: "Divine Feast"
+    ability-lore: ["Absorption IV, Regeneration II and", "Resistance I when eaten."]
+    recipe: { ingredients: { enchanted_gold: 16, aether_shard: 4, GOLDEN_APPLE: 1 } }
+  sunken_treasure:
+    material: CHEST
+    name: "Sunken Treasure"
+    rarity: RARE
+    type: CONSUMABLE
+    glint: true
+    ability: treasure
+    ability-name: "Open"
+    ability-trigger: "RIGHT CLICK"
+    ability-lore: ["Contains coins and treasure", "from the deep."]
+  wisdom_tome:
+    material: BOOK
+    name: "Tome of Wisdom"
+    rarity: RARE
+    type: CONSUMABLE
+    glint: true
+    ability: wisdom
+    ability-name: "Study"
+    ability-trigger: "RIGHT CLICK"
+    ability-lore: ["Grants <green>1,500</green> experience points."]
+    recipe: { ingredients: { enchanted_lapis: 16, BOOK: 1 } }
+
+  # ── Nether & End materials ─────────────────────────────────
+  infernium:            { material: NETHER_BRICK, name: "Infernium", rarity: RARE, type: RESOURCE, sell: 40, lore: ["Molten ore from the Nether's depths."] }
+  soulite:              { material: CYAN_DYE, name: "Soulite", rarity: EPIC, type: RESOURCE, sell: 75, lore: ["Crystallised souls from the", "Soul Sand Valley and basalt deltas."] }
+  astralite:            { material: CHORUS_FRUIT, name: "Astralite", rarity: EPIC, type: RESOURCE, sell: 120, lore: ["Starlit crystal grown in End stone."] }
+  enchanted_infernium:  { material: NETHER_BRICK, name: "Enchanted Infernium", rarity: EPIC, type: ENCHANTED, recipe: { ingredients: { infernium: 160 } } }
+  enchanted_soulite:    { material: CYAN_DYE, name: "Enchanted Soulite", rarity: EPIC, type: ENCHANTED, recipe: { ingredients: { soulite: 160 } } }
+  enchanted_astralite:  { material: CHORUS_FRUIT, name: "Enchanted Astralite", rarity: LEGENDARY, type: ENCHANTED, recipe: { ingredients: { astralite: 160 } } }
+  soulreaper:
+    material: NETHERITE_SWORD
+    name: "Soulreaper"
+    rarity: EPIC
+    type: WEAPON
+    attributes: { attack_damage: 150, attack_speed: 1.6, strength: 70, crit_chance: 10 }
+    enchants: { sharpness: 5 }
+    ability: lifesteal
+    ability-name: "Harvest Souls"
+    ability-lore: ["Heals you for <red>15%</red> of damage dealt."]
+    recipe: { ingredients: { soulite: 48, enchanted_infernium: 2, wither_essence: 8, NETHERITE_SWORD: 1 } }
+  astral_staff:
+    material: BLAZE_ROD
+    name: "Astral Staff"
+    rarity: LEGENDARY
+    type: WEAPON
+    attributes: { attack_damage: 130, attack_speed: 1.8, strength: 45, mana: 120 }
+    ability: starfall
+    ability-name: "Meteor Shower"
+    ability-trigger: "RIGHT CLICK"
+    ability-lore: ["Call down a star where you look,", "dealing <red>8</red> damage to nearby mobs.", "<dark_gray>Cooldown: 10s"]
+    recipe: { ingredients: { astralite: 32, enchanted_astralite: 1, ember_core: 8, starlight: 4 } }
+  infernal_sigil:
+    material: BLAZE_POWDER
+    name: "Infernal Sigil"
+    rarity: LEGENDARY
+    type: CONSUMABLE
+    category: SUMMONS
+    glint: true
+    ability: "summon:infernal_tyrant"
+    ability-name: "Summon the Infernal Tyrant"
+    ability-trigger: "RIGHT CLICK"
+    ability-lore: ["Best summoned in the Nether.", "Fire resistance strongly advised."]
+    recipe: { ingredients: { infernium: 64, ember_core: 8, enchanted_blaze_rod: 1 } }
+
+  # ── Boss summons (right-click the ground; not within 150 blocks of spawn) ──
+  frozen_relic:
+    material: HEART_OF_THE_SEA
+    name: "Frozen Relic"
+    rarity: EPIC
+    type: CONSUMABLE
+    category: SUMMONS
+    glint: true
+    ability: "summon:frost_titan"
+    ability-name: "Summon the Frost Titan"
+    ability-trigger: "RIGHT CLICK"
+    ability-lore: ["Bring friends. Loot is shared by", "damage dealt."]
+    recipe: { ingredients: { frostite: 64, enchanted_iron: 8, zombie_heart: 2 } }
+  ember_sigil:
+    material: MAGMA_CREAM
+    name: "Ember Sigil"
+    rarity: EPIC
+    type: CONSUMABLE
+    category: SUMMONS
+    glint: true
+    ability: "summon:ember_warlord"
+    ability-name: "Summon the Ember Warlord"
+    ability-trigger: "RIGHT CLICK"
+    ability-lore: ["Best fought far from anything flammable."]
+    recipe: { ingredients: { emberite: 64, ember_core: 8, wither_essence: 4 } }
+  silk_cocoon:
+    material: COBWEB
+    name: "Silk Cocoon"
+    rarity: RARE
+    type: CONSUMABLE
+    category: SUMMONS
+    glint: true
+    ability: "summon:broodmother"
+    ability-name: "Summon the Broodmother"
+    ability-trigger: "RIGHT CLICK"
+    ability-lore: ["Something is moving inside..."]
+    recipe: { ingredients: { spider_silk: 32, enchanted_string: 4 } }
+  void_sigil:
+    material: ENDER_EYE
+    name: "Void Sigil"
+    rarity: LEGENDARY
+    type: CONSUMABLE
+    category: SUMMONS
+    glint: true
+    ability: "summon:void_herald"
+    ability-name: "Summon the Void Herald"
+    ability-trigger: "RIGHT CLICK"
+    ability-lore: ["The void stares back."]
+    recipe: { ingredients: { voidstone: 16, void_fragment: 64, enchanted_ender_pearl: 8 } }
+
+# ── Armor sets (each expands into helmet/chestplate/leggings/boots) ──
+# armor = defense per piece (helmet, chest, legs, boots). Recipe cost is multiplied 5/8/7/4 per piece.
+sets:
+  miner:
+    name: "Miner's"
+    rarity: RARE
+    color: "#2FD1B5"
+    armor: [6, 14, 12, 6]
+    stats: { health: 100, defense: 250, strength: 0, mana: 0 }
+    recipe-material: mithril
+    recipe-cost: 12
+    effects: { haste: 1 }
+    bonus-lore: ["<aqua>Haste II</aqua> while wearing the full set."]
+  infernal:
+    name: "Infernal"
+    rarity: EPIC
+    color: "#B22222"
+    armor: [8, 18, 15, 8]
+    stats: { health: 200, defense: 180, strength: 40, mana: 0 }
+    toughness: 2
+    recipe-material: infernium
+    recipe-cost: 4
+    recipe-extra: { ember_core: 2 }
+    effects: { fire_resistance: 0, strength: 0 }
+    bonus-lore: ["<gold>Fire immunity</gold> and <aqua>Strength I</aqua>."]
+  astral:
+    name: "Astral"
+    rarity: LEGENDARY
+    color: "#C8A2FF"
+    armor: [10, 22, 18, 10]
+    stats: { health: 350, defense: 500, strength: 80, mana: 100 }
+    toughness: 3
+    health: 2
+    recipe-material: astralite
+    recipe-cost: 2
+    recipe-extra: { enchanted_astralite: 1 }
+    effects: { speed: 1, jump_boost: 1, slow_falling: 0 }
+    bonus-lore: ["<aqua>Speed II</aqua>, <aqua>Jump Boost II</aqua> and <aqua>Slow Falling</aqua>."]
+  frost:
+    name: "Frostguard"
+    rarity: RARE
+    color: "#A5E4FF"
+    armor: [7, 16, 13, 7]
+    stats: { health: 250, defense: 300, strength: 0, mana: 0 }
+    toughness: 1
+    recipe-material: frostite
+    recipe-cost: 6
+    recipe-extra: { enchanted_iron: 2 }
+    effects: { speed: 0, resistance: 0 }
+    bonus-lore: ["<aqua>Speed I</aqua> and <aqua>Resistance I</aqua>."]
+  ember:
+    name: "Emberforged"
+    rarity: RARE
+    color: "#FF6A00"
+    armor: [7, 16, 14, 7]
+    stats: { health: 200, defense: 180, strength: 25, mana: 0 }
+    toughness: 1
+    recipe-material: emberite
+    recipe-cost: 6
+    recipe-extra: { ember_core: 2 }
+    effects: { fire_resistance: 0 }
+    bonus-lore: ["<gold>Immune to fire and lava</gold>."]
+  void:
+    name: "Voidwalker"
+    rarity: EPIC
+    color: "#3B0A5A"
+    armor: [8, 18, 15, 8]
+    stats: { health: 250, defense: 300, strength: 20, mana: 50, crit_chance: 5 }
+    toughness: 2
+    recipe-material: voidstone
+    recipe-cost: 3
+    recipe-extra: { void_fragment: 8 }
+    effects: { night_vision: 0, speed: 1 }
+    bonus-lore: ["<aqua>Night Vision</aqua> and <aqua>Speed II</aqua>."]
+  starlight:
+    name: "Starborn"
+    rarity: LEGENDARY
+    color: "#FFE680"
+    armor: [10, 22, 18, 10]
+    stats: { health: 400, defense: 500, strength: 80, mana: 100, crit_chance: 10 }
+    toughness: 3
+    health: 4
+    recipe-material: starlight
+    recipe-cost: 2
+    recipe-extra: { enchanted_diamond: 2 }
+    effects: { regeneration: 0, strength: 0, night_vision: 0 }
+    bonus-lore: ["<aqua>Regeneration I</aqua>, <aqua>Strength I</aqua> and <aqua>Night Vision</aqua>."]
+  angler:
+    name: "Angler's"
+    rarity: UNCOMMON
+    color: "#1E90FF"
+    armor: [4, 10, 8, 4]
+    stats: { health: 120, defense: 150, strength: 0, mana: 50 }
+    recipe-material: sea_glass
+    recipe-cost: 3
+    recipe-extra: { enchanted_raw_fish: 1 }
+    effects: { water_breathing: 0, dolphins_grace: 0 }
+    bonus-lore: ["<aqua>Water Breathing</aqua> and <aqua>Dolphin's Grace</aqua>."]
+  farmer:
+    name: "Farmer's"
+    rarity: UNCOMMON
+    color: "#D2B04C"
+    armor: [4, 10, 8, 4]
+    stats: { health: 100, defense: 120, strength: 0, mana: 0, farming_fortune: 50, farming_speed: 20 }
+    recipe-material: enchanted_wheat
+    recipe-cost: 1
+    effects: { speed: 0, saturation: 0 }
+    bonus-lore: ["<aqua>Speed I</aqua> and you never go hungry."]

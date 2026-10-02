@@ -1,0 +1,1104 @@
+2026-09-29T23:49:17.398-0500 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonMain] Assuming the daemon was started with following jvm opts: [-XX:MaxMetaspaceSize=384m, -XX:+HeapDumpOnOutOfMemoryError, -Xms256m, -Xmx512m, -Dfile.encoding=UTF-8, -Duser.country=US, -Duser.language=en, -Duser.variant]
+2026-09-29T23:49:17.736-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+2026-09-29T23:49:17.737-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.738-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IP)-QoS Packet Scheduler-0000
+2026-09-29T23:49:17.739-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.739-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+2026-09-29T23:49:17.741-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.742-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+2026-09-29T23:49:17.742-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.743-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+2026-09-29T23:49:17.744-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.745-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+2026-09-29T23:49:17.748-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.749-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+2026-09-29T23:49:17.750-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.756-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+2026-09-29T23:49:17.758-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.759-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+2026-09-29T23:49:17.760-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.760-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Hyper-V Virtual Switch Extension Adapter-Hyper-V Virtual Switch Extension Filter-0000
+2026-09-29T23:49:17.761-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.761-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Hyper-V Virtual Switch Extension Adapter-Virtual Filtering Platform VMSwitch Extension-0000
+2026-09-29T23:49:17.762-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.762-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Hyper-V Virtual Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+2026-09-29T23:49:17.763-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.764-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Hyper-V Virtual Ethernet Adapter-QoS Packet Scheduler-0000
+2026-09-29T23:49:17.764-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.765-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Hyper-V Virtual Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+2026-09-29T23:49:17.766-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.767-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Kernel Debug Network Adapter
+2026-09-29T23:49:17.767-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.768-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Realtek PCIe GbE Family Controller
+2026-09-29T23:49:17.769-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.769-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:9da4:ff7e:ae67:59a2%ethernet_32769
+2026-09-29T23:49:17.770-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fd00:88de:7cb0:3582:f1f7:28e:2be:1210
+2026-09-29T23:49:17.770-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fd00:88de:7cb0:3582:2575:f18a:6338:726c
+2026-09-29T23:49:17.771-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /2600:6c56:b6f0:b9c0:f1f7:28e:2be:1210
+2026-09-29T23:49:17.772-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /2600:6c56:b6f0:b9c0:f40:4520:1fa7:1b5e
+2026-09-29T23:49:17.772-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /2600:6c56:b6f0:b9c0:0:0:0:1d6c
+2026-09-29T23:49:17.773-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /192.168.1.182
+2026-09-29T23:49:17.773-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Bluetooth Device (Personal Area Network)
+2026-09-29T23:49:17.774-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.775-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:2c6c:8c65:f792:831b%ethernet_32770
+2026-09-29T23:49:17.775-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IP)
+2026-09-29T23:49:17.776-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.777-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IPv6)
+2026-09-29T23:49:17.777-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.778-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (Network Monitor)
+2026-09-29T23:49:17.778-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.779-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Remote NDIS based Internet Sharing Device #2
+2026-09-29T23:49:17.780-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.780-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface UsbNcm Host Device
+2026-09-29T23:49:17.781-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.781-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Hyper-V Virtual Switch Extension Adapter
+2026-09-29T23:49:17.782-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.783-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface SAMSUNG Mobile USB Remote NDIS Network Device
+2026-09-29T23:49:17.783-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.784-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Hyper-V Virtual Ethernet Adapter
+2026-09-29T23:49:17.786-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.787-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:f4be:f170:3505:b5c7%ethernet_32778
+2026-09-29T23:49:17.788-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /172.24.176.1
+2026-09-29T23:49:17.788-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (PPPOE)
+2026-09-29T23:49:17.788-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.790-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface RAS Async Adapter
+2026-09-29T23:49:17.791-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.791-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Software Loopback Interface 1
+2026-09-29T23:49:17.791-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? true
+2026-09-29T23:49:17.792-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /0:0:0:0:0:0:0:1
+2026-09-29T23:49:17.792-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /127.0.0.1
+2026-09-29T23:49:17.792-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Dual Band Wireless-AC 3168-WFP Native MAC Layer LightWeight Filter-0000
+2026-09-29T23:49:17.792-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.793-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Dual Band Wireless-AC 3168-Virtual WiFi Filter Driver-0000
+2026-09-29T23:49:17.793-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.793-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Dual Band Wireless-AC 3168-Native WiFi Filter Driver-0000
+2026-09-29T23:49:17.794-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.794-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Dual Band Wireless-AC 3168-QoS Packet Scheduler-0000
+2026-09-29T23:49:17.796-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.797-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Dual Band Wireless-AC 3168-WFP 802.3 MAC Layer LightWeight Filter-0000
+2026-09-29T23:49:17.798-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.799-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter-WFP Native MAC Layer LightWeight Filter-0000
+2026-09-29T23:49:17.800-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.800-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter-Native WiFi Filter Driver-0000
+2026-09-29T23:49:17.801-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.801-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter-QoS Packet Scheduler-0000
+2026-09-29T23:49:17.801-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.801-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+2026-09-29T23:49:17.802-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.802-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2-WFP Native MAC Layer LightWeight Filter-0000
+2026-09-29T23:49:17.802-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.802-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2-Native WiFi Filter Driver-0000
+2026-09-29T23:49:17.803-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.803-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2-QoS Packet Scheduler-0000
+2026-09-29T23:49:17.804-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.804-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2-WFP 802.3 MAC Layer LightWeight Filter-0000
+2026-09-29T23:49:17.804-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.804-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Dual Band Wireless-AC 3168
+2026-09-29T23:49:17.805-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.805-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:1821:36be:7a53:efbe%wireless_32768
+2026-09-29T23:49:17.806-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter
+2026-09-29T23:49:17.807-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.807-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:b8f6:7e7a:8f27:b30d%wireless_32769
+2026-09-29T23:49:17.807-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2
+2026-09-29T23:49:17.808-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.808-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:3724:285c:d095:c5df%wireless_32770
+2026-09-29T23:49:17.808-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Teredo Tunneling Adapter
+2026-09-29T23:49:17.808-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.808-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft IP-HTTPS Platform Adapter
+2026-09-29T23:49:17.808-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.808-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft 6to4 Adapter
+2026-09-29T23:49:17.809-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.809-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (SSTP)
+2026-09-29T23:49:17.809-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.809-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IKEv2)
+2026-09-29T23:49:17.809-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.810-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (L2TP)
+2026-09-29T23:49:17.810-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.810-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (PPTP)
+2026-09-29T23:49:17.810-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T23:49:17.871-0500 [INFO] [org.gradle.launcher.daemon.server.Daemon] start() called on daemon - DefaultDaemonContext[uid=a1363c9d-3f68-4ed5-bd6d-d0102b0d7220,javaHome=C:\Program Files\Amazon Corretto\jdk25.0.3_9,javaVersion=25,javaVendor=Amazon.com Inc.,daemonRegistryDir=D:\Server\aethercore\.gradle-user-home\daemon,pid=29632,idleTimeout=120000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+2026-09-29T23:49:17.922-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Listening on [2981e034-6064-49c5-adf4-70daa827582d port:57848, addresses:[localhost/127.0.0.1]].
+2026-09-29T23:49:17.932-0500 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] Daemon starting at: Tue Sep 29 23:49:17 CDT 2026, with address: [2981e034-6064-49c5-adf4-70daa827582d port:57848, addresses:[localhost/127.0.0.1]]
+2026-09-29T23:49:17.933-0500 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertising the daemon address to the clients: [2981e034-6064-49c5-adf4-70daa827582d port:57848, addresses:[localhost/127.0.0.1]]
+2026-09-29T23:49:17.933-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertised daemon context: DefaultDaemonContext[uid=a1363c9d-3f68-4ed5-bd6d-d0102b0d7220,javaHome=C:\Program Files\Amazon Corretto\jdk25.0.3_9,javaVersion=25,javaVendor=Amazon.com Inc.,daemonRegistryDir=D:\Server\aethercore\.gradle-user-home\daemon,pid=29632,idleTimeout=120000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+2026-09-29T23:49:17.935-0500 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon address: [2981e034-6064-49c5-adf4-70daa827582d port:57848, addresses:[localhost/127.0.0.1]], context: DefaultDaemonContext[uid=a1363c9d-3f68-4ed5-bd6d-d0102b0d7220,javaHome=C:\Program Files\Amazon Corretto\jdk25.0.3_9,javaVersion=25,javaVendor=Amazon.com Inc.,daemonRegistryDir=D:\Server\aethercore\.gradle-user-home\daemon,pid=29632,idleTimeout=120000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+2026-09-29T23:49:17.971-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2026-09-29T23:49:17.975-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2026-09-29T23:49:17.986-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2026-09-29T23:49:17.988-0500 [LIFECYCLE] [org.gradle.launcher.daemon.server.Daemon] Daemon server started.
+2026-09-29T23:49:18.004-0500 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stopOnExpiration() called on daemon
+2026-09-29T23:49:18.007-0500 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] awaitExpiration() called on daemon
+2026-09-29T23:49:18.007-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2026-09-29T23:49:18.048-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:57849 to /127.0.0.1:57848.
+2026-09-29T23:49:18.136-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 38: received class org.gradle.launcher.daemon.protocol.Build
+2026-09-29T23:49:18.137-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 38: Received non-IO message from client: Build{id=1d43116b-510c-46c5-9860-d001ce7dc4dc, currentDir=D:\Server\aethercore}
+2026-09-29T23:49:18.137-0500 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=1d43116b-510c-46c5-9860-d001ce7dc4dc, currentDir=D:\Server\aethercore}.
+2026-09-29T23:49:18.137-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=1d43116b-510c-46c5-9860-d001ce7dc4dc, currentDir=D:\Server\aethercore} with connection: socket connection from /127.0.0.1:57848 to /127.0.0.1:57849.
+2026-09-29T23:49:18.140-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=1d43116b-510c-46c5-9860-d001ce7dc4dc, currentDir=D:\Server\aethercore}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:57848 to /127.0.0.1:57849] after 0.003766666666666667 minutes of idle
+2026-09-29T23:49:18.140-0500 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [2981e034-6064-49c5-adf4-70daa827582d port:57848, addresses:[localhost/127.0.0.1]]
+2026-09-29T23:49:18.141-0500 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [2981e034-6064-49c5-adf4-70daa827582d port:57848, addresses:[localhost/127.0.0.1]]
+2026-09-29T23:49:18.142-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2026-09-29T23:49:18.142-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2026-09-29T23:49:18.144-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2026-09-29T23:49:18.144-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2026-09-29T23:49:18.145-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2026-09-29T23:49:18.146-0500 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=1d43116b-510c-46c5-9860-d001ce7dc4dc, currentDir=D:\Server\aethercore}. Dispatching build started information...
+2026-09-29T23:49:18.147-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 40: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@29a84bdf
+2026-09-29T23:49:18.151-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2026-09-29T23:49:18.152-0500 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 29632). The daemon log file: D:\Server\aethercore\.gradle-user-home\daemon\9.8.0\daemon-29632.out.log
+2026-09-29T23:49:18.152-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ApplyClientEnvironmentVariables] Configuring env variables: [USERDOMAIN_ROAMINGPROFILE, BROWSER_USE_ACCESS_VERIFYING_IDENTITY, PROCESSOR_LEVEL, GIT_PAGER, ALLUSERSPROFILE, CODEX_MCP_NODE_PATH, CODEX_SHELL, PROCESSOR_ARCHITECTURE, __COMPAT_LAYER, PSModulePath, SystemDrive, GH_PAGER, CODEX_CLI_PATH, CODEX_APP_TOOLS_PIPE_PATH, COLORTERM, NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S, USERNAME, CODEX_TASK_WORKSPACE_VERIFYING_IDENTITY, ProgramFiles(x86), CODEX_INTERNAL_ORIGINATOR_OVERRIDE, CODEX_SAGE_BACKFILL_TRACKER_TAB_REUSE, PATHEXT, SHELL, DriverData, OneDriveConsumer, PAGER, CODEX_PERMISSION_PROFILE, CODEX_WINDOWS_SANDBOX_PACKAGE_FAMILY, LOG_FORMAT, ProgramData, ProgramW6432, HOMEPATH, LC_ALL, PROCESSOR_IDENTIFIER, ProgramFiles, PUBLIC, ZSH_TMUX_AUTOSTARTED, windir, LC_CTYPE, CODEX_SESSION_ID, LOCALAPPDATA, ChocolateyLastPathUpdate, USERDOMAIN, LOGONSERVER, JAVA_HOME, PROMPT, RUST_LOG, TERM, LANG, OneDrive, APPDATA, CODEX_APPLY_PATCH_PRESERVE_LINE_ENDINGS, ChocolateyInstall, CODEX_THREAD_ID, ChocolateyToolsLocation, NO_COLOR, CODEX_CI, CommonProgramFiles, Path, DISABLE_AUTO_UPDATE, OS, COMPUTERNAME, PROCESSOR_REVISION, CommonProgramW6432, ComSpec, ZSH_TMUX_AUTOSTART, =D:, SystemRoot, TEMP, HOMEDRIVE, USERPROFILE, TMP, CommonProgramFiles(x86), CODEX_TECTONIC_PATH, CODEX_VERSION, NUMBER_OF_PROCESSORS]
+2026-09-29T23:49:18.158-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon] Requesting daemon stop after processing Build{id=1d43116b-510c-46c5-9860-d001ce7dc4dc, currentDir=D:\Server\aethercore}
+2026-09-29T23:49:18.159-0500 [LIFECYCLE] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon will be stopped at the end of the build 
+2026-09-29T23:49:18.159-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Stop as soon as idle requested. The daemon is busy
+2026-09-29T23:49:18.159-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon stop has been requested. Sleeping until state changes.
+2026-09-29T23:49:18.163-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2026-09-29T23:49:18.164-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=a1363c9d-3f68-4ed5-bd6d-d0102b0d7220,javaHome=C:\Program Files\Amazon Corretto\jdk25.0.3_9,javaVersion=25,javaVendor=Amazon.com Inc.,daemonRegistryDir=D:\Server\aethercore\.gradle-user-home\daemon,pid=29632,idleTimeout=120000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:3: error: package com.earth2me.essentials does not exist
+import com.earth2me.essentials.Essentials;
+                              ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:4: error: package com.earth2me.essentials does not exist
+import com.earth2me.essentials.Kit;
+                              ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:5: error: package com.earth2me.essentials does not exist
+import com.earth2me.essentials.Kits;
+                              ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:6: error: package com.earth2me.essentials does not exist
+import com.earth2me.essentials.User;
+                              ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\BedrockMenus.java:9: error: package org.geysermc.cumulus.form does not exist
+import org.geysermc.cumulus.form.SimpleForm;
+                                ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\BedrockMenus.java:10: error: package org.geysermc.cumulus.util does not exist
+import org.geysermc.cumulus.util.FormImage;
+                                ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\BedrockMenus.java:11: error: package org.geysermc.floodgate.api does not exist
+import org.geysermc.floodgate.api.FloodgateApi;
+                                 ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:30: error: cannot find symbol
+    private Essentials essentials() {
+            ^
+  symbol:   class Essentials
+  location: class KitMenus
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:202: error: cannot find symbol
+    private long nextUse(Essentials ess, Player player, String name) {
+                         ^
+  symbol:   class Essentials
+  location: class KitMenus
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:211: error: cannot find symbol
+    private List<String> contents(Kits kits, String name) {
+                                  ^
+  symbol:   class Kits
+  location: class KitMenus
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\economy\Eco.java:3: error: package net.milkbowl.vault.economy does not exist
+import net.milkbowl.vault.economy.Economy;
+                                 ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\economy\Eco.java:14: error: cannot find symbol
+    private static Economy economy() {
+                   ^
+  symbol:   class Economy
+  location: class Eco
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\GriefPreventionHook.java:4: error: package me.ryanhamshire.GriefPrevention.events does not exist
+import me.ryanhamshire.GriefPrevention.events.ClaimCreatedEvent;
+                                             ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\GriefPreventionHook.java:19: error: cannot find symbol
+    public void onClaim(ClaimCreatedEvent event) {
+                        ^
+  symbol:   class ClaimCreatedEvent
+  location: class GriefPreventionHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Placeholders.java:6: error: package me.clip.placeholderapi.expansion does not exist
+import me.clip.placeholderapi.expansion.PlaceholderExpansion;
+                                       ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Placeholders.java:16: error: cannot find symbol
+public final class Placeholders extends PlaceholderExpansion {
+                                        ^
+  symbol: class PlaceholderExpansion
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\VoteListener.java:3: error: package com.vexsoftware.votifier.model does not exist
+import com.vexsoftware.votifier.model.Vote;
+                                     ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\VoteListener.java:4: error: package com.vexsoftware.votifier.model does not exist
+import com.vexsoftware.votifier.model.VotifierEvent;
+                                     ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\VoteListener.java:21: error: cannot find symbol
+    public void onVote(VotifierEvent event) {
+                       ^
+  symbol:   class VotifierEvent
+  location: class VoteListener
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:3: error: package com.sk89q.worldedit.bukkit does not exist
+import com.sk89q.worldedit.bukkit.BukkitAdapter;
+                                 ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:4: error: package com.sk89q.worldedit.math does not exist
+import com.sk89q.worldedit.math.BlockVector3;
+                               ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:5: error: package com.sk89q.worldguard does not exist
+import com.sk89q.worldguard.WorldGuard;
+                           ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:6: error: package com.sk89q.worldguard.protection.flags does not exist
+import com.sk89q.worldguard.protection.flags.Flags;
+                                            ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:7: error: package com.sk89q.worldguard.protection.flags does not exist
+import com.sk89q.worldguard.protection.flags.StateFlag;
+                                            ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:8: error: package com.sk89q.worldguard.protection.managers does not exist
+import com.sk89q.worldguard.protection.managers.RegionManager;
+                                               ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:9: error: package com.sk89q.worldguard.protection.regions does not exist
+import com.sk89q.worldguard.protection.regions.ProtectedCuboidRegion;
+                                              ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\AetherCore.java:224: error: cannot find symbol
+            new gg.aetherfall.core.module.Placeholders(this).register();
+                                                            ^
+  symbol:   method register()
+  location: class Placeholders
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\RankPerks.java:91: warning: [deprecation] isOnGround() in Player has been deprecated
+            if (p.getVelocity().setY(0).lengthSquared() < 0.003 && p.isOnGround()) continue; // only while moving
+                                                                    ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:31: error: cannot find symbol
+        return (Essentials) Bukkit.getPluginManager().getPlugin("Essentials");
+                ^
+  symbol:   class Essentials
+  location: class KitMenus
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:35: error: cannot find symbol
+        Essentials ess = essentials();
+        ^
+  symbol:   class Essentials
+  location: class KitMenus
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:40: error: cannot find symbol
+        Kits kits = ess.getKits();
+        ^
+  symbol:   class Kits
+  location: class KitMenus
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:105: error: cannot find symbol
+        Essentials ess = essentials();
+        ^
+  symbol:   class Essentials
+  location: class KitMenus
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:107: error: cannot find symbol
+        Kits kits = ess.getKits();
+        ^
+  symbol:   class Kits
+  location: class KitMenus
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:181: error: cannot find symbol
+        Essentials ess = essentials();
+        ^
+  symbol:   class Essentials
+  location: class KitMenus
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:184: error: cannot find symbol
+            User user = ess.getUser(player);
+            ^
+  symbol:   class User
+  location: class KitMenus
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:185: error: cannot find symbol
+            Kit kit = new Kit(name, ess);
+            ^
+  symbol:   class Kit
+  location: class KitMenus
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:185: error: cannot find symbol
+            Kit kit = new Kit(name, ess);
+                          ^
+  symbol:   class Kit
+  location: class KitMenus
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:204: error: cannot find symbol
+            return new Kit(name, ess).getNextUse(ess.getUser(player));
+                       ^
+  symbol:   class Kit
+  location: class KitMenus
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\BedrockMenus.java:32: error: cannot find symbol
+            return FloodgateApi.getInstance().isFloodgatePlayer(p.getUniqueId());
+                   ^
+  symbol:   variable FloodgateApi
+  location: class BedrockMenus
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\BedrockMenus.java:87: error: package SimpleForm does not exist
+        SimpleForm.Builder form = SimpleForm.builder().title(title).content(content);
+                  ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\BedrockMenus.java:87: error: cannot find symbol
+        SimpleForm.Builder form = SimpleForm.builder().title(title).content(content);
+                                  ^
+  symbol:   variable SimpleForm
+  location: class BedrockMenus
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\BedrockMenus.java:88: error: package FormImage does not exist
+        for (Entry e : entries) form.button(e.label, FormImage.Type.PATH, e.icon);
+                                                              ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\BedrockMenus.java:95: error: cannot find symbol
+        FloodgateApi.getInstance().sendForm(p.getUniqueId(), form);
+        ^
+  symbol:   variable FloodgateApi
+  location: class BedrockMenus
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\economy\Eco.java:15: error: cannot find symbol
+        var rsp = Bukkit.getServicesManager().getRegistration(Economy.class);
+                                                              ^
+  symbol:   class Economy
+  location: class Eco
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\economy\Eco.java:24: error: cannot find symbol
+        Economy e = economy();
+        ^
+  symbol:   class Economy
+  location: class Eco
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\economy\Eco.java:29: error: cannot find symbol
+        Economy e = economy();
+        ^
+  symbol:   class Economy
+  location: class Eco
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\economy\Eco.java:34: error: cannot find symbol
+        Economy e = economy();
+        ^
+  symbol:   class Economy
+  location: class Eco
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\economy\Eco.java:41: error: cannot find symbol
+        Economy e = economy();
+        ^
+  symbol:   class Economy
+  location: class Eco
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Placeholders.java:23: error: method does not override or implement a method from a supertype
+    @Override public @NotNull String getIdentifier() { return "aether"; }
+    ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Placeholders.java:24: error: method does not override or implement a method from a supertype
+    @Override public @NotNull String getAuthor() { return "Aetherfall"; }
+    ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Placeholders.java:25: error: method does not override or implement a method from a supertype
+    @Override public @NotNull String getVersion() { return plugin.getPluginMeta().getVersion(); }
+    ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Placeholders.java:26: error: method does not override or implement a method from a supertype
+    @Override public boolean persist() { return true; }
+    ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Placeholders.java:28: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Placeholders.java:73: error: package net.milkbowl.vault.economy does not exist
+        var rsp = plugin.getServer().getServicesManager().getRegistration(net.milkbowl.vault.economy.Economy.class);
+                                                                                                    ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\VoteListener.java:22: error: cannot find symbol
+        Vote vote = event.getVote();
+        ^
+  symbol:   class Vote
+  location: class VoteListener
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:17: error: cannot find symbol
+        RegionManager rm = WorldGuard.getInstance().getPlatform().getRegionContainer()
+        ^
+  symbol:   class RegionManager
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:17: error: cannot find symbol
+        RegionManager rm = WorldGuard.getInstance().getPlatform().getRegionContainer()
+                           ^
+  symbol:   variable WorldGuard
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:18: error: cannot find symbol
+                .get(BukkitAdapter.adapt(center.getWorld()));
+                     ^
+  symbol:   variable BukkitAdapter
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:21: error: cannot find symbol
+        ProtectedCuboidRegion region = new ProtectedCuboidRegion("spawn",
+        ^
+  symbol:   class ProtectedCuboidRegion
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:21: error: cannot find symbol
+        ProtectedCuboidRegion region = new ProtectedCuboidRegion("spawn",
+                                           ^
+  symbol:   class ProtectedCuboidRegion
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:22: error: cannot find symbol
+                BlockVector3.at(center.getBlockX() - radius, world.getMinHeight(), center.getBlockZ() - radius),
+                ^
+  symbol:   variable BlockVector3
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:23: error: cannot find symbol
+                BlockVector3.at(center.getBlockX() + radius, world.getMaxHeight() - 1, center.getBlockZ() + radius));
+                ^
+  symbol:   variable BlockVector3
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:25: error: cannot find symbol
+        region.setFlag(Flags.BUILD, StateFlag.State.DENY);
+                       ^
+  symbol:   variable Flags
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:25: error: package StateFlag does not exist
+        region.setFlag(Flags.BUILD, StateFlag.State.DENY);
+                                             ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:26: error: cannot find symbol
+        region.setFlag(Flags.PVP, StateFlag.State.DENY);
+                       ^
+  symbol:   variable Flags
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:26: error: package StateFlag does not exist
+        region.setFlag(Flags.PVP, StateFlag.State.DENY);
+                                           ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:27: error: cannot find symbol
+        region.setFlag(Flags.MOB_SPAWNING, StateFlag.State.DENY);
+                       ^
+  symbol:   variable Flags
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:27: error: package StateFlag does not exist
+        region.setFlag(Flags.MOB_SPAWNING, StateFlag.State.DENY);
+                                                    ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:28: error: cannot find symbol
+        region.setFlag(Flags.MOB_DAMAGE, StateFlag.State.DENY);
+                       ^
+  symbol:   variable Flags
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:28: error: package StateFlag does not exist
+        region.setFlag(Flags.MOB_DAMAGE, StateFlag.State.DENY);
+                                                  ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:29: error: cannot find symbol
+        region.setFlag(Flags.CREEPER_EXPLOSION, StateFlag.State.DENY);
+                       ^
+  symbol:   variable Flags
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:29: error: package StateFlag does not exist
+        region.setFlag(Flags.CREEPER_EXPLOSION, StateFlag.State.DENY);
+                                                         ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:30: error: cannot find symbol
+        region.setFlag(Flags.OTHER_EXPLOSION, StateFlag.State.DENY);
+                       ^
+  symbol:   variable Flags
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:30: error: package StateFlag does not exist
+        region.setFlag(Flags.OTHER_EXPLOSION, StateFlag.State.DENY);
+                                                       ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:31: error: cannot find symbol
+        region.setFlag(Flags.TNT, StateFlag.State.DENY);
+                       ^
+  symbol:   variable Flags
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:31: error: package StateFlag does not exist
+        region.setFlag(Flags.TNT, StateFlag.State.DENY);
+                                           ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:32: error: cannot find symbol
+        region.setFlag(Flags.FIRE_SPREAD, StateFlag.State.DENY);
+                       ^
+  symbol:   variable Flags
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:32: error: package StateFlag does not exist
+        region.setFlag(Flags.FIRE_SPREAD, StateFlag.State.DENY);
+                                                   ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:33: error: cannot find symbol
+        region.setFlag(Flags.LAVA_FLOW, StateFlag.State.DENY);
+                       ^
+  symbol:   variable Flags
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:33: error: package StateFlag does not exist
+        region.setFlag(Flags.LAVA_FLOW, StateFlag.State.DENY);
+                                                 ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:34: error: cannot find symbol
+        region.setFlag(Flags.LIGHTER, StateFlag.State.DENY);
+                       ^
+  symbol:   variable Flags
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:34: error: package StateFlag does not exist
+        region.setFlag(Flags.LIGHTER, StateFlag.State.DENY);
+                                               ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:35: error: cannot find symbol
+        region.setFlag(Flags.ENDER_BUILD, StateFlag.State.DENY);
+                       ^
+  symbol:   variable Flags
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:35: error: package StateFlag does not exist
+        region.setFlag(Flags.ENDER_BUILD, StateFlag.State.DENY);
+                                                   ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:36: error: cannot find symbol
+        region.setFlag(Flags.RAVAGER_RAVAGE, StateFlag.State.DENY);
+                       ^
+  symbol:   variable Flags
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:36: error: package StateFlag does not exist
+        region.setFlag(Flags.RAVAGER_RAVAGE, StateFlag.State.DENY);
+                                                      ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:37: error: cannot find symbol
+        region.setFlag(Flags.FALL_DAMAGE, StateFlag.State.DENY);
+                       ^
+  symbol:   variable Flags
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:37: error: package StateFlag does not exist
+        region.setFlag(Flags.FALL_DAMAGE, StateFlag.State.DENY);
+                                                   ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:38: error: cannot find symbol
+        region.setFlag(Flags.LEAF_DECAY, StateFlag.State.DENY);
+                       ^
+  symbol:   variable Flags
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:38: error: package StateFlag does not exist
+        region.setFlag(Flags.LEAF_DECAY, StateFlag.State.DENY);
+                                                  ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:39: error: cannot find symbol
+        region.setFlag(Flags.USE, StateFlag.State.ALLOW);
+                       ^
+  symbol:   variable Flags
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:39: error: package StateFlag does not exist
+        region.setFlag(Flags.USE, StateFlag.State.ALLOW);
+                                           ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:46: error: cannot find symbol
+        RegionManager rm = WorldGuard.getInstance().getPlatform().getRegionContainer().get(BukkitAdapter.adapt(center.getWorld()));
+        ^
+  symbol:   class RegionManager
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:46: error: cannot find symbol
+        RegionManager rm = WorldGuard.getInstance().getPlatform().getRegionContainer().get(BukkitAdapter.adapt(center.getWorld()));
+                           ^
+  symbol:   variable WorldGuard
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:46: error: cannot find symbol
+        RegionManager rm = WorldGuard.getInstance().getPlatform().getRegionContainer().get(BukkitAdapter.adapt(center.getWorld()));
+                                                                                           ^
+  symbol:   variable BukkitAdapter
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:48: error: cannot find symbol
+        ProtectedCuboidRegion region = new ProtectedCuboidRegion("arena",
+        ^
+  symbol:   class ProtectedCuboidRegion
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:48: error: cannot find symbol
+        ProtectedCuboidRegion region = new ProtectedCuboidRegion("arena",
+                                           ^
+  symbol:   class ProtectedCuboidRegion
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:49: error: cannot find symbol
+                BlockVector3.at(center.getBlockX() - radius, center.getWorld().getMinHeight(), center.getBlockZ() - radius),
+                ^
+  symbol:   variable BlockVector3
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:50: error: cannot find symbol
+                BlockVector3.at(center.getBlockX() + radius, center.getWorld().getMaxHeight() - 1, center.getBlockZ() + radius));
+                ^
+  symbol:   variable BlockVector3
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:52: error: cannot find symbol
+        region.setFlag(Flags.BUILD, StateFlag.State.DENY);
+                       ^
+  symbol:   variable Flags
+  location: class WorldGuardHook
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:52: error: package StateFlag does not exist
+        region.setFlag(Flags.BUILD, StateFlag.State.DENY);
+                                             ^
+100 errors
+1 warning
+
+[Incubating] Problems report is available at: file:///D:/Server/aethercore/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava' (registered by plugin class 'org.gradle.api.plugins.JavaBasePlugin').
+> Compilation failed; see the compiler output below.
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:3: error: package com.earth2me.essentials does not exist
+  import com.earth2me.essentials.Essentials;
+                                ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:4: error: package com.earth2me.essentials does not exist
+  import com.earth2me.essentials.Kit;
+                                ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:5: error: package com.earth2me.essentials does not exist
+  import com.earth2me.essentials.Kits;
+                                ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:6: error: package com.earth2me.essentials does not exist
+  import com.earth2me.essentials.User;
+                                ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\BedrockMenus.java:9: error: package org.geysermc.cumulus.form does not exist
+  import org.geysermc.cumulus.form.SimpleForm;
+                                  ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\BedrockMenus.java:10: error: package org.geysermc.cumulus.util does not exist
+  import org.geysermc.cumulus.util.FormImage;
+                                  ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\BedrockMenus.java:11: error: package org.geysermc.floodgate.api does not exist
+  import org.geysermc.floodgate.api.FloodgateApi;
+                                   ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\economy\Eco.java:3: error: package net.milkbowl.vault.economy does not exist
+  import net.milkbowl.vault.economy.Economy;
+                                   ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\GriefPreventionHook.java:4: error: package me.ryanhamshire.GriefPrevention.events does not exist
+  import me.ryanhamshire.GriefPrevention.events.ClaimCreatedEvent;
+                                               ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Placeholders.java:6: error: package me.clip.placeholderapi.expansion does not exist
+  import me.clip.placeholderapi.expansion.PlaceholderExpansion;
+                                         ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\VoteListener.java:3: error: package com.vexsoftware.votifier.model does not exist
+  import com.vexsoftware.votifier.model.Vote;
+                                       ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\VoteListener.java:4: error: package com.vexsoftware.votifier.model does not exist
+  import com.vexsoftware.votifier.model.VotifierEvent;
+                                       ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:3: error: package com.sk89q.worldedit.bukkit does not exist
+  import com.sk89q.worldedit.bukkit.BukkitAdapter;
+                                   ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:4: error: package com.sk89q.worldedit.math does not exist
+  import com.sk89q.worldedit.math.BlockVector3;
+                                 ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:5: error: package com.sk89q.worldguard does not exist
+  import com.sk89q.worldguard.WorldGuard;
+                             ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:6: error: package com.sk89q.worldguard.protection.flags does not exist
+  import com.sk89q.worldguard.protection.flags.Flags;
+                                              ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:7: error: package com.sk89q.worldguard.protection.flags does not exist
+  import com.sk89q.worldguard.protection.flags.StateFlag;
+                                              ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:8: error: package com.sk89q.worldguard.protection.managers does not exist
+  import com.sk89q.worldguard.protection.managers.RegionManager;
+                                                 ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:9: error: package com.sk89q.worldguard.protection.regions does not exist
+  import com.sk89q.worldguard.protection.regions.ProtectedCuboidRegion;
+                                                ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\BedrockMenus.java:87: error: package SimpleForm does not exist
+          SimpleForm.Builder form = SimpleForm.builder().title(title).content(content);
+                    ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\BedrockMenus.java:88: error: package FormImage does not exist
+          for (Entry e : entries) form.button(e.label, FormImage.Type.PATH, e.icon);
+                                                                ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Placeholders.java:73: error: package net.milkbowl.vault.economy does not exist
+          var rsp = plugin.getServer().getServicesManager().getRegistration(net.milkbowl.vault.economy.Economy.class);
+                                                                                                      ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:25: error: package StateFlag does not exist
+          region.setFlag(Flags.BUILD, StateFlag.State.DENY);
+                                               ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:26: error: package StateFlag does not exist
+          region.setFlag(Flags.PVP, StateFlag.State.DENY);
+                                             ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:27: error: package StateFlag does not exist
+          region.setFlag(Flags.MOB_SPAWNING, StateFlag.State.DENY);
+                                                      ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:28: error: package StateFlag does not exist
+          region.setFlag(Flags.MOB_DAMAGE, StateFlag.State.DENY);
+                                                    ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:29: error: package StateFlag does not exist
+          region.setFlag(Flags.CREEPER_EXPLOSION, StateFlag.State.DENY);
+                                                           ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:30: error: package StateFlag does not exist
+          region.setFlag(Flags.OTHER_EXPLOSION, StateFlag.State.DENY);
+                                                         ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:31: error: package StateFlag does not exist
+          region.setFlag(Flags.TNT, StateFlag.State.DENY);
+                                             ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:32: error: package StateFlag does not exist
+          region.setFlag(Flags.FIRE_SPREAD, StateFlag.State.DENY);
+                                                     ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:33: error: package StateFlag does not exist
+          region.setFlag(Flags.LAVA_FLOW, StateFlag.State.DENY);
+                                                   ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:34: error: package StateFlag does not exist
+          region.setFlag(Flags.LIGHTER, StateFlag.State.DENY);
+                                                 ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:35: error: package StateFlag does not exist
+          region.setFlag(Flags.ENDER_BUILD, StateFlag.State.DENY);
+                                                     ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:36: error: package StateFlag does not exist
+          region.setFlag(Flags.RAVAGER_RAVAGE, StateFlag.State.DENY);
+                                                        ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:37: error: package StateFlag does not exist
+          region.setFlag(Flags.FALL_DAMAGE, StateFlag.State.DENY);
+                                                     ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:38: error: package StateFlag does not exist
+          region.setFlag(Flags.LEAF_DECAY, StateFlag.State.DENY);
+                                                    ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:39: error: package StateFlag does not exist
+          region.setFlag(Flags.USE, StateFlag.State.ALLOW);
+                                             ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:52: error: package StateFlag does not exist
+          region.setFlag(Flags.BUILD, StateFlag.State.DENY);
+                                               ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:30: error: cannot find symbol
+      private Essentials essentials() {
+              ^
+    symbol:   class Essentials
+    location: class KitMenus
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:202: error: cannot find symbol
+      private long nextUse(Essentials ess, Player player, String name) {
+                           ^
+    symbol:   class Essentials
+    location: class KitMenus
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:211: error: cannot find symbol
+      private List<String> contents(Kits kits, String name) {
+                                    ^
+    symbol:   class Kits
+    location: class KitMenus
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\economy\Eco.java:14: error: cannot find symbol
+      private static Economy economy() {
+                     ^
+    symbol:   class Economy
+    location: class Eco
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\GriefPreventionHook.java:19: error: cannot find symbol
+      public void onClaim(ClaimCreatedEvent event) {
+                          ^
+    symbol:   class ClaimCreatedEvent
+    location: class GriefPreventionHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\VoteListener.java:21: error: cannot find symbol
+      public void onVote(VotifierEvent event) {
+                         ^
+    symbol:   class VotifierEvent
+    location: class VoteListener
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:31: error: cannot find symbol
+          return (Essentials) Bukkit.getPluginManager().getPlugin("Essentials");
+                  ^
+    symbol:   class Essentials
+    location: class KitMenus
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:35: error: cannot find symbol
+          Essentials ess = essentials();
+          ^
+    symbol:   class Essentials
+    location: class KitMenus
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:40: error: cannot find symbol
+          Kits kits = ess.getKits();
+          ^
+    symbol:   class Kits
+    location: class KitMenus
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:105: error: cannot find symbol
+          Essentials ess = essentials();
+          ^
+    symbol:   class Essentials
+    location: class KitMenus
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:107: error: cannot find symbol
+          Kits kits = ess.getKits();
+          ^
+    symbol:   class Kits
+    location: class KitMenus
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:181: error: cannot find symbol
+          Essentials ess = essentials();
+          ^
+    symbol:   class Essentials
+    location: class KitMenus
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:184: error: cannot find symbol
+              User user = ess.getUser(player);
+              ^
+    symbol:   class User
+    location: class KitMenus
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:185: error: cannot find symbol
+              Kit kit = new Kit(name, ess);
+              ^
+    symbol:   class Kit
+    location: class KitMenus
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:185: error: cannot find symbol
+              Kit kit = new Kit(name, ess);
+                            ^
+    symbol:   class Kit
+    location: class KitMenus
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\KitMenus.java:204: error: cannot find symbol
+              return new Kit(name, ess).getNextUse(ess.getUser(player));
+                         ^
+    symbol:   class Kit
+    location: class KitMenus
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\BedrockMenus.java:32: error: cannot find symbol
+              return FloodgateApi.getInstance().isFloodgatePlayer(p.getUniqueId());
+                     ^
+    symbol:   variable FloodgateApi
+    location: class BedrockMenus
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\BedrockMenus.java:87: error: cannot find symbol
+          SimpleForm.Builder form = SimpleForm.builder().title(title).content(content);
+                                    ^
+    symbol:   variable SimpleForm
+    location: class BedrockMenus
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\BedrockMenus.java:95: error: cannot find symbol
+          FloodgateApi.getInstance().sendForm(p.getUniqueId(), form);
+          ^
+    symbol:   variable FloodgateApi
+    location: class BedrockMenus
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\economy\Eco.java:15: error: cannot find symbol
+          var rsp = Bukkit.getServicesManager().getRegistration(Economy.class);
+                                                                ^
+    symbol:   class Economy
+    location: class Eco
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\economy\Eco.java:24: error: cannot find symbol
+          Economy e = economy();
+          ^
+    symbol:   class Economy
+    location: class Eco
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\economy\Eco.java:29: error: cannot find symbol
+          Economy e = economy();
+          ^
+    symbol:   class Economy
+    location: class Eco
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\economy\Eco.java:34: error: cannot find symbol
+          Economy e = economy();
+          ^
+    symbol:   class Economy
+    location: class Eco
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\economy\Eco.java:41: error: cannot find symbol
+          Economy e = economy();
+          ^
+    symbol:   class Economy
+    location: class Eco
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\VoteListener.java:22: error: cannot find symbol
+          Vote vote = event.getVote();
+          ^
+    symbol:   class Vote
+    location: class VoteListener
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:17: error: cannot find symbol
+          RegionManager rm = WorldGuard.getInstance().getPlatform().getRegionContainer()
+          ^
+    symbol:   class RegionManager
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:17: error: cannot find symbol
+          RegionManager rm = WorldGuard.getInstance().getPlatform().getRegionContainer()
+                             ^
+    symbol:   variable WorldGuard
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:18: error: cannot find symbol
+                  .get(BukkitAdapter.adapt(center.getWorld()));
+                       ^
+    symbol:   variable BukkitAdapter
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:21: error: cannot find symbol
+          ProtectedCuboidRegion region = new ProtectedCuboidRegion("spawn",
+          ^
+    symbol:   class ProtectedCuboidRegion
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:21: error: cannot find symbol
+          ProtectedCuboidRegion region = new ProtectedCuboidRegion("spawn",
+                                             ^
+    symbol:   class ProtectedCuboidRegion
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:22: error: cannot find symbol
+                  BlockVector3.at(center.getBlockX() - radius, world.getMinHeight(), center.getBlockZ() - radius),
+                  ^
+    symbol:   variable BlockVector3
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:23: error: cannot find symbol
+                  BlockVector3.at(center.getBlockX() + radius, world.getMaxHeight() - 1, center.getBlockZ() + radius));
+                  ^
+    symbol:   variable BlockVector3
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:25: error: cannot find symbol
+          region.setFlag(Flags.BUILD, StateFlag.State.DENY);
+                         ^
+    symbol:   variable Flags
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:26: error: cannot find symbol
+          region.setFlag(Flags.PVP, StateFlag.State.DENY);
+                         ^
+    symbol:   variable Flags
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:27: error: cannot find symbol
+          region.setFlag(Flags.MOB_SPAWNING, StateFlag.State.DENY);
+                         ^
+    symbol:   variable Flags
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:28: error: cannot find symbol
+          region.setFlag(Flags.MOB_DAMAGE, StateFlag.State.DENY);
+                         ^
+    symbol:   variable Flags
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:29: error: cannot find symbol
+          region.setFlag(Flags.CREEPER_EXPLOSION, StateFlag.State.DENY);
+                         ^
+    symbol:   variable Flags
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:30: error: cannot find symbol
+          region.setFlag(Flags.OTHER_EXPLOSION, StateFlag.State.DENY);
+                         ^
+    symbol:   variable Flags
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:31: error: cannot find symbol
+          region.setFlag(Flags.TNT, StateFlag.State.DENY);
+                         ^
+    symbol:   variable Flags
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:32: error: cannot find symbol
+          region.setFlag(Flags.FIRE_SPREAD, StateFlag.State.DENY);
+                         ^
+    symbol:   variable Flags
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:33: error: cannot find symbol
+          region.setFlag(Flags.LAVA_FLOW, StateFlag.State.DENY);
+                         ^
+    symbol:   variable Flags
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:34: error: cannot find symbol
+          region.setFlag(Flags.LIGHTER, StateFlag.State.DENY);
+                         ^
+    symbol:   variable Flags
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:35: error: cannot find symbol
+          region.setFlag(Flags.ENDER_BUILD, StateFlag.State.DENY);
+                         ^
+    symbol:   variable Flags
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:36: error: cannot find symbol
+          region.setFlag(Flags.RAVAGER_RAVAGE, StateFlag.State.DENY);
+                         ^
+    symbol:   variable Flags
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:37: error: cannot find symbol
+          region.setFlag(Flags.FALL_DAMAGE, StateFlag.State.DENY);
+                         ^
+    symbol:   variable Flags
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:38: error: cannot find symbol
+          region.setFlag(Flags.LEAF_DECAY, StateFlag.State.DENY);
+                         ^
+    symbol:   variable Flags
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:39: error: cannot find symbol
+          region.setFlag(Flags.USE, StateFlag.State.ALLOW);
+                         ^
+    symbol:   variable Flags
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:46: error: cannot find symbol
+          RegionManager rm = WorldGuard.getInstance().getPlatform().getRegionContainer().get(BukkitAdapter.adapt(center.getWorld()));
+          ^
+    symbol:   class RegionManager
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:46: error: cannot find symbol
+          RegionManager rm = WorldGuard.getInstance().getPlatform().getRegionContainer().get(BukkitAdapter.adapt(center.getWorld()));
+                             ^
+    symbol:   variable WorldGuard
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:46: error: cannot find symbol
+          RegionManager rm = WorldGuard.getInstance().getPlatform().getRegionContainer().get(BukkitAdapter.adapt(center.getWorld()));
+                                                                                             ^
+    symbol:   variable BukkitAdapter
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:48: error: cannot find symbol
+          ProtectedCuboidRegion region = new ProtectedCuboidRegion("arena",
+          ^
+    symbol:   class ProtectedCuboidRegion
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:48: error: cannot find symbol
+          ProtectedCuboidRegion region = new ProtectedCuboidRegion("arena",
+                                             ^
+    symbol:   class ProtectedCuboidRegion
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:49: error: cannot find symbol
+                  BlockVector3.at(center.getBlockX() - radius, center.getWorld().getMinHeight(), center.getBlockZ() - radius),
+                  ^
+    symbol:   variable BlockVector3
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:50: error: cannot find symbol
+                  BlockVector3.at(center.getBlockX() + radius, center.getWorld().getMaxHeight() - 1, center.getBlockZ() + radius));
+                  ^
+    symbol:   variable BlockVector3
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WorldGuardHook.java:52: error: cannot find symbol
+          region.setFlag(Flags.BUILD, StateFlag.State.DENY);
+                         ^
+    symbol:   variable Flags
+    location: class WorldGuardHook
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Placeholders.java:16: error: cannot find symbol
+  public final class Placeholders extends PlaceholderExpansion {
+                                          ^
+    symbol: class PlaceholderExpansion
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\AetherCore.java:224: error: cannot find symbol
+              new gg.aetherfall.core.module.Placeholders(this).register();
+                                                              ^
+    symbol:   method register()
+    location: class Placeholders
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\RankPerks.java:91: warning: [deprecation] isOnGround() in Player has been deprecated
+              if (p.getVelocity().setY(0).lengthSquared() < 0.003 && p.isOnGround()) continue; // only while moving
+                                                                      ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Placeholders.java:23: error: method does not override or implement a method from a supertype
+      @Override public @NotNull String getIdentifier() { return "aether"; }
+      ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Placeholders.java:24: error: method does not override or implement a method from a supertype
+      @Override public @NotNull String getAuthor() { return "Aetherfall"; }
+      ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Placeholders.java:25: error: method does not override or implement a method from a supertype
+      @Override public @NotNull String getVersion() { return plugin.getPluginMeta().getVersion(); }
+      ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Placeholders.java:26: error: method does not override or implement a method from a supertype
+      @Override public boolean persist() { return true; }
+      ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Placeholders.java:28: error: method does not override or implement a method from a supertype
+      @Override
+      ^
+  100 errors
+  1 warning
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 32s
+2 actionable tasks: 2 executed
+2026-09-29T23:49:47.056-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2026-09-29T23:49:47.068-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon stop has been requested. Sleeping until state changes.
+2026-09-29T23:49:47.068-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=1d43116b-510c-46c5-9860-d001ce7dc4dc, currentDir=D:\Server\aethercore}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:57848 to /127.0.0.1:57849]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@f7421cd with state StopRequested
+2026-09-29T23:49:47.069-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=1d43116b-510c-46c5-9860-d001ce7dc4dc, currentDir=D:\Server\aethercore}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:57848 to /127.0.0.1:57849]
+2026-09-29T23:49:47.069-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2026-09-29T23:49:47.069-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Marking daemon stopped due to command completed and stop requested. The daemon is not running a build
+2026-09-29T23:49:47.069-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon has stopped.
+2026-09-29T23:49:47.069-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@75fc6b9b]
+2026-09-29T23:49:47.069-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 37: dispatching Success[value=org.gradle.launcher.exec.BuildActionResult@75fc6b9b]
+2026-09-29T23:49:47.069-0500 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stop() called on daemon
+2026-09-29T23:49:47.069-0500 [INFO] [org.gradle.launcher.daemon.server.Daemon] Stop requested. Daemon is removing its presence from the registry...
+2026-09-29T23:49:47.070-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Removing our presence to clients, eg. removing this address from the registry: [2981e034-6064-49c5-adf4-70daa827582d port:57848, addresses:[localhost/127.0.0.1]]
+2026-09-29T23:49:47.070-0500 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Removing daemon address: [2981e034-6064-49c5-adf4-70daa827582d port:57848, addresses:[localhost/127.0.0.1]]
+2026-09-29T23:49:47.071-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2026-09-29T23:49:47.071-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2026-09-29T23:49:47.073-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2026-09-29T23:49:47.073-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Address removed from registry.
+2026-09-29T23:49:47.083-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.CleanUpVirtualFileSystemAfterBuild] Cleaning virtual file system after build finished
+2026-09-29T23:49:47.083-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=1d43116b-510c-46c5-9860-d001ce7dc4dc, currentDir=D:\Server\aethercore}
+2026-09-29T23:49:47.142-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 38: received class org.gradle.launcher.daemon.protocol.CloseInput
+2026-09-29T23:49:47.143-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 38: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@555775d7
+2026-09-29T23:49:47.143-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 38: received class org.gradle.launcher.daemon.protocol.Finished
+2026-09-29T23:49:47.143-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 38: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@6a57b0b4
+2026-09-29T23:49:47.143-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@6a57b0b4
+2026-09-29T23:49:47.144-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 37: stopping connection
+2026-09-29T23:49:47.145-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2026-09-29T23:49:47.145-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 38: received null
+2026-09-29T23:49:47.145-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 38: Received end-of-input from client.
+2026-09-29T23:49:47.149-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 37: stopping connection
+2026-09-29T23:49:47.151-0500 [DEBUG] [org.gradle.cache.internal.DefaultCacheCleanupExecutor] jars (D:\Server\aethercore\.gradle-user-home\caches\jars-9) has last been fully cleaned up 13 hours ago
+2026-09-29T23:49:47.151-0500 [DEBUG] [org.gradle.cache.internal.DefaultCacheCleanupExecutor] Skipping cleanup for jars (D:\Server\aethercore\.gradle-user-home\caches\jars-9) as it is not yet due
+2026-09-29T23:49:47.152-0500 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Cache jars (D:\Server\aethercore\.gradle-user-home\caches\jars-9) was closed 0 times.
+2026-09-29T23:49:47.154-0500 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for file content cache (D:\Server\aethercore\.gradle-user-home\caches\9.8.0\fileContent)
+2026-09-29T23:49:47.154-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on file content cache (D:\Server\aethercore\.gradle-user-home\caches\9.8.0\fileContent).
+2026-09-29T23:49:47.155-0500 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Closing VFS, dropping state
+2026-09-29T23:49:47.157-0500 [DEBUG] [org.gradle.internal.watch.registry.impl.DefaultFileWatcherRegistry] Finished listening to file system change events
+2026-09-29T23:49:47.157-0500 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Cache Generated Gradle JARs cache (D:\Server\aethercore\.gradle-user-home\caches\9.8.0\generated-gradle-jars) was closed 0 times.
+2026-09-29T23:49:47.157-0500 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for artifact cache (D:\Server\aethercore\.gradle-user-home\caches\modules-2)
+2026-09-29T23:49:47.158-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (D:\Server\aethercore\.gradle-user-home\caches\modules-2).
+2026-09-29T23:49:47.158-0500 [DEBUG] [org.gradle.cache.internal.DefaultCacheCleanupExecutor] artifact cache (D:\Server\aethercore\.gradle-user-home\caches\modules-2) has last been fully cleaned up 13 hours ago
+2026-09-29T23:49:47.159-0500 [DEBUG] [org.gradle.cache.internal.DefaultCacheCleanupExecutor] Skipping cleanup for artifact cache (D:\Server\aethercore\.gradle-user-home\caches\modules-2) as it is not yet due
+2026-09-29T23:49:47.160-0500 [DEBUG] [org.gradle.cache.internal.DefaultCacheCleanupExecutor] kotlin-dsl/accessors has last been fully cleaned up 13 hours ago
+2026-09-29T23:49:47.161-0500 [DEBUG] [org.gradle.cache.internal.DefaultCacheCleanupExecutor] Skipping cleanup for kotlin-dsl/accessors as it is not yet due
+2026-09-29T23:49:47.162-0500 [DEBUG] [org.gradle.cache.internal.DefaultCacheCleanupExecutor] kotlin-dsl/scripts has last been fully cleaned up 13 hours ago
+2026-09-29T23:49:47.162-0500 [DEBUG] [org.gradle.cache.internal.DefaultCacheCleanupExecutor] Skipping cleanup for kotlin-dsl/scripts as it is not yet due
+2026-09-29T23:49:47.163-0500 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for journal cache (D:\Server\aethercore\.gradle-user-home\caches\journal-1)
+2026-09-29T23:49:47.163-0500 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache file-access.bin (D:\Server\aethercore\.gradle-user-home\caches\journal-1\file-access.bin)
+2026-09-29T23:49:47.164-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on journal cache (D:\Server\aethercore\.gradle-user-home\caches\journal-1).
+2026-09-29T23:49:47.167-0500 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for file hash cache (D:\Server\aethercore\.gradle-user-home\caches\9.8.0\fileHashes)
+2026-09-29T23:49:47.168-0500 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache kotlinDslCompileAvoidanceClasspathHashCache.bin (D:\Server\aethercore\.gradle-user-home\caches\9.8.0\fileHashes\kotlinDslCompileAvoidanceClasspathHashCache.bin)
+2026-09-29T23:49:47.170-0500 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache fileHashes.bin (D:\Server\aethercore\.gradle-user-home\caches\9.8.0\fileHashes\fileHashes.bin)
+2026-09-29T23:49:47.171-0500 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache KotlinMetadataCompatibilityCache.bin (D:\Server\aethercore\.gradle-user-home\caches\9.8.0\fileHashes\KotlinMetadataCompatibilityCache.bin)
+2026-09-29T23:49:47.172-0500 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache resourceHashesCache.bin (D:\Server\aethercore\.gradle-user-home\caches\9.8.0\fileHashes\resourceHashesCache.bin)
+2026-09-29T23:49:47.173-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on file hash cache (D:\Server\aethercore\.gradle-user-home\caches\9.8.0\fileHashes).
+2026-09-29T23:49:47.174-0500 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for Java compile cache (D:\Server\aethercore\.gradle-user-home\caches\9.8.0\javaCompile)
+2026-09-29T23:49:47.175-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on Java compile cache (D:\Server\aethercore\.gradle-user-home\caches\9.8.0\javaCompile).
+2026-09-29T23:49:47.177-0500 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Deleting unused version-specific caches in D:\Server\aethercore\.gradle-user-home\caches' started
+2026-09-29T23:49:47.178-0500 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Deleting unused version-specific caches in D:\Server\aethercore\.gradle-user-home\caches'
+2026-09-29T23:49:47.179-0500 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Deleting unused version-specific caches in D:\Server\aethercore\.gradle-user-home\caches' completed
+2026-09-29T23:49:47.179-0500 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stop() called on daemon
+2026-09-29T23:49:47.179-0500 [INFO] [org.gradle.launcher.daemon.server.Daemon] Stop requested. Daemon is removing its presence from the registry...
+2026-09-29T23:49:47.180-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Removing our presence to clients, eg. removing this address from the registry: [2981e034-6064-49c5-adf4-70daa827582d port:57848, addresses:[localhost/127.0.0.1]]
+2026-09-29T23:49:47.180-0500 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Removing daemon address: [2981e034-6064-49c5-adf4-70daa827582d port:57848, addresses:[localhost/127.0.0.1]]
+2026-09-29T23:49:47.195-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2026-09-29T23:49:47.196-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2026-09-29T23:49:47.199-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2026-09-29T23:49:47.200-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Address removed from registry.
+2026-09-29T23:49:47.201-0500 [DEBUG] [org.gradle.cache.internal.locklistener.DefaultFileLockContentionHandler] File lock listener thread completed.
+2026-09-29T23:49:47.203-0500 [DEBUG] [java.lang.Runtime] Runtime.exit() called with status: 0
+java.lang.Throwable: Runtime.exit(0)
+	at java.base/java.lang.Shutdown.logRuntimeExit(Shutdown.java:179)
+	at java.base/java.lang.Shutdown.exit(Shutdown.java:160)
+	at java.base/java.lang.Runtime.exit(Runtime.java:177)
+	at java.base/java.lang.System.exit(System.java:1541)
+	at org.gradle.launcher.bootstrap.ProcessCompleter.complete(ProcessCompleter.java:21)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:72)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:39)
+	at org.gradle.launcher.daemon.bootstrap.GradleDaemon.main(GradleDaemon.java:23)
+Daemon vm is shutting down... The daemon has exited normally or was terminated in response to a user interrupt.
+2026-09-29T23:49:47.205-0500 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Removing daemon address: [2981e034-6064-49c5-adf4-70daa827582d port:57848, addresses:[localhost/127.0.0.1]]
+2026-09-29T23:49:47.206-0500 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] VM shutdown hook was unable to remove the daemon address from the registry. It will be cleaned up later.
+java.lang.IllegalStateException: Cannot start managing file contention because this handler has been closed.
+	at org.gradle.cache.internal.locklistener.DefaultFileLockContentionHandler.assertNotStopped(DefaultFileLockContentionHandler.java:267)
+	at org.gradle.cache.internal.locklistener.DefaultFileLockContentionHandler.reservePort(DefaultFileLockContentionHandler.java:312)
+	at org.gradle.cache.internal.DefaultFileLockManager.lock(DefaultFileLockManager.java:127)
+	at org.gradle.cache.internal.DefaultFileLockManager.lock(DefaultFileLockManager.java:109)
+	at org.gradle.cache.internal.DefaultFileLockManager.lock(DefaultFileLockManager.java:104)
+	at org.gradle.cache.internal.OnDemandFileAccess.updateFile(OnDemandFileAccess.java:51)
+	at org.gradle.cache.internal.FileBackedObjectHolder.update(FileBackedObjectHolder.java:77)
+	at org.gradle.cache.internal.FileIntegrityViolationSuppressingObjectHolderDecorator.lambda$update$0(FileIntegrityViolationSuppressingObjectHolderDecorator.java:48)
+	at org.gradle.cache.internal.FileIntegrityViolationSuppressingObjectHolderDecorator.doUpdate(FileIntegrityViolationSuppressingObjectHolderDecorator.java:58)
+	at org.gradle.cache.internal.FileIntegrityViolationSuppressingObjectHolderDecorator.update(FileIntegrityViolationSuppressingObjectHolderDecorator.java:48)
+	at org.gradle.launcher.daemon.registry.PersistentDaemonRegistry.remove(PersistentDaemonRegistry.java:133)
+	at org.gradle.launcher.daemon.server.Daemon$1.run(Daemon.java:133)
+	at java.base/java.lang.Thread.run(Thread.java:1474)

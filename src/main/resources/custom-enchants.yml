@@ -1,0 +1,237 @@
+# Aetherfall custom enchant definitions.
+# The registry implementation will validate IDs, levels, materials, and effect keys.
+enchants:
+  cultivation:
+    name: "Cultivation"
+    rarity: RARE
+    applies-to: [HOE]
+    max-level: 5
+    source: FARMING_COLLECTION
+    effect: farming_fortune
+    per-level: 2
+    description: "Increases Farming Fortune while harvesting crops."
+  turbo:
+    name: "Turbo"
+    rarity: RARE
+    applies-to: [HOE]
+    max-level: 5
+    source: FARMING_EVENT
+    effect: farming_speed
+    per-level: 10
+    description: "Increases Farming Speed on a compatible farming tool."
+  dedication:
+    name: "Dedication"
+    rarity: EPIC
+    applies-to: [HOE]
+    max-level: 4
+    source: FARMING_COLLECTION
+    effect: farming_combo_fortune
+    per-level: 1
+    description: "Rewards sustained manual harvesting with extra Fortune."
+  cane_affinity:
+    name: "Cane Affinity"
+    rarity: EPIC
+    applies-to: [HOE]
+    max-level: 3
+    source: SUGAR_CANE_COLLECTION
+    effect: sugar_cane_fortune
+    per-level: 20
+    description: "Increases Sugar Cane Fortune."
+  cactus_affinity:
+    name: "Cactus Affinity"
+    rarity: EPIC
+    applies-to: [HOE]
+    max-level: 3
+    source: CACTUS_COLLECTION
+    effect: cactus_fortune
+    per-level: 20
+    description: "Increases Cactus Fortune."
+  core_resonance:
+    name: "Core Resonance"
+    rarity: EPIC
+    applies-to: [PICKAXE]
+    max-level: 3
+    source: MINING_COLLECTION
+    effect: core_drop_chance
+    per-level: 2
+    description: "Improves custom core discovery from eligible natural ores."
+  tidecaller:
+    name: "Tidecaller"
+    rarity: EPIC
+    applies-to: [FISHING_ROD]
+    max-level: 3
+    source: FISHING_EVENT
+    effect: sea_creature_chance
+    per-level: 3
+    description: "Improves sea creature chance during legitimate fishing catches."
+  executioner:
+    name: "Executioner"
+    rarity: LEGENDARY
+    applies-to: [SWORD, BOW]
+    max-level: 5
+    source: BOSS_LOOT
+    effect: low_health_damage
+    per-level: 2
+    description: "Deals additional damage to mobs below 30% health."
+  efficient:
+    name: "Efficient"
+    rarity: EPIC
+    applies-to: [MINION]
+    max-level: 3
+    source: MINION_COLLECTION
+    effect: minion_action_time
+    per-level: 2
+    description: "Reduces minion action time while respecting tier speed floors."
+  replenish:
+    name: "Replenish"
+    rarity: EPIC
+    applies-to: [HOE]
+    max-level: 1
+    source: FARMING_COLLECTION
+    effect: replant_crop
+    per-level: 1
+    description: "Replants the harvested crop when the player has a valid seed or crop item."
+  harvester_touch:
+    name: "Harvester's Touch"
+    rarity: RARE
+    applies-to: [HOE]
+    max-level: 3
+    source: FARMING_COLLECTION
+    effect: manual_harvest_xp
+    per-level: 3
+    description: "Adds Farming XP to deliberate harvests while providing no reward for automated bursts."
+  fortune_engine:
+    name: "Fortune Engine"
+    rarity: LEGENDARY
+    applies-to: [HOE]
+    max-level: 3
+    source: COMMUNITY_EVENT
+    effect: adaptive_fortune_cap
+    per-level: 1
+    description: "Raises the Farming Fortune ceiling slightly, but only while a manual harvest combo is active."
+  deep_delver:
+    name: "Deep Delver"
+    rarity: RARE
+    applies-to: [PICKAXE]
+    max-level: 5
+    source: MINING_COLLECTION
+    effect: mining_speed_depth
+    per-level: 15
+    description: "Grants Mining Speed below the configured depth threshold and has no effect in safe spawn worlds."
+  vein_discipline:
+    name: "Vein Discipline"
+    rarity: EPIC
+    applies-to: [PICKAXE]
+    max-level: 3
+    source: MINING_COLLECTION
+    effect: manual_vein_fortune
+    per-level: 5
+    description: "Improves the first natural ore mined by hand and prevents recursive vein blocks from multiplying the bonus."
+  smelter:
+    name: "Smelter"
+    rarity: EPIC
+    applies-to: [PICKAXE]
+    max-level: 1
+    source: FORGE_RECIPE
+    effect: autosmelt_eligible_ores
+    per-level: 1
+    description: "Converts eligible natural ore drops into their smelted form after claim and block-origin checks pass."
+  excavator_grace:
+    name: "Excavator's Grace"
+    rarity: RARE
+    applies-to: [PICKAXE]
+    max-level: 3
+    source: MINING_EVENT
+    effect: tool_durability_mining
+    per-level: 4
+    description: "Reduces durability cost from approved mining abilities without preventing normal tool wear."
+  treasure_map:
+    name: "Treasure Map"
+    rarity: EPIC
+    applies-to: [FISHING_ROD]
+    max-level: 5
+    source: FISHING_COLLECTION
+    effect: treasure_quality
+    per-level: 3
+    description: "Improves the quality roll of legitimate treasure catches and cannot affect junk or duplicated drops."
+  reel_momentum:
+    name: "Reel Momentum"
+    rarity: RARE
+    applies-to: [FISHING_ROD]
+    max-level: 3
+    source: FISHING_EVENT
+    effect: fishing_combo
+    per-level: 1
+    description: "Builds a short Fishing Speed bonus after consecutive real catches, resetting when the player stops fishing."
+  deepwater:
+    name: "Deepwater"
+    rarity: LEGENDARY
+    applies-to: [FISHING_ROD]
+    max-level: 3
+    source: BOSS_LOOT
+    effect: rare_fishing_drop
+    per-level: 2
+    description: "Adds a small chance for special deepwater drops while preserving the normal sea creature table."
+  boss_hunter:
+    name: "Boss Hunter"
+    rarity: LEGENDARY
+    applies-to: [SWORD, BOW]
+    max-level: 5
+    source: BOSS_LOOT
+    effect: boss_damage
+    per-level: 2
+    description: "Adds damage to a boss only after the player has made a valid contribution to that encounter."
+  aether_drain:
+    name: "Aether Drain"
+    rarity: EPIC
+    applies-to: [SWORD]
+    max-level: 3
+    source: SLAYER_REWARD
+    effect: mana_on_crit
+    per-level: 2
+    description: "Restores a small amount of Mana on a real critical hit, with a per-player cooldown."
+  first_strike:
+    name: "First Strike"
+    rarity: RARE
+    applies-to: [SWORD, BOW]
+    max-level: 4
+    source: COMBAT_COLLECTION
+    effect: first_hit_damage
+    per-level: 4
+    description: "Increases the first valid hit against a target that has not recently been damaged by the player."
+  guardian:
+    name: "Guardian"
+    rarity: EPIC
+    applies-to: [ARMOR]
+    max-level: 3
+    source: GUILD_REWARD
+    effect: group_defense
+    per-level: 2
+    description: "Adds Defense while nearby party or guild members are in the same encounter."
+  deep_storage:
+    name: "Deep Storage"
+    rarity: EPIC
+    applies-to: [MINION]
+    max-level: 3
+    source: MINION_COLLECTION
+    effect: minion_storage
+    per-level: 32
+    description: "Adds minion storage capacity without increasing production speed or creating resources."
+  catalyst_keeper:
+    name: "Catalyst Keeper"
+    rarity: EPIC
+    applies-to: [MINION]
+    max-level: 3
+    source: MINION_COLLECTION
+    effect: fuel_duration
+    per-level: 10
+    description: "Extends approved minion fuel duration while preserving the fuel speed multiplier cap."
+  compactor:
+    name: "Compactor"
+    rarity: LEGENDARY
+    applies-to: [MINION]
+    max-level: 2
+    source: FORGE_RECIPE
+    effect: minion_auto_compact
+    per-level: 1
+    description: "Converts eligible stored minion resources into their registered compacted form on collection."

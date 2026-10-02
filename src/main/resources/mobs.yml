@@ -1,0 +1,392 @@
+# ─────────────────────────────────────────────────────────────
+#  Elite mobs replace a share of natural spawns; bosses are summoned with relics from /forge
+#  or appear as timed World Boss events. /aether reload applies changes.
+#
+#  replace:   which natural spawns can become this elite (types, chance, optional biome / y filters)
+#  on-hit:    effects applied to players the mob hits (effect names = potion effects, plus "fire")
+#  equipment: item keys (custom ids or vanilla materials); never dropped
+#  drops:     rolled on death (in addition to vanilla drops); coins go straight to the killer
+# ─────────────────────────────────────────────────────────────
+
+elites:
+  reef_stalker:
+    base: COD
+    name: "Reef Stalker"
+    color: "<dark_aqua>"
+    level: 18
+    health: 45
+    damage: 7
+    replace: { types: [COD], chance: 0 }
+    drops: [ { item: sea_glass, chance: 0.8, min: 1, max: 3 }, { item: prismatic_scale, chance: 0.05 } ]
+    coins: 35
+    xp: 55
+  krakenling:
+    base: SQUID
+    name: "Krakenling"
+    color: "<dark_purple>"
+    level: 30
+    health: 90
+    damage: 10
+    replace: { types: [SQUID], chance: 0 }
+    drops: [ { item: kraken_ink, chance: 0.25 }, { item: drowned_pearl, chance: 0.6 } ]
+    coins: 80
+    xp: 100
+  frost_zombie:
+    base: ZOMBIE
+    name: "Frost Zombie"
+    color: "<aqua>"
+    level: 12
+    health: 45
+    damage: 6
+    speed: 0.25
+    replace: { types: [ZOMBIE, HUSK], chance: 0.08, biomes: ["*SNOW*", "*FROZEN*", "*ICE*", "*GROVE*", "*PEAKS*", "*TAIGA*"] }
+    equipment: { helmet: LEATHER_HELMET, chestplate: frost_chestplate }
+    on-hit: { slowness: [60, 1] }
+    drops: [ { item: frostite, chance: 0.6, min: 1, max: 3 }, { item: zombie_heart, chance: 0.04 } ]
+    coins: 18
+    xp: 25
+  cave_brute:
+    base: ZOMBIE
+    name: "Cave Brute"
+    color: "<gold>"
+    level: 18
+    health: 70
+    damage: 9
+    speed: 0.22
+    scale: 1.35
+    knockback-resistance: 0.8
+    replace: { types: [ZOMBIE], chance: 0.10, max-y: 0 }
+    equipment: { mainhand: IRON_PICKAXE, helmet: miner_helmet }
+    on-hit: { mining_fatigue: [80, 0] }
+    abilities: [ leap ]
+    drops: [ { item: mithril, chance: 0.8, min: 2, max: 5 }, { item: titanium, chance: 0.2, min: 1, max: 2 } ]
+    coins: 30
+    xp: 40
+  ember_skeleton:
+    base: SKELETON
+    name: "Ember Archer"
+    color: "<red>"
+    level: 20
+    health: 50
+    damage: 5
+    replace: { types: [SKELETON], chance: 0.10, max-y: -20 }
+    equipment: { mainhand: BOW, helmet: ember_helmet }
+    abilities: [ fire_arrows ]
+    drops: [ { item: emberite, chance: 0.5, min: 1, max: 2 }, { item: ember_core, chance: 0.03 } ]
+    coins: 25
+    xp: 35
+  venom_spider:
+    base: SPIDER
+    name: "Venomweaver"
+    color: "<dark_green>"
+    level: 10
+    health: 36
+    damage: 5
+    speed: 0.34
+    replace: { types: [SPIDER], chance: 0.10 }
+    on-hit: { poison: [80, 0] }
+    drops: [ { item: spider_silk, chance: 0.3, min: 1, max: 2 } ]
+    coins: 15
+    xp: 20
+  shadow_stalker:
+    base: ENDERMAN
+    name: "Shadow Stalker"
+    color: "<dark_purple>"
+    level: 30
+    health: 90
+    damage: 10
+    replace: { types: [ENDERMAN], chance: 0.08 }
+    on-hit: { blindness: [60, 0] }
+    drops: [ { item: void_fragment, chance: 1.0, min: 2, max: 4 }, { item: voidstone, chance: 0.08 } ]
+    coins: 45
+    xp: 60
+  plague_zombie:
+    base: ZOMBIE
+    name: "Plague Walker"
+    color: "<dark_green>"
+    level: 8
+    health: 32
+    damage: 5
+    replace: { types: [ZOMBIE], chance: 0.05 }
+    on-hit: { hunger: [100, 1] }
+    drops: [ { item: zombie_heart, chance: 0.05 }, { item: ROTTEN_FLESH, chance: 1.0, min: 2, max: 5 } ]
+    coins: 12
+    xp: 15
+  storm_creeper:
+    base: CREEPER
+    name: "Storm Creeper"
+    color: "<yellow>"
+    level: 15
+    health: 30
+    charged: true
+    replace: { types: [CREEPER], chance: 0.05 }
+    drops: [ { item: volatile_core, chance: 0.25 }, { item: GUNPOWDER, chance: 1.0, min: 3, max: 6 } ]
+    coins: 25
+    xp: 30
+  abyssal_drowned:
+    base: DROWNED
+    name: "Abyssal Drowned"
+    color: "<dark_aqua>"
+    level: 16
+    health: 55
+    damage: 8
+    replace: { types: [DROWNED], chance: 0.12 }
+    equipment: { mainhand: TRIDENT, helmet: angler_helmet }
+    drops: [ { item: drowned_pearl, chance: 0.15 }, { item: sea_glass, chance: 0.5, min: 1, max: 3 }, { item: prismatic_scale, chance: 0.02 } ]
+    coins: 25
+    xp: 35
+  king_slime:
+    base: SLIME
+    name: "Slime King"
+    color: "<green>"
+    level: 14
+    health: 60
+    size: 6
+    replace: { types: [SLIME], chance: 0.06 }
+    drops: [ { item: slime_core, chance: 0.6, min: 1, max: 3 } ]
+    coins: 25
+    xp: 30
+
+  infernal_brute:
+    base: PIGLIN_BRUTE
+    name: "Infernal Brute"
+    color: "<red>"
+    level: 35
+    health: 110
+    damage: 14
+    replace: { types: [ZOMBIFIED_PIGLIN], chance: 0.05 }
+    equipment: { mainhand: GOLDEN_AXE, helmet: ember_helmet }
+    on-hit: { fire: [80, 0] }
+    abilities: [ leap ]
+    drops: [ { item: infernium, chance: 1.0, min: 2, max: 5 }, { item: ember_core, chance: 0.1 } ]
+    coins: 60
+    xp: 80
+  soul_wraith:
+    base: WITHER_SKELETON
+    name: "Soul Wraith"
+    color: "<dark_aqua>"
+    level: 40
+    health: 120
+    damage: 13
+    replace: { types: [SKELETON, WITHER_SKELETON], chance: 0.2, biomes: ["*SOUL_SAND_VALLEY*", "*BASALT*"] }
+    on-hit: { wither: [80, 1] }
+    drops: [ { item: soulite, chance: 0.6, min: 1, max: 2 }, { item: wither_essence, chance: 0.3 } ]
+    coins: 75
+    xp: 100
+  astral_sentinel:
+    base: ENDERMAN
+    name: "Astral Sentinel"
+    color: "<light_purple>"
+    level: 50
+    health: 160
+    damage: 15
+    replace: { types: [ENDERMAN], chance: 0.12, biomes: ["*END_HIGHLANDS*", "*END_MIDLANDS*", "*END_BARRENS*", "*SMALL_END_ISLANDS*"] }
+    on-hit: { levitation: [40, 0] }
+    drops: [ { item: astralite, chance: 0.8, min: 1, max: 3 }, { item: void_fragment, chance: 1.0, min: 2, max: 4 } ]
+    coins: 100
+    xp: 140
+  crystal_bat:
+    base: BAT
+    name: "Crystal Bat"
+    color: "<light_purple>"
+    level: 9
+    health: 28
+    damage: 4
+    replace: { types: [BAT], chance: 0.18, min-y: -64, max-y: 20 }
+    drops: [ { item: aether_shard, chance: 0.18, min: 1, max: 2 }, { item: starlight, chance: 0.01 } ]
+    coins: 20
+    xp: 30
+  swamp_hag:
+    base: WITCH
+    name: "Swamp Hag"
+    color: "<dark_green>"
+    level: 22
+    health: 75
+    damage: 8
+    replace: { types: [WITCH], chance: 0.14, biomes: ["*SWAMP*", "*MANGROVE*"] }
+    on-hit: { poison: [80, 0] }
+    drops: [ { item: zombie_heart, chance: 0.12 }, { item: golden_seed, chance: 0.08 } ]
+    coins: 42
+    xp: 65
+  deep_guardian:
+    base: GUARDIAN
+    name: "Deep Guardian"
+    color: "<dark_aqua>"
+    level: 28
+    health: 100
+    damage: 10
+    replace: { types: [GUARDIAN], chance: 0.16 }
+    drops: [ { item: guardian_scale, chance: 0.65, min: 1, max: 3 }, { item: prismatic_scale, chance: 0.03 } ]
+    coins: 55
+    xp: 90
+  soul_bear:
+    base: POLAR_BEAR
+    name: "Soul Bear"
+    color: "<blue>"
+    level: 24
+    health: 95
+    damage: 11
+    replace: { types: [POLAR_BEAR], chance: 0.12, biomes: ["*SNOW*", "*ICE*", "*FROZEN*"] }
+    on-hit: { slowness: [70, 1] }
+    drops: [ { item: frostite, chance: 0.45, min: 1, max: 3 }, { item: frostite, chance: 0.04, min: 3, max: 6 } ]
+    coins: 48
+    xp: 75
+  crimson_golem:
+    base: IRON_GOLEM
+    name: "Crimson Golem"
+    color: "<red>"
+    level: 45
+    health: 260
+    damage: 18
+    scale: 1.25
+    replace: { types: [IRON_GOLEM], chance: 0.08, biomes: ["*BADLANDS*", "*NETHER*"] }
+    on-hit: { fire: [80, 0] }
+    drops: [ { item: emberite, chance: 0.7, min: 2, max: 6 }, { item: ember_core, chance: 0.08 } ]
+    coins: 125
+    xp: 180
+  ender_mimic:
+    base: ENDERMITE
+    name: "Ender Mimic"
+    color: "<dark_purple>"
+    level: 38
+    health: 80
+    damage: 13
+    speed: 0.38
+    replace: { types: [ENDERMITE], chance: 0.22 }
+    abilities: [ leap ]
+    drops: [ { item: void_fragment, chance: 0.9, min: 2, max: 6 }, { item: voidstone, chance: 0.05 } ]
+    coins: 80
+    xp: 120
+# ── Bosses ────────────────────────────────────────────────────
+# abilities: nova (area damage + effect), minions, leap, fireballs, teleport, webs, lightning
+# phases:    at = health fraction; enrage multiplies damage & speed and speeds up abilities
+# rewards:   coin pool shared by damage dealt; loot rolled for every player who did >= 5% damage
+bosses:
+  frost_titan:
+    base: ZOMBIE
+    name: "Frost Titan"
+    color: "<aqua><bold>"
+    health: 900
+    damage: 14
+    speed: 0.24
+    scale: 2.6
+    bar: BLUE
+    summon-item: frozen_relic
+    equipment: { helmet: frost_helmet, chestplate: frost_chestplate, leggings: frost_leggings, boots: frost_boots, mainhand: frostbite_blade }
+    abilities:
+      - { type: nova, every: 9, radius: 7, damage: 8, effect: slowness, particle: SNOWFLAKE }
+      - { type: leap, every: 7, radius: 4, damage: 10 }
+      - { type: minions, every: 20, mob: frost_zombie, count: 3 }
+    phases:
+      - { at: 0.5, enrage: 1.3, message: "The Titan's armor cracks — it grows furious!" }
+    rewards:
+      coins: 6000
+      loot: [ { item: frostite, chance: 1.0, min: 8, max: 20 }, { item: enchanted_diamond, chance: 0.35 }, { item: frostbite_blade, chance: 0.04 }, { item: aether_shard, chance: 0.5, min: 1, max: 3 } ]
+  ember_warlord:
+    base: WITHER_SKELETON
+    name: "Ember Warlord"
+    color: "<red><bold>"
+    health: 1200
+    damage: 16
+    speed: 0.28
+    scale: 2.0
+    bar: RED
+    summon-item: ember_sigil
+    equipment: { mainhand: ember_blade, helmet: ember_helmet, chestplate: ember_chestplate }
+    abilities:
+      - { type: fireballs, every: 6 }
+      - { type: nova, every: 10, radius: 6, damage: 7, effect: fire, particle: FLAME }
+      - { type: minions, every: 22, mob: ember_skeleton, count: 3 }
+    phases:
+      - { at: 0.4, enrage: 1.35, message: "The Warlord erupts in flame!" }
+    rewards:
+      coins: 8000
+      loot: [ { item: emberite, chance: 1.0, min: 10, max: 24 }, { item: ember_core, chance: 1.0, min: 2, max: 5 }, { item: ember_blade, chance: 0.05 }, { item: ember_pickaxe, chance: 0.04 } ]
+  broodmother:
+    base: SPIDER
+    name: "The Broodmother"
+    color: "<dark_green><bold>"
+    health: 700
+    damage: 12
+    speed: 0.32
+    scale: 3.0
+    bar: GREEN
+    summon-item: silk_cocoon
+    abilities:
+      - { type: webs, every: 11 }
+      - { type: nova, every: 8, radius: 6, damage: 5, effect: poison, particle: ITEM_SLIME }
+      - { type: minions, every: 15, mob: venom_spider, count: 4 }
+    phases:
+      - { at: 0.5, enrage: 1.25, message: "The Broodmother shrieks — her children answer!" }
+    rewards:
+      coins: 5000
+      loot: [ { item: spider_silk, chance: 1.0, min: 8, max: 16 }, { item: enchanted_string, chance: 0.5, min: 1, max: 2 }, { item: grappling_hook, chance: 0.15 } ]
+  void_herald:
+    base: ENDERMAN
+    name: "Void Herald"
+    color: "<dark_purple><bold>"
+    health: 1600
+    damage: 18
+    speed: 0.3
+    scale: 1.6
+    bar: PURPLE
+    summon-item: void_sigil
+    abilities:
+      - { type: teleport, every: 6 }
+      - { type: nova, every: 9, radius: 7, damage: 9, effect: blindness, particle: PORTAL }
+      - { type: minions, every: 20, mob: shadow_stalker, count: 2 }
+    phases:
+      - { at: 0.5, enrage: 1.3, message: "Reality tears around the Herald!" }
+      - { at: 0.2, enrage: 1.2, message: "The Herald becomes desperate!" }
+    rewards:
+      coins: 12000
+      loot: [ { item: voidstone, chance: 1.0, min: 4, max: 10 }, { item: void_fragment, chance: 1.0, min: 16, max: 32 }, { item: void_blade, chance: 0.04 }, { item: void_chestplate, chance: 0.06 } ]
+  infernal_tyrant:
+    base: BLAZE
+    name: "Infernal Tyrant"
+    color: "<gradient:#FF5A1F:#B22222><bold>"
+    health: 2500
+    damage: 18
+    scale: 3.0
+    bar: RED
+    summon-item: infernal_sigil
+    abilities:
+      - { type: fireballs, every: 4 }
+      - { type: nova, every: 8, radius: 8, damage: 9, effect: fire, particle: FLAME }
+      - { type: lightning, every: 11, damage: 9 }
+      - { type: minions, every: 20, mob: infernal_brute, count: 2 }
+    phases:
+      - { at: 0.5, enrage: 1.3, message: "The Tyrant's flames turn white-hot!" }
+      - { at: 0.2, enrage: 1.2, message: "The Tyrant is burning out — finish it!" }
+    rewards:
+      coins: 20000
+      loot: [ { item: infernium, chance: 1.0, min: 16, max: 32 }, { item: soulite, chance: 1.0, min: 4, max: 10 }, { item: soulreaper, chance: 0.05 }, { item: infernal_chestplate, chance: 0.08 } ]
+  aether_colossus:
+    base: ZOMBIE
+    name: "Aether Colossus"
+    color: "<gradient:#8B5CF6:#22D3EE><bold>"
+    health: 5000
+    damage: 20
+    speed: 0.22
+    scale: 4.0
+    bar: PINK
+    world-boss: true
+    equipment: { helmet: starlight_helmet, chestplate: starlight_chestplate, leggings: starlight_leggings, boots: starlight_boots }
+    abilities:
+      - { type: lightning, every: 7, damage: 10 }
+      - { type: leap, every: 9, radius: 6, damage: 14 }
+      - { type: nova, every: 12, radius: 9, damage: 10, effect: slowness, particle: END_ROD }
+      - { type: minions, every: 25, mob: cave_brute, count: 4 }
+    phases:
+      - { at: 0.66, enrage: 1.2, message: "The Colossus awakens fully!" }
+      - { at: 0.33, enrage: 1.3, message: "The Colossus begins to crumble — finish it!" }
+    rewards:
+      coins: 25000
+      loot: [ { item: starlight, chance: 0.8, min: 1, max: 3 }, { item: aether_shard, chance: 1.0, min: 3, max: 8 }, { item: echo_heart, chance: 0.03 }, { item: sunken_treasure, chance: 0.5 } ]
+
+# A World Boss appears at the arena (set with /aether setarena) on a timer when enough players are online.
+world-boss:
+  boss: aether_colossus
+  interval-minutes: 180
+  min-players: 3
+  warning-minutes: 5

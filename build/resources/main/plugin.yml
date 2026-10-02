@@ -1,0 +1,203 @@
+name: AetherCore
+version: '1.0.0'
+main: gg.aetherfall.core.AetherCore
+api-version: '26.2'
+description: Daily rewards, quests, playtime ranks, timber/vein miner, chat games and the /menu hub for Aetherfall.
+author: Aetherfall
+softdepend: [AuraSkills, PlaceholderAPI, Essentials, LuckPerms, Vault, WorldGuard, Votifier, floodgate, GriefPrevention]
+libraries:
+  - org.xerial:sqlite-jdbc:3.53.4.0
+
+commands:
+  skills:
+    description: View your RPG skills and combat stats.
+    aliases: [skill, skillsmenu]
+    permission: aethercore.use
+  equipment:
+    description: Customize held custom equipment with reforges.
+    aliases: [reforge, customize]
+    permission: aethercore.use
+  kits:
+    description: Browse, preview and claim your rank kits.
+    aliases: [kit, kitgui]
+    permission: aethercore.use
+  perks:
+    description: View the rank ladder and its rewards.
+    aliases: [ranks, rank]
+    permission: aethercore.use
+  trail:
+    description: Toggle your earned rank particle trail.
+    permission: aethercore.use
+  menu:
+    description: Open the main menu.
+    aliases: [m, gui, aetherfall]
+    permission: aethercore.use
+  daily:
+    description: Claim your daily reward.
+    aliases: [reward, rewards]
+    permission: aethercore.use
+  quests:
+    description: View your daily quests.
+    aliases: [quest, q]
+    permission: aethercore.use
+  contracts:
+    description: View your weekly contracts.
+    aliases: [weekly, weeklies]
+    permission: aethercore.use
+  collections:
+    description: View your discovered item collections.
+    aliases: [collection]
+    permission: aethercore.use
+  community:
+    description: View shared server progression.
+    aliases: [communityprogress]
+    permission: aethercore.use
+  bestiary:
+    description: View your creature bestiary.
+    aliases: [beast, mobs]
+    permission: aethercore.use
+  achievements:
+    description: View achievements and unlocked titles.
+    aliases: [ach, titles]
+    permission: aethercore.use
+  title:
+    description: Equip an unlocked title.
+    permission: aethercore.use
+  minions:
+    description: Manage your resource minions.
+    aliases: [minion]
+    permission: aethercore.use
+  guild:
+    description: Create and manage a guild or town.
+    aliases: [guilds, town, towns]
+    permission: aethercore.use
+  slayer:
+    description: Manage slayer contracts.
+    aliases: [slayers, hunt]
+    permission: aethercore.use
+  playtime:
+    description: Show playtime and your next rank.
+    aliases: [pt]
+    permission: aethercore.use
+  top:
+    description: Leaderboards.
+    aliases: [leaderboard, lb]
+    usage: /top [playtime|quests|streak]
+    permission: aethercore.use
+  profile:
+    description: Show a player's profile and stats.
+    aliases: [pstats, playerstats]
+    permission: aethercore.use
+  timber:
+    description: Toggle Timber.
+    permission: aethercore.timber
+  veinminer:
+    description: Toggle Vein Miner.
+    aliases: [vm]
+    permission: aethercore.veinminer
+  claimhelp:
+    description: How to protect your land.
+    aliases: [claiminfo]
+    permission: aethercore.use
+  map:
+    description: Link to the live web map.
+    aliases: [livemap, webmap]
+    permission: aethercore.use
+  discord:
+    description: Discord invite link.
+    permission: aethercore.use
+  forge:
+    description: Craft custom items.
+    aliases: [craftitems, recipes]
+    permission: aethercore.use
+  shop:
+    description: NPC shop.
+    aliases: [market]
+    permission: aethercore.use
+  bazaar:
+    description: Player-driven marketplace.
+    aliases: [bz]
+    permission: aethercore.use
+  auctionhouse:
+    description: Auction House for gear and unique items.
+    aliases: [ah, auction, auctions]
+    permission: aethercore.use
+  sellall:
+    description: Sell all resources in your inventory to the NPC shop.
+    aliases: [sellinv]
+    permission: aethercore.use
+  vote:
+    description: Vote for the server and earn rewards.
+    aliases: [votes]
+    permission: aethercore.use
+  frame:
+    description: Make item frames invisible and lock their items (look at a frame).
+    aliases: [frames, itemframe, iframe]
+    usage: /frame [display|invis|lock|unlock|reset] [radius]
+    permission: aethercore.frames
+  tutorial:
+    description: Your starter tutorial progress.
+    aliases: [guide, tut]
+    permission: aethercore.use
+  party:
+    description: Play together — invite, chat, share boss loot.
+    aliases: [p]
+    permission: aethercore.use
+  partychat:
+    description: Party chat.
+    aliases: [pc]
+    permission: aethercore.use
+  friend:
+    description: Friends list with join alerts.
+    aliases: [friends, f]
+    permission: aethercore.use
+  report:
+    description: Report a player to staff.
+    permission: aethercore.use
+  reports:
+    description: Staff report queue.
+    permission: aethercore.staff
+  staffchat:
+    description: Staff chat (/sc is mapped to this in commands.yml).
+    aliases: [schat]
+    permission: aethercore.staff
+  aegive:
+    description: Admin command to give custom items or open the item catalog GUI.
+    aliases: [aethergive, cgive, givecustom]
+    usage: /aegive [player] <item> [amount]
+    permission: aethercore.admin
+  salvage:
+    description: Salvage custom items and mob drops for coins and Aether Shards.
+    aliases: [salvager, recycle]
+    permission: aethercore.use
+  magnet:
+    description: Toggle item magnetism on or off.
+    aliases: [togglemagnet]
+    permission: aethercore.use
+  enchants:
+    description: View available custom enchants and combining instructions.
+    usage: /enchants
+    aliases: [enchant]
+    permission: aethercore.use
+  aether:
+    description: AetherCore admin.
+    permission: aethercore.admin
+
+
+permissions:
+  aethercore.use:
+    default: true
+  aethercore.timber:
+    default: true
+  aethercore.veinminer:
+    default: true
+  aethercore.admin:
+    default: op
+  aethercore.frames:
+    default: op
+  aethercore.staff:
+    description: Receive reports, use /reports and /sc, bypass the chat filter.
+    default: op
+  aethercore.frames.bypass:
+    description: Edit and break locked item frames.
+    default: op

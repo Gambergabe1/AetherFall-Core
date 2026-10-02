@@ -1,0 +1,69 @@
+# ─────────────────────────────────────────────────────────────
+#  Rare drops. chance is 0..1. Looting/Fortune/Luck of the Sea add +20% chance per level,
+#  the Lucky Charm adds +25%, the Angler's Rod doubles fishing chances.
+#  Drops rarer than rare-drop-announce are announced to the whole server.
+# ─────────────────────────────────────────────────────────────
+rare-drop-announce: 0.01
+
+mobs:
+  ZOMBIE:           [ { item: zombie_heart, chance: 0.008 } ]
+  ZOMBIE_VILLAGER:  [ { item: zombie_heart, chance: 0.02 } ]
+  HUSK:             [ { item: zombie_heart, chance: 0.01 } ]
+  DROWNED:          [ { item: drowned_pearl, chance: 0.015 }, { item: zombie_heart, chance: 0.005 } ]
+  CREEPER:          [ { item: volatile_core, chance: 0.012 } ]
+  ENDERMAN:         [ { item: void_fragment, chance: 0.06 } ]
+  BLAZE:            [ { item: ember_core, chance: 0.03 } ]
+  SPIDER:           [ { item: spider_silk, chance: 0.02 } ]
+  CAVE_SPIDER:      [ { item: spider_silk, chance: 0.03 } ]
+  SKELETON:         [ { item: bone_shard, chance: 0.02 } ]
+  STRAY:            [ { item: bone_shard, chance: 0.03 }, { item: frostite, chance: 0.01 } ]
+  BOGGED:           [ { item: bone_shard, chance: 0.03 } ]
+  WITHER_SKELETON:  [ { item: wither_essence, chance: 0.05 } ]
+  SLIME:            [ { item: slime_core, chance: 0.02 } ]
+  MAGMA_CUBE:       [ { item: emberite, chance: 0.02 } ]
+  PHANTOM:          [ { item: phantom_wing, chance: 0.10 } ]
+  GUARDIAN:         [ { item: guardian_scale, chance: 0.05 } ]
+  ELDER_GUARDIAN:   [ { item: guardian_scale, chance: 1.0, min: 4, max: 8 }, { item: prismatic_scale, chance: 0.5 } ]
+  WITCH:            [ { item: aether_shard, chance: 0.01 } ]
+  PILLAGER:         [ { item: aether_shard, chance: 0.005 } ]
+  VINDICATOR:       [ { item: aether_shard, chance: 0.01 } ]
+  WARDEN:           [ { item: echo_heart, chance: 1.0 } ]
+  ENDER_DRAGON:     [ { item: dragon_scale, chance: 1.0, min: 3, max: 5 } ]
+  WITHER:           [ { item: wither_essence, chance: 1.0, min: 16, max: 24 }, { item: starlight, chance: 0.5 } ]
+
+fishing:
+  - { item: sea_glass, chance: 0.06 }
+  - { item: guardian_scale, chance: 0.025, min: 1, max: 2 }
+  - { item: drowned_pearl, chance: 0.018 }
+  - { item: phantom_wing, chance: 0.012 }
+  - { item: prismatic_scale, chance: 0.012 }
+  - { item: golden_seed, chance: 0.006 }
+  - { item: aether_shard, chance: 0.006 }
+  - { item: sunken_treasure, chance: 0.008 }
+  - { item: kraken_ink, chance: 0.002 }
+  - { item: starlight, chance: 0.0015 }
+
+# Natural (non player-placed) blocks. Keys may use * wildcards.
+blocks:
+  "STONE":       [ { item: aether_shard, chance: 0.0008 } ]
+  "DEEPSLATE":   [ { item: aether_shard, chance: 0.0012 } ]
+  "*_LOG":       [ { item: ancient_bark, chance: 0.003 } ]
+
+# Fully grown crops only.
+crops:
+  WHEAT:      [ { item: golden_seed, chance: 0.004 } ]
+  CARROTS:    [ { item: golden_seed, chance: 0.003 } ]
+  POTATOES:   [ { item: golden_seed, chance: 0.003 } ]
+  BEETROOTS:  [ { item: golden_seed, chance: 0.003 } ]
+
+# Loot tables for Sunken Treasure (weighted). coins: [min, max]
+treasure:
+  coins: [150, 600]
+  loot:
+    - { item: DIAMOND, amount: [1, 3], weight: 20 }
+    - { item: EMERALD, amount: [2, 6], weight: 20 }
+    - { item: sea_glass, amount: [4, 12], weight: 25 }
+    - { item: prismatic_scale, amount: [1, 2], weight: 10 }
+    - { item: aether_shard, amount: [1, 2], weight: 8 }
+    - { item: HEART_OF_THE_SEA, amount: [1, 1], weight: 3 }
+    - { item: kraken_ink, amount: [1, 1], weight: 1 }

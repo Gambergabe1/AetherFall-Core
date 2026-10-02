@@ -1,0 +1,885 @@
+2026-09-29T09:53:40.635-0500 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonMain] Assuming the daemon was started with following jvm opts: [-XX:MaxMetaspaceSize=384m, -XX:+HeapDumpOnOutOfMemoryError, -Xms256m, -Xmx512m, -Dfile.encoding=UTF-8, -Duser.country=US, -Duser.language=en, -Duser.variant]
+2026-09-29T09:53:40.815-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+2026-09-29T09:53:40.816-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.816-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IP)-QoS Packet Scheduler-0000
+2026-09-29T09:53:40.817-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.817-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+2026-09-29T09:53:40.817-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.818-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+2026-09-29T09:53:40.818-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.818-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+2026-09-29T09:53:40.819-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.819-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Realtek PCIe GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+2026-09-29T09:53:40.820-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.820-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Realtek PCIe GbE Family Controller-QoS Packet Scheduler-0000
+2026-09-29T09:53:40.820-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.821-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Realtek PCIe GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+2026-09-29T09:53:40.821-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.822-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+2026-09-29T09:53:40.822-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.823-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Kernel Debug Network Adapter
+2026-09-29T09:53:40.823-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.823-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Realtek PCIe GbE Family Controller
+2026-09-29T09:53:40.824-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.824-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:9da4:ff7e:ae67:59a2%ethernet_32769
+2026-09-29T09:53:40.824-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fd00:88de:7cb0:3582:f1f7:28e:2be:1210
+2026-09-29T09:53:40.825-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fd00:88de:7cb0:3582:2575:f18a:6338:726c
+2026-09-29T09:53:40.825-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /2600:6c56:b6f0:b9c0:f1f7:28e:2be:1210
+2026-09-29T09:53:40.825-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /2600:6c56:b6f0:b9c0:f40:4520:1fa7:1b5e
+2026-09-29T09:53:40.826-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /2600:6c56:b6f0:b9c0:0:0:0:1d6c
+2026-09-29T09:53:40.826-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /192.168.1.182
+2026-09-29T09:53:40.827-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Bluetooth Device (Personal Area Network)
+2026-09-29T09:53:40.827-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.828-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:2c6c:8c65:f792:831b%ethernet_32770
+2026-09-29T09:53:40.828-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IP)
+2026-09-29T09:53:40.829-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.829-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IPv6)
+2026-09-29T09:53:40.829-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.829-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (Network Monitor)
+2026-09-29T09:53:40.830-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.830-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Remote NDIS based Internet Sharing Device #2
+2026-09-29T09:53:40.830-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.831-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface UsbNcm Host Device
+2026-09-29T09:53:40.831-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.831-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface SAMSUNG Mobile USB Remote NDIS Network Device
+2026-09-29T09:53:40.832-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.832-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (PPPOE)
+2026-09-29T09:53:40.832-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.833-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface RAS Async Adapter
+2026-09-29T09:53:40.833-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.834-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Software Loopback Interface 1
+2026-09-29T09:53:40.834-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? true
+2026-09-29T09:53:40.835-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /0:0:0:0:0:0:0:1
+2026-09-29T09:53:40.835-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /127.0.0.1
+2026-09-29T09:53:40.835-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Dual Band Wireless-AC 3168-WFP Native MAC Layer LightWeight Filter-0000
+2026-09-29T09:53:40.836-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.836-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Dual Band Wireless-AC 3168-Virtual WiFi Filter Driver-0000
+2026-09-29T09:53:40.837-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.837-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Dual Band Wireless-AC 3168-Native WiFi Filter Driver-0000
+2026-09-29T09:53:40.837-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.838-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Dual Band Wireless-AC 3168-QoS Packet Scheduler-0000
+2026-09-29T09:53:40.838-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.839-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Dual Band Wireless-AC 3168-WFP 802.3 MAC Layer LightWeight Filter-0000
+2026-09-29T09:53:40.840-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.841-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter-WFP Native MAC Layer LightWeight Filter-0000
+2026-09-29T09:53:40.842-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.842-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter-Native WiFi Filter Driver-0000
+2026-09-29T09:53:40.842-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.843-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter-QoS Packet Scheduler-0000
+2026-09-29T09:53:40.844-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.844-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+2026-09-29T09:53:40.844-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.845-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2-WFP Native MAC Layer LightWeight Filter-0000
+2026-09-29T09:53:40.845-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.845-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2-Native WiFi Filter Driver-0000
+2026-09-29T09:53:40.845-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.845-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2-QoS Packet Scheduler-0000
+2026-09-29T09:53:40.846-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.846-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2-WFP 802.3 MAC Layer LightWeight Filter-0000
+2026-09-29T09:53:40.846-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.846-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Intel(R) Dual Band Wireless-AC 3168
+2026-09-29T09:53:40.847-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.847-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:1821:36be:7a53:efbe%wireless_32768
+2026-09-29T09:53:40.848-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter
+2026-09-29T09:53:40.849-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.849-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:b8f6:7e7a:8f27:b30d%wireless_32769
+2026-09-29T09:53:40.849-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2
+2026-09-29T09:53:40.850-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.850-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:3724:285c:d095:c5df%wireless_32770
+2026-09-29T09:53:40.850-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Teredo Tunneling Adapter
+2026-09-29T09:53:40.850-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.850-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft IP-HTTPS Platform Adapter
+2026-09-29T09:53:40.851-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.851-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft 6to4 Adapter
+2026-09-29T09:53:40.851-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.851-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (SSTP)
+2026-09-29T09:53:40.851-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.851-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IKEv2)
+2026-09-29T09:53:40.852-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.852-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (L2TP)
+2026-09-29T09:53:40.852-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.852-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (PPTP)
+2026-09-29T09:53:40.852-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-29T09:53:40.901-0500 [INFO] [org.gradle.launcher.daemon.server.Daemon] start() called on daemon - DefaultDaemonContext[uid=0b114534-7c3b-4822-874a-5049067fc5f7,javaHome=C:\Program Files\Amazon Corretto\jdk25.0.3_9,javaVersion=25,javaVendor=Amazon.com Inc.,daemonRegistryDir=D:\Server\aethercore\.gradle-user-home\daemon,pid=4144,idleTimeout=120000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+2026-09-29T09:53:48.934-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Listening on [6ff91b10-c1ef-4756-a96f-a70ec96dc926 port:62696, addresses:[localhost/127.0.0.1]].
+2026-09-29T09:53:48.942-0500 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] Daemon starting at: Tue Sep 29 09:53:48 CDT 2026, with address: [6ff91b10-c1ef-4756-a96f-a70ec96dc926 port:62696, addresses:[localhost/127.0.0.1]]
+2026-09-29T09:53:48.942-0500 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertising the daemon address to the clients: [6ff91b10-c1ef-4756-a96f-a70ec96dc926 port:62696, addresses:[localhost/127.0.0.1]]
+2026-09-29T09:53:48.942-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertised daemon context: DefaultDaemonContext[uid=0b114534-7c3b-4822-874a-5049067fc5f7,javaHome=C:\Program Files\Amazon Corretto\jdk25.0.3_9,javaVersion=25,javaVendor=Amazon.com Inc.,daemonRegistryDir=D:\Server\aethercore\.gradle-user-home\daemon,pid=4144,idleTimeout=120000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+2026-09-29T09:53:48.943-0500 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon address: [6ff91b10-c1ef-4756-a96f-a70ec96dc926 port:62696, addresses:[localhost/127.0.0.1]], context: DefaultDaemonContext[uid=0b114534-7c3b-4822-874a-5049067fc5f7,javaHome=C:\Program Files\Amazon Corretto\jdk25.0.3_9,javaVersion=25,javaVendor=Amazon.com Inc.,daemonRegistryDir=D:\Server\aethercore\.gradle-user-home\daemon,pid=4144,idleTimeout=120000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+2026-09-29T09:53:48.953-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2026-09-29T09:53:48.957-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2026-09-29T09:53:48.964-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2026-09-29T09:53:48.965-0500 [LIFECYCLE] [org.gradle.launcher.daemon.server.Daemon] Daemon server started.
+2026-09-29T09:53:48.982-0500 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stopOnExpiration() called on daemon
+2026-09-29T09:53:48.984-0500 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] awaitExpiration() called on daemon
+2026-09-29T09:53:48.985-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2026-09-29T09:53:49.012-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:62697 to /127.0.0.1:62696.
+2026-09-29T09:53:49.114-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 72: received class org.gradle.launcher.daemon.protocol.Build
+2026-09-29T09:53:49.114-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 72: Received non-IO message from client: Build{id=2c5304ba-5b0c-42bf-a72b-22081af9fdfd, currentDir=D:\Server\aethercore}
+2026-09-29T09:53:49.114-0500 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=2c5304ba-5b0c-42bf-a72b-22081af9fdfd, currentDir=D:\Server\aethercore}.
+2026-09-29T09:53:49.115-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=2c5304ba-5b0c-42bf-a72b-22081af9fdfd, currentDir=D:\Server\aethercore} with connection: socket connection from /127.0.0.1:62696 to /127.0.0.1:62697.
+2026-09-29T09:53:49.117-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=2c5304ba-5b0c-42bf-a72b-22081af9fdfd, currentDir=D:\Server\aethercore}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:62696 to /127.0.0.1:62697] after 0.0031166666666666665 minutes of idle
+2026-09-29T09:53:49.118-0500 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [6ff91b10-c1ef-4756-a96f-a70ec96dc926 port:62696, addresses:[localhost/127.0.0.1]]
+2026-09-29T09:53:49.118-0500 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [6ff91b10-c1ef-4756-a96f-a70ec96dc926 port:62696, addresses:[localhost/127.0.0.1]]
+2026-09-29T09:53:49.119-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2026-09-29T09:53:49.120-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2026-09-29T09:53:49.121-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2026-09-29T09:53:49.122-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2026-09-29T09:53:49.122-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2026-09-29T09:53:49.123-0500 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=2c5304ba-5b0c-42bf-a72b-22081af9fdfd, currentDir=D:\Server\aethercore}. Dispatching build started information...
+2026-09-29T09:53:49.123-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 74: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@264470b8
+2026-09-29T09:53:49.126-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2026-09-29T09:53:49.126-0500 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 4144). The daemon log file: D:\Server\aethercore\.gradle-user-home\daemon\9.8.0\daemon-4144.out.log
+2026-09-29T09:53:49.127-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ApplyClientEnvironmentVariables] Configuring env variables: [PATH, USERDOMAIN_ROAMINGPROFILE, PROCESSOR_LEVEL, GIT_PAGER, ALLUSERSPROFILE, CODEX_MCP_NODE_PATH, CODEX_SHELL, PROCESSOR_ARCHITECTURE, PSModulePath, SystemDrive, GH_PAGER, CODEX_APP_TOOLS_PIPE_PATH, COLORTERM, NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S, USERNAME, ProgramFiles(x86), CODEX_INTERNAL_ORIGINATOR_OVERRIDE, CODEX_SAGE_BACKFILL_TRACKER_TAB_REUSE, CODEX_SANDBOX_NETWORK_DISABLED, PATHEXT, SHELL, DriverData, OneDriveConsumer, PAGER, CODEX_PERMISSION_PROFILE, CODEX_WINDOWS_SANDBOX_PACKAGE_FAMILY, LOG_FORMAT, ProgramData, ProgramW6432, HOMEPATH, LC_ALL, PROCESSOR_IDENTIFIER, ProgramFiles, PUBLIC, ZSH_TMUX_AUTOSTARTED, LESS, windir, LC_CTYPE, CODEX_SESSION_ID, LOCALAPPDATA, ChocolateyLastPathUpdate, USERDOMAIN, LOGONSERVER, JAVA_HOME, PROMPT, RUST_LOG, TERM, LANG, OneDrive, APPDATA, CODEX_APPLY_PATCH_PRESERVE_LINE_ENDINGS, ChocolateyInstall, CODEX_THREAD_ID, ChocolateyToolsLocation, NO_COLOR, CODEX_CI, CommonProgramFiles, Path, DISABLE_AUTO_UPDATE, OS, COMPUTERNAME, PROCESSOR_REVISION, CommonProgramW6432, ComSpec, ZSH_TMUX_AUTOSTART, =D:, SystemRoot, TEMP, HOMEDRIVE, USERPROFILE, TMP, CommonProgramFiles(x86), CODEX_TECTONIC_PATH, CODEX_VERSION, NUMBER_OF_PROCESSORS]
+2026-09-29T09:53:49.132-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon] Requesting daemon stop after processing Build{id=2c5304ba-5b0c-42bf-a72b-22081af9fdfd, currentDir=D:\Server\aethercore}
+2026-09-29T09:53:49.133-0500 [LIFECYCLE] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon will be stopped at the end of the build 
+2026-09-29T09:53:49.133-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Stop as soon as idle requested. The daemon is busy
+2026-09-29T09:53:49.133-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon stop has been requested. Sleeping until state changes.
+2026-09-29T09:53:49.137-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2026-09-29T09:53:49.137-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=0b114534-7c3b-4822-874a-5049067fc5f7,javaHome=C:\Program Files\Amazon Corretto\jdk25.0.3_9,javaVersion=25,javaVendor=Amazon.com Inc.,daemonRegistryDir=D:\Server\aethercore\.gradle-user-home\daemon,pid=4144,idleTimeout=120000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\AetherCore.java:16: error: package net.kyori.adventure.text does not exist
+import net.kyori.adventure.text.Component;
+                               ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\AetherCore.java:17: error: package org.bukkit does not exist
+import org.bukkit.Bukkit;
+                 ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\AetherCore.java:18: error: package org.bukkit does not exist
+import org.bukkit.GameRules;
+                 ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\AetherCore.java:19: error: package org.bukkit does not exist
+import org.bukkit.World;
+                 ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\AetherCore.java:20: error: package org.bukkit.command does not exist
+import org.bukkit.command.CommandSender;
+                         ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\AetherCore.java:21: error: package org.bukkit.command does not exist
+import org.bukkit.command.PluginCommand;
+                         ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\AetherCore.java:22: error: package org.bukkit.entity does not exist
+import org.bukkit.entity.Player;
+                        ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\AetherCore.java:23: error: cannot find symbol
+import org.bukkit.plugin.java.JavaPlugin;
+                             ^
+  symbol:   class JavaPlugin
+  location: package org.bukkit.plugin.java
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\AetherCore.java:31: error: cannot find symbol
+public final class AetherCore extends JavaPlugin {
+                                      ^
+  symbol: class JavaPlugin
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\data\DataManager.java:4: error: package org.bukkit does not exist
+import org.bukkit.Bukkit;
+                 ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\data\DataManager.java:5: error: package org.bukkit.entity does not exist
+import org.bukkit.entity.Player;
+                        ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\PlacedBlocks.java:3: error: package org.bukkit.block does not exist
+import org.bukkit.block.Block;
+                       ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\PlacedBlocks.java:4: error: package org.bukkit.event does not exist
+import org.bukkit.event.EventHandler;
+                       ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\PlacedBlocks.java:5: error: package org.bukkit.event does not exist
+import org.bukkit.event.EventPriority;
+                       ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\PlacedBlocks.java:6: error: package org.bukkit.event does not exist
+import org.bukkit.event.Listener;
+                       ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\PlacedBlocks.java:7: error: package org.bukkit.event.block does not exist
+import org.bukkit.event.block.BlockPlaceEvent;
+                             ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\PlacedBlocks.java:17: error: cannot find symbol
+public final class PlacedBlocks implements Listener {
+                                           ^
+  symbol: class Listener
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\DailyRewards.java:8: error: package org.bukkit does not exist
+import org.bukkit.Material;
+                 ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\DailyRewards.java:9: error: package org.bukkit does not exist
+import org.bukkit.Sound;
+                 ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\DailyRewards.java:10: error: package org.bukkit.configuration does not exist
+import org.bukkit.configuration.ConfigurationSection;
+                               ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\DailyRewards.java:11: error: package org.bukkit.entity does not exist
+import org.bukkit.entity.Player;
+                        ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:9: error: package io.papermc.paper.event.player does not exist
+import io.papermc.paper.event.player.PlayerTradeEvent;
+                                    ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:10: error: package org.bukkit does not exist
+import org.bukkit.Material;
+                 ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:11: error: package org.bukkit does not exist
+import org.bukkit.Sound;
+                 ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:12: error: package org.bukkit does not exist
+import org.bukkit.Statistic;
+                 ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:13: error: package org.bukkit.block does not exist
+import org.bukkit.block.Block;
+                       ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:14: error: package org.bukkit.block.data does not exist
+import org.bukkit.block.data.Ageable;
+                            ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:15: error: package org.bukkit.configuration does not exist
+import org.bukkit.configuration.ConfigurationSection;
+                               ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:16: error: package org.bukkit.entity does not exist
+import org.bukkit.entity.Item;
+                        ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:17: error: package org.bukkit.entity does not exist
+import org.bukkit.entity.LivingEntity;
+                        ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:18: error: package org.bukkit.entity does not exist
+import org.bukkit.entity.Player;
+                        ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:19: error: package org.bukkit.event does not exist
+import org.bukkit.event.EventHandler;
+                       ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:20: error: package org.bukkit.event does not exist
+import org.bukkit.event.EventPriority;
+                       ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:21: error: package org.bukkit.event does not exist
+import org.bukkit.event.Listener;
+                       ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:22: error: package org.bukkit.event.block does not exist
+import org.bukkit.event.block.BlockBreakEvent;
+                             ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:23: error: package org.bukkit.event.block does not exist
+import org.bukkit.event.block.BlockPlaceEvent;
+                             ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:24: error: package org.bukkit.event.enchantment does not exist
+import org.bukkit.event.enchantment.EnchantItemEvent;
+                                   ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:25: error: package org.bukkit.event.entity does not exist
+import org.bukkit.event.entity.EntityBreedEvent;
+                              ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:26: error: package org.bukkit.event.entity does not exist
+import org.bukkit.event.entity.EntityDeathEvent;
+                              ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:27: error: package org.bukkit.event.inventory does not exist
+import org.bukkit.event.inventory.CraftItemEvent;
+                                 ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:28: error: package org.bukkit.event.inventory does not exist
+import org.bukkit.event.inventory.FurnaceExtractEvent;
+                                 ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:29: error: package org.bukkit.event.player does not exist
+import org.bukkit.event.player.PlayerFishEvent;
+                              ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:30: error: package org.bukkit.event.player does not exist
+import org.bukkit.event.player.PlayerStatisticIncrementEvent;
+                              ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:31: error: package org.bukkit.inventory does not exist
+import org.bukkit.inventory.ItemStack;
+                           ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:45: error: cannot find symbol
+public final class QuestManager implements Listener {
+                                           ^
+  symbol: class Listener
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WeeklyContracts.java:9: error: package org.bukkit does not exist
+import org.bukkit.Material;
+                 ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WeeklyContracts.java:10: error: package org.bukkit does not exist
+import org.bukkit.Sound;
+                 ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WeeklyContracts.java:11: error: package org.bukkit.configuration does not exist
+import org.bukkit.configuration.ConfigurationSection;
+                               ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WeeklyContracts.java:12: error: package org.bukkit.entity does not exist
+import org.bukkit.entity.Player;
+                        ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WeeklyEvents.java:5: error: package org.bukkit does not exist
+import org.bukkit.Bukkit;
+                 ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WeeklyEvents.java:6: error: package org.bukkit.scheduler does not exist
+import org.bukkit.scheduler.BukkitTask;
+                           ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Collections.java:9: error: package org.bukkit does not exist
+import org.bukkit.Bukkit;
+                 ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Collections.java:10: error: package org.bukkit does not exist
+import org.bukkit.Material;
+                 ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Collections.java:11: error: package org.bukkit.command does not exist
+import org.bukkit.command.Command;
+                         ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Collections.java:12: error: package org.bukkit.command does not exist
+import org.bukkit.command.CommandSender;
+                         ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Collections.java:13: error: package org.bukkit.command does not exist
+import org.bukkit.command.TabExecutor;
+                         ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Collections.java:14: error: package org.bukkit.entity does not exist
+import org.bukkit.entity.Player;
+                        ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Collections.java:15: error: package org.bukkit.event does not exist
+import org.bukkit.event.EventHandler;
+                       ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Collections.java:16: error: package org.bukkit.event does not exist
+import org.bukkit.event.Listener;
+                       ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Collections.java:17: error: package org.bukkit.event.entity does not exist
+import org.bukkit.event.entity.EntityPickupItemEvent;
+                              ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Collections.java:18: error: package org.bukkit.event.inventory does not exist
+import org.bukkit.event.inventory.CraftItemEvent;
+                                 ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Collections.java:19: error: package org.bukkit.inventory does not exist
+import org.bukkit.inventory.ItemStack;
+                           ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Collections.java:20: error: package org.jetbrains.annotations does not exist
+import org.jetbrains.annotations.NotNull;
+                                ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Collections.java:26: error: cannot find symbol
+public final class Collections implements Listener, TabExecutor {
+                                          ^
+  symbol: class Listener
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Collections.java:26: error: cannot find symbol
+public final class Collections implements Listener, TabExecutor {
+                                                    ^
+  symbol: class TabExecutor
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\CommunityProgress.java:5: error: package org.bukkit does not exist
+import org.bukkit.Bukkit;
+                 ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\CommunityProgress.java:6: error: package org.bukkit.command does not exist
+import org.bukkit.command.Command;
+                         ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\CommunityProgress.java:7: error: package org.bukkit.command does not exist
+import org.bukkit.command.CommandSender;
+                         ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\CommunityProgress.java:8: error: package org.bukkit.command does not exist
+import org.bukkit.command.TabExecutor;
+                         ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\CommunityProgress.java:9: error: package org.bukkit.configuration.file does not exist
+import org.bukkit.configuration.file.YamlConfiguration;
+                                    ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\CommunityProgress.java:10: error: package org.bukkit.entity does not exist
+import org.bukkit.entity.Player;
+                        ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\CommunityProgress.java:11: error: package org.jetbrains.annotations does not exist
+import org.jetbrains.annotations.NotNull;
+                                ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\CommunityProgress.java:18: error: cannot find symbol
+public final class CommunityProgress implements TabExecutor {
+                                                ^
+  symbol: class TabExecutor
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Bestiary.java:8: error: package org.bukkit does not exist
+import org.bukkit.Material;
+                 ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Bestiary.java:9: error: package org.bukkit.command does not exist
+import org.bukkit.command.Command;
+                         ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Bestiary.java:10: error: package org.bukkit.command does not exist
+import org.bukkit.command.CommandSender;
+                         ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Bestiary.java:11: error: package org.bukkit.command does not exist
+import org.bukkit.command.TabExecutor;
+                         ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Bestiary.java:12: error: package org.bukkit.entity does not exist
+import org.bukkit.entity.Entity;
+                        ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Bestiary.java:13: error: package org.bukkit.entity does not exist
+import org.bukkit.entity.EntityType;
+                        ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Bestiary.java:14: error: package org.bukkit.entity does not exist
+import org.bukkit.entity.LivingEntity;
+                        ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Bestiary.java:15: error: package org.bukkit.entity does not exist
+import org.bukkit.entity.Player;
+                        ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Bestiary.java:16: error: package org.bukkit.event does not exist
+import org.bukkit.event.EventHandler;
+                       ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Bestiary.java:17: error: package org.bukkit.event does not exist
+import org.bukkit.event.Listener;
+                       ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Bestiary.java:18: error: package org.bukkit.event.entity does not exist
+import org.bukkit.event.entity.EntityDeathEvent;
+                              ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Bestiary.java:19: error: package org.jetbrains.annotations does not exist
+import org.jetbrains.annotations.NotNull;
+                                ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Bestiary.java:28: error: cannot find symbol
+public final class Bestiary implements Listener, TabExecutor {
+                                       ^
+  symbol: class Listener
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Bestiary.java:28: error: cannot find symbol
+public final class Bestiary implements Listener, TabExecutor {
+                                                 ^
+  symbol: class TabExecutor
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Achievements.java:8: error: package org.bukkit does not exist
+import org.bukkit.Material;
+                 ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Achievements.java:9: error: package org.bukkit.command does not exist
+import org.bukkit.command.Command;
+                         ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Achievements.java:10: error: package org.bukkit.command does not exist
+import org.bukkit.command.CommandSender;
+                         ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Achievements.java:11: error: package org.bukkit.command does not exist
+import org.bukkit.command.TabExecutor;
+                         ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Achievements.java:12: error: package org.bukkit.entity does not exist
+import org.bukkit.entity.Player;
+                        ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Achievements.java:13: error: package org.jetbrains.annotations does not exist
+import org.jetbrains.annotations.NotNull;
+                                ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Achievements.java:20: error: cannot find symbol
+public final class Achievements implements TabExecutor {
+                                           ^
+  symbol: class TabExecutor
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Minions.java:8: error: package org.bukkit does not exist
+import org.bukkit.Bukkit;
+                 ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Minions.java:9: error: package org.bukkit does not exist
+import org.bukkit.Material;
+                 ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Minions.java:10: error: package org.bukkit.command does not exist
+import org.bukkit.command.Command;
+                         ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Minions.java:11: error: package org.bukkit.command does not exist
+import org.bukkit.command.CommandSender;
+                         ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Minions.java:12: error: package org.bukkit.command does not exist
+import org.bukkit.command.TabExecutor;
+                         ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Minions.java:13: error: package org.bukkit.entity does not exist
+import org.bukkit.entity.Player;
+                        ^
+D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Placeholders.java:73: warning: [deprecation] Economy in net.milkbowl.vault.economy has been deprecated
+        var rsp = plugin.getServer().getServicesManager().getRegistration(net.milkbowl.vault.economy.Economy.class);
+                                                                                                    ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+100 errors
+1 warning
+
+[Incubating] Problems report is available at: file:///D:/Server/aethercore/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava' (registered by plugin class 'org.gradle.api.plugins.JavaBasePlugin').
+> Compilation failed; see the compiler output below.
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\AetherCore.java:16: error: package net.kyori.adventure.text does not exist
+  import net.kyori.adventure.text.Component;
+                                 ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\AetherCore.java:17: error: package org.bukkit does not exist
+  import org.bukkit.Bukkit;
+                   ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\AetherCore.java:18: error: package org.bukkit does not exist
+  import org.bukkit.GameRules;
+                   ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\AetherCore.java:19: error: package org.bukkit does not exist
+  import org.bukkit.World;
+                   ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\AetherCore.java:20: error: package org.bukkit.command does not exist
+  import org.bukkit.command.CommandSender;
+                           ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\AetherCore.java:21: error: package org.bukkit.command does not exist
+  import org.bukkit.command.PluginCommand;
+                           ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\AetherCore.java:22: error: package org.bukkit.entity does not exist
+  import org.bukkit.entity.Player;
+                          ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\data\DataManager.java:4: error: package org.bukkit does not exist
+  import org.bukkit.Bukkit;
+                   ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\data\DataManager.java:5: error: package org.bukkit.entity does not exist
+  import org.bukkit.entity.Player;
+                          ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\PlacedBlocks.java:3: error: package org.bukkit.block does not exist
+  import org.bukkit.block.Block;
+                         ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\PlacedBlocks.java:4: error: package org.bukkit.event does not exist
+  import org.bukkit.event.EventHandler;
+                         ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\PlacedBlocks.java:5: error: package org.bukkit.event does not exist
+  import org.bukkit.event.EventPriority;
+                         ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\PlacedBlocks.java:6: error: package org.bukkit.event does not exist
+  import org.bukkit.event.Listener;
+                         ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\PlacedBlocks.java:7: error: package org.bukkit.event.block does not exist
+  import org.bukkit.event.block.BlockPlaceEvent;
+                               ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\DailyRewards.java:8: error: package org.bukkit does not exist
+  import org.bukkit.Material;
+                   ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\DailyRewards.java:9: error: package org.bukkit does not exist
+  import org.bukkit.Sound;
+                   ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\DailyRewards.java:10: error: package org.bukkit.configuration does not exist
+  import org.bukkit.configuration.ConfigurationSection;
+                                 ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\DailyRewards.java:11: error: package org.bukkit.entity does not exist
+  import org.bukkit.entity.Player;
+                          ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:9: error: package io.papermc.paper.event.player does not exist
+  import io.papermc.paper.event.player.PlayerTradeEvent;
+                                      ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:10: error: package org.bukkit does not exist
+  import org.bukkit.Material;
+                   ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:11: error: package org.bukkit does not exist
+  import org.bukkit.Sound;
+                   ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:12: error: package org.bukkit does not exist
+  import org.bukkit.Statistic;
+                   ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:13: error: package org.bukkit.block does not exist
+  import org.bukkit.block.Block;
+                         ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:14: error: package org.bukkit.block.data does not exist
+  import org.bukkit.block.data.Ageable;
+                              ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:15: error: package org.bukkit.configuration does not exist
+  import org.bukkit.configuration.ConfigurationSection;
+                                 ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:16: error: package org.bukkit.entity does not exist
+  import org.bukkit.entity.Item;
+                          ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:17: error: package org.bukkit.entity does not exist
+  import org.bukkit.entity.LivingEntity;
+                          ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:18: error: package org.bukkit.entity does not exist
+  import org.bukkit.entity.Player;
+                          ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:19: error: package org.bukkit.event does not exist
+  import org.bukkit.event.EventHandler;
+                         ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:20: error: package org.bukkit.event does not exist
+  import org.bukkit.event.EventPriority;
+                         ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:21: error: package org.bukkit.event does not exist
+  import org.bukkit.event.Listener;
+                         ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:22: error: package org.bukkit.event.block does not exist
+  import org.bukkit.event.block.BlockBreakEvent;
+                               ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:23: error: package org.bukkit.event.block does not exist
+  import org.bukkit.event.block.BlockPlaceEvent;
+                               ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:24: error: package org.bukkit.event.enchantment does not exist
+  import org.bukkit.event.enchantment.EnchantItemEvent;
+                                     ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:25: error: package org.bukkit.event.entity does not exist
+  import org.bukkit.event.entity.EntityBreedEvent;
+                                ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:26: error: package org.bukkit.event.entity does not exist
+  import org.bukkit.event.entity.EntityDeathEvent;
+                                ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:27: error: package org.bukkit.event.inventory does not exist
+  import org.bukkit.event.inventory.CraftItemEvent;
+                                   ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:28: error: package org.bukkit.event.inventory does not exist
+  import org.bukkit.event.inventory.FurnaceExtractEvent;
+                                   ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:29: error: package org.bukkit.event.player does not exist
+  import org.bukkit.event.player.PlayerFishEvent;
+                                ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:30: error: package org.bukkit.event.player does not exist
+  import org.bukkit.event.player.PlayerStatisticIncrementEvent;
+                                ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:31: error: package org.bukkit.inventory does not exist
+  import org.bukkit.inventory.ItemStack;
+                             ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WeeklyContracts.java:9: error: package org.bukkit does not exist
+  import org.bukkit.Material;
+                   ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WeeklyContracts.java:10: error: package org.bukkit does not exist
+  import org.bukkit.Sound;
+                   ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WeeklyContracts.java:11: error: package org.bukkit.configuration does not exist
+  import org.bukkit.configuration.ConfigurationSection;
+                                 ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WeeklyContracts.java:12: error: package org.bukkit.entity does not exist
+  import org.bukkit.entity.Player;
+                          ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WeeklyEvents.java:5: error: package org.bukkit does not exist
+  import org.bukkit.Bukkit;
+                   ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\WeeklyEvents.java:6: error: package org.bukkit.scheduler does not exist
+  import org.bukkit.scheduler.BukkitTask;
+                             ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Collections.java:9: error: package org.bukkit does not exist
+  import org.bukkit.Bukkit;
+                   ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Collections.java:10: error: package org.bukkit does not exist
+  import org.bukkit.Material;
+                   ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Collections.java:11: error: package org.bukkit.command does not exist
+  import org.bukkit.command.Command;
+                           ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Collections.java:12: error: package org.bukkit.command does not exist
+  import org.bukkit.command.CommandSender;
+                           ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Collections.java:13: error: package org.bukkit.command does not exist
+  import org.bukkit.command.TabExecutor;
+                           ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Collections.java:14: error: package org.bukkit.entity does not exist
+  import org.bukkit.entity.Player;
+                          ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Collections.java:15: error: package org.bukkit.event does not exist
+  import org.bukkit.event.EventHandler;
+                         ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Collections.java:16: error: package org.bukkit.event does not exist
+  import org.bukkit.event.Listener;
+                         ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Collections.java:17: error: package org.bukkit.event.entity does not exist
+  import org.bukkit.event.entity.EntityPickupItemEvent;
+                                ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Collections.java:18: error: package org.bukkit.event.inventory does not exist
+  import org.bukkit.event.inventory.CraftItemEvent;
+                                   ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Collections.java:19: error: package org.bukkit.inventory does not exist
+  import org.bukkit.inventory.ItemStack;
+                             ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Collections.java:20: error: package org.jetbrains.annotations does not exist
+  import org.jetbrains.annotations.NotNull;
+                                  ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\CommunityProgress.java:5: error: package org.bukkit does not exist
+  import org.bukkit.Bukkit;
+                   ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\CommunityProgress.java:6: error: package org.bukkit.command does not exist
+  import org.bukkit.command.Command;
+                           ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\CommunityProgress.java:7: error: package org.bukkit.command does not exist
+  import org.bukkit.command.CommandSender;
+                           ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\CommunityProgress.java:8: error: package org.bukkit.command does not exist
+  import org.bukkit.command.TabExecutor;
+                           ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\CommunityProgress.java:9: error: package org.bukkit.configuration.file does not exist
+  import org.bukkit.configuration.file.YamlConfiguration;
+                                      ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\CommunityProgress.java:10: error: package org.bukkit.entity does not exist
+  import org.bukkit.entity.Player;
+                          ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\CommunityProgress.java:11: error: package org.jetbrains.annotations does not exist
+  import org.jetbrains.annotations.NotNull;
+                                  ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Bestiary.java:8: error: package org.bukkit does not exist
+  import org.bukkit.Material;
+                   ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Bestiary.java:9: error: package org.bukkit.command does not exist
+  import org.bukkit.command.Command;
+                           ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Bestiary.java:10: error: package org.bukkit.command does not exist
+  import org.bukkit.command.CommandSender;
+                           ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Bestiary.java:11: error: package org.bukkit.command does not exist
+  import org.bukkit.command.TabExecutor;
+                           ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Bestiary.java:12: error: package org.bukkit.entity does not exist
+  import org.bukkit.entity.Entity;
+                          ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Bestiary.java:13: error: package org.bukkit.entity does not exist
+  import org.bukkit.entity.EntityType;
+                          ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Bestiary.java:14: error: package org.bukkit.entity does not exist
+  import org.bukkit.entity.LivingEntity;
+                          ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Bestiary.java:15: error: package org.bukkit.entity does not exist
+  import org.bukkit.entity.Player;
+                          ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Bestiary.java:16: error: package org.bukkit.event does not exist
+  import org.bukkit.event.EventHandler;
+                         ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Bestiary.java:17: error: package org.bukkit.event does not exist
+  import org.bukkit.event.Listener;
+                         ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Bestiary.java:18: error: package org.bukkit.event.entity does not exist
+  import org.bukkit.event.entity.EntityDeathEvent;
+                                ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Bestiary.java:19: error: package org.jetbrains.annotations does not exist
+  import org.jetbrains.annotations.NotNull;
+                                  ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Achievements.java:8: error: package org.bukkit does not exist
+  import org.bukkit.Material;
+                   ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Achievements.java:9: error: package org.bukkit.command does not exist
+  import org.bukkit.command.Command;
+                           ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Achievements.java:10: error: package org.bukkit.command does not exist
+  import org.bukkit.command.CommandSender;
+                           ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Achievements.java:11: error: package org.bukkit.command does not exist
+  import org.bukkit.command.TabExecutor;
+                           ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Achievements.java:12: error: package org.bukkit.entity does not exist
+  import org.bukkit.entity.Player;
+                          ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Achievements.java:13: error: package org.jetbrains.annotations does not exist
+  import org.jetbrains.annotations.NotNull;
+                                  ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Minions.java:8: error: package org.bukkit does not exist
+  import org.bukkit.Bukkit;
+                   ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Minions.java:9: error: package org.bukkit does not exist
+  import org.bukkit.Material;
+                   ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Minions.java:10: error: package org.bukkit.command does not exist
+  import org.bukkit.command.Command;
+                           ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Minions.java:11: error: package org.bukkit.command does not exist
+  import org.bukkit.command.CommandSender;
+                           ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Minions.java:12: error: package org.bukkit.command does not exist
+  import org.bukkit.command.TabExecutor;
+                           ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Minions.java:13: error: package org.bukkit.entity does not exist
+  import org.bukkit.entity.Player;
+                          ^
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\AetherCore.java:23: error: cannot find symbol
+  import org.bukkit.plugin.java.JavaPlugin;
+                               ^
+    symbol:   class JavaPlugin
+    location: package org.bukkit.plugin.java
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\AetherCore.java:31: error: cannot find symbol
+  public final class AetherCore extends JavaPlugin {
+                                        ^
+    symbol: class JavaPlugin
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\PlacedBlocks.java:17: error: cannot find symbol
+  public final class PlacedBlocks implements Listener {
+                                             ^
+    symbol: class Listener
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\QuestManager.java:45: error: cannot find symbol
+  public final class QuestManager implements Listener {
+                                             ^
+    symbol: class Listener
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Collections.java:26: error: cannot find symbol
+  public final class Collections implements Listener, TabExecutor {
+                                            ^
+    symbol: class Listener
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Collections.java:26: error: cannot find symbol
+  public final class Collections implements Listener, TabExecutor {
+                                                      ^
+    symbol: class TabExecutor
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\CommunityProgress.java:18: error: cannot find symbol
+  public final class CommunityProgress implements TabExecutor {
+                                                  ^
+    symbol: class TabExecutor
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Bestiary.java:28: error: cannot find symbol
+  public final class Bestiary implements Listener, TabExecutor {
+                                         ^
+    symbol: class Listener
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Bestiary.java:28: error: cannot find symbol
+  public final class Bestiary implements Listener, TabExecutor {
+                                                   ^
+    symbol: class TabExecutor
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Achievements.java:20: error: cannot find symbol
+  public final class Achievements implements TabExecutor {
+                                             ^
+    symbol: class TabExecutor
+  D:\Server\aethercore\src\main\java\gg\aetherfall\core\module\Placeholders.java:73: warning: [deprecation] Economy in net.milkbowl.vault.economy has been deprecated
+          var rsp = plugin.getServer().getServicesManager().getRegistration(net.milkbowl.vault.economy.Economy.class);
+                                                                                                      ^
+  Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+  100 errors
+  1 warning
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 30s
+1 actionable task: 1 executed
+2026-09-29T09:54:00.355-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2026-09-29T09:54:00.371-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon stop has been requested. Sleeping until state changes.
+2026-09-29T09:54:00.372-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=2c5304ba-5b0c-42bf-a72b-22081af9fdfd, currentDir=D:\Server\aethercore}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:62696 to /127.0.0.1:62697]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@4d621a37 with state StopRequested
+2026-09-29T09:54:00.372-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=2c5304ba-5b0c-42bf-a72b-22081af9fdfd, currentDir=D:\Server\aethercore}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:62696 to /127.0.0.1:62697]
+2026-09-29T09:54:00.372-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2026-09-29T09:54:00.373-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Marking daemon stopped due to command completed and stop requested. The daemon is not running a build
+2026-09-29T09:54:00.373-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon has stopped.
+2026-09-29T09:54:00.373-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@46234424]
+2026-09-29T09:54:00.373-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 71: dispatching Success[value=org.gradle.launcher.exec.BuildActionResult@46234424]
+2026-09-29T09:54:00.374-0500 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stop() called on daemon
+2026-09-29T09:54:00.375-0500 [INFO] [org.gradle.launcher.daemon.server.Daemon] Stop requested. Daemon is removing its presence from the registry...
+2026-09-29T09:54:00.375-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Removing our presence to clients, eg. removing this address from the registry: [6ff91b10-c1ef-4756-a96f-a70ec96dc926 port:62696, addresses:[localhost/127.0.0.1]]
+2026-09-29T09:54:00.376-0500 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Removing daemon address: [6ff91b10-c1ef-4756-a96f-a70ec96dc926 port:62696, addresses:[localhost/127.0.0.1]]
+2026-09-29T09:54:00.378-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2026-09-29T09:54:00.379-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2026-09-29T09:54:00.380-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2026-09-29T09:54:00.381-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Address removed from registry.
+2026-09-29T09:54:00.386-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.CleanUpVirtualFileSystemAfterBuild] Cleaning virtual file system after build finished
+2026-09-29T09:54:00.386-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=2c5304ba-5b0c-42bf-a72b-22081af9fdfd, currentDir=D:\Server\aethercore}
+2026-09-29T09:54:00.431-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 72: received class org.gradle.launcher.daemon.protocol.CloseInput
+2026-09-29T09:54:00.432-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 72: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@1c375d49
+2026-09-29T09:54:00.432-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 72: received class org.gradle.launcher.daemon.protocol.Finished
+2026-09-29T09:54:00.432-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 72: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@26d83525
+2026-09-29T09:54:00.432-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@26d83525
+2026-09-29T09:54:00.433-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 71: stopping connection
+2026-09-29T09:54:00.434-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2026-09-29T09:54:00.434-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 72: received null
+2026-09-29T09:54:00.434-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 72: Received end-of-input from client.
+2026-09-29T09:54:00.435-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 71: stopping connection
+2026-09-29T09:54:00.440-0500 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Cache jars (D:\Server\aethercore\.gradle-user-home\caches\jars-9) was closed 0 times.
+2026-09-29T09:54:00.441-0500 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for file content cache (D:\Server\aethercore\.gradle-user-home\caches\9.8.0\fileContent)
+2026-09-29T09:54:00.441-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on file content cache (D:\Server\aethercore\.gradle-user-home\caches\9.8.0\fileContent).
+2026-09-29T09:54:00.442-0500 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Closing VFS, dropping state
+2026-09-29T09:54:00.444-0500 [DEBUG] [org.gradle.internal.watch.registry.impl.DefaultFileWatcherRegistry] Finished listening to file system change events
+2026-09-29T09:54:00.444-0500 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Cache Generated Gradle JARs cache (D:\Server\aethercore\.gradle-user-home\caches\9.8.0\generated-gradle-jars) was closed 0 times.
+2026-09-29T09:54:00.444-0500 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for artifact cache (D:\Server\aethercore\.gradle-user-home\caches\modules-2)
+2026-09-29T09:54:00.444-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (D:\Server\aethercore\.gradle-user-home\caches\modules-2).
+2026-09-29T09:54:00.447-0500 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for journal cache (D:\Server\aethercore\.gradle-user-home\caches\journal-1)
+2026-09-29T09:54:00.448-0500 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache file-access.bin (D:\Server\aethercore\.gradle-user-home\caches\journal-1\file-access.bin)
+2026-09-29T09:54:00.448-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on journal cache (D:\Server\aethercore\.gradle-user-home\caches\journal-1).
+2026-09-29T09:54:00.450-0500 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for file hash cache (D:\Server\aethercore\.gradle-user-home\caches\9.8.0\fileHashes)
+2026-09-29T09:54:00.450-0500 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache kotlinDslCompileAvoidanceClasspathHashCache.bin (D:\Server\aethercore\.gradle-user-home\caches\9.8.0\fileHashes\kotlinDslCompileAvoidanceClasspathHashCache.bin)
+2026-09-29T09:54:00.451-0500 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache fileHashes.bin (D:\Server\aethercore\.gradle-user-home\caches\9.8.0\fileHashes\fileHashes.bin)
+2026-09-29T09:54:00.451-0500 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache resourceHashesCache.bin (D:\Server\aethercore\.gradle-user-home\caches\9.8.0\fileHashes\resourceHashesCache.bin)
+2026-09-29T09:54:00.452-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on file hash cache (D:\Server\aethercore\.gradle-user-home\caches\9.8.0\fileHashes).
+2026-09-29T09:54:00.453-0500 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for Java compile cache (D:\Server\aethercore\.gradle-user-home\caches\9.8.0\javaCompile)
+2026-09-29T09:54:00.453-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on Java compile cache (D:\Server\aethercore\.gradle-user-home\caches\9.8.0\javaCompile).
+2026-09-29T09:54:00.455-0500 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Deleting unused version-specific caches in D:\Server\aethercore\.gradle-user-home\caches' started
+2026-09-29T09:54:00.471-0500 [DEBUG] [org.gradle.cache.internal.VersionSpecificCacheCleanupAction] Processed version-specific caches at D:\Server\aethercore\.gradle-user-home\caches for cleanup in 0.016 secs
+2026-09-29T09:54:00.472-0500 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Deleting unused version-specific caches in D:\Server\aethercore\.gradle-user-home\caches'
+2026-09-29T09:54:00.472-0500 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Deleting unused version-specific caches in D:\Server\aethercore\.gradle-user-home\caches' completed
+2026-09-29T09:54:00.475-0500 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Deleting unused Gradle distributions in D:\Server\aethercore\.gradle-user-home\wrapper\dists' started
+2026-09-29T09:54:00.476-0500 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Deleting unused Gradle distributions in D:\Server\aethercore\.gradle-user-home\wrapper\dists'
+2026-09-29T09:54:00.476-0500 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Deleting unused Gradle distributions in D:\Server\aethercore\.gradle-user-home\wrapper\dists' completed
+2026-09-29T09:54:00.477-0500 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Deleting old daemon log files in D:\Server\aethercore\.gradle-user-home\daemon' started
+2026-09-29T09:54:00.481-0500 [DEBUG] [org.gradle.cache.internal.DaemonLogCleanupAction] Processed daemon logs at D:\Server\aethercore\.gradle-user-home\daemon for cleanup in 0.002 secs
+2026-09-29T09:54:00.481-0500 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Deleting old daemon log files in D:\Server\aethercore\.gradle-user-home\daemon'
+2026-09-29T09:54:00.481-0500 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Deleting old daemon log files in D:\Server\aethercore\.gradle-user-home\daemon' completed
+2026-09-29T09:54:00.482-0500 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stop() called on daemon
+2026-09-29T09:54:00.482-0500 [INFO] [org.gradle.launcher.daemon.server.Daemon] Stop requested. Daemon is removing its presence from the registry...
+2026-09-29T09:54:00.482-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Removing our presence to clients, eg. removing this address from the registry: [6ff91b10-c1ef-4756-a96f-a70ec96dc926 port:62696, addresses:[localhost/127.0.0.1]]
+2026-09-29T09:54:00.482-0500 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Removing daemon address: [6ff91b10-c1ef-4756-a96f-a70ec96dc926 port:62696, addresses:[localhost/127.0.0.1]]
+2026-09-29T09:54:00.489-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2026-09-29T09:54:00.490-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2026-09-29T09:54:00.493-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2026-09-29T09:54:00.493-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Address removed from registry.
+2026-09-29T09:54:00.494-0500 [DEBUG] [org.gradle.cache.internal.locklistener.DefaultFileLockContentionHandler] File lock listener thread completed.
+2026-09-29T09:54:00.496-0500 [DEBUG] [java.lang.Runtime] Runtime.exit() called with status: 0
+java.lang.Throwable: Runtime.exit(0)
+	at java.base/java.lang.Shutdown.logRuntimeExit(Shutdown.java:179)
+	at java.base/java.lang.Shutdown.exit(Shutdown.java:160)
+	at java.base/java.lang.Runtime.exit(Runtime.java:177)
+	at java.base/java.lang.System.exit(System.java:1541)
+	at org.gradle.launcher.bootstrap.ProcessCompleter.complete(ProcessCompleter.java:21)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:72)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:39)
+	at org.gradle.launcher.daemon.bootstrap.GradleDaemon.main(GradleDaemon.java:23)
+Daemon vm is shutting down... The daemon has exited normally or was terminated in response to a user interrupt.
+2026-09-29T09:54:00.497-0500 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Removing daemon address: [6ff91b10-c1ef-4756-a96f-a70ec96dc926 port:62696, addresses:[localhost/127.0.0.1]]
+2026-09-29T09:54:00.499-0500 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] VM shutdown hook was unable to remove the daemon address from the registry. It will be cleaned up later.
+java.lang.IllegalStateException: Cannot start managing file contention because this handler has been closed.
+	at org.gradle.cache.internal.locklistener.DefaultFileLockContentionHandler.assertNotStopped(DefaultFileLockContentionHandler.java:267)
+	at org.gradle.cache.internal.locklistener.DefaultFileLockContentionHandler.reservePort(DefaultFileLockContentionHandler.java:312)
+	at org.gradle.cache.internal.DefaultFileLockManager.lock(DefaultFileLockManager.java:127)
+	at org.gradle.cache.internal.DefaultFileLockManager.lock(DefaultFileLockManager.java:109)
+	at org.gradle.cache.internal.DefaultFileLockManager.lock(DefaultFileLockManager.java:104)
+	at org.gradle.cache.internal.OnDemandFileAccess.updateFile(OnDemandFileAccess.java:51)
+	at org.gradle.cache.internal.FileBackedObjectHolder.update(FileBackedObjectHolder.java:77)
+	at org.gradle.cache.internal.FileIntegrityViolationSuppressingObjectHolderDecorator.lambda$update$0(FileIntegrityViolationSuppressingObjectHolderDecorator.java:48)
+	at org.gradle.cache.internal.FileIntegrityViolationSuppressingObjectHolderDecorator.doUpdate(FileIntegrityViolationSuppressingObjectHolderDecorator.java:58)
+	at org.gradle.cache.internal.FileIntegrityViolationSuppressingObjectHolderDecorator.update(FileIntegrityViolationSuppressingObjectHolderDecorator.java:48)
+	at org.gradle.launcher.daemon.registry.PersistentDaemonRegistry.remove(PersistentDaemonRegistry.java:133)
+	at org.gradle.launcher.daemon.server.Daemon$1.run(Daemon.java:133)
+	at java.base/java.lang.Thread.run(Thread.java:1474)

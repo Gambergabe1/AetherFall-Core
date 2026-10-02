@@ -1,0 +1,390 @@
+# ─────────────────────────────────────────────────────────────
+#  AetherCore — the heart of Aetherfall.
+#  Text uses MiniMessage: https://docs.advntr.dev/minimessage/format.html
+#  /aether reload applies changes without a restart.
+# ─────────────────────────────────────────────────────────────
+
+config-version: 5
+
+server-name: "<gradient:#8B5CF6:#22D3EE><bold>Aetherfall</bold></gradient>"
+prefix: "<dark_gray>[<gradient:#8B5CF6:#22D3EE>✦</gradient><dark_gray>] <gray>"
+discord-url: "https://discord.gg/3uKcxUAbtG"
+website-url: "https://aetherfall.example"
+map-url: "http://localhost:8100"
+world-boss-arena: ""   # set in-game with /aether setarena   # BlueMap web map (change to your public address)
+
+# Timezone used for the daily reset of /daily and /quests.
+timezone: "UTC"
+
+# How coin rewards are paid. {player} and {amount} are replaced.
+# Default uses EssentialsX economy (through Vault).
+coin-command: "eco give {player} {amount}"
+currency-symbol: "⛃"
+
+# Centralized balance knobs. Adjust these during a live economy pass, then use /aether reload.
+economy:
+  npc-sell-multiplier: 1.0
+
+# Per-minute XP ceilings protect the native skills system from macros and event duplication.
+skills:
+  xp-rate-limits:
+    combat: 2500
+    mining: 1500
+    farming: 1500
+    fishing: 600
+    foraging: 1500
+    enchanting: 2000
+
+# Custom gear is tuned for the native RPG system and future dungeon content.
+combat:
+  custom-weapon-damage-multiplier: 1.35
+
+fishing:
+  custom-enchant-book-chance: 0.0125
+  custom-enchant-level-chance: 0.00025
+  encounter-cap: 3
+  encounter-cooldown-ms: 5000
+  encounter-lifetime-ms: 120000
+  max-encounter-item-count: 64
+  encounters:
+    reef_stalker:
+      guaranteed: { sea_glass: 1 }
+      drops:
+        - { item: sea_glass, min: 1, max: 2, chance: 0.75 }
+        - { item: sunken_treasure, min: 1, max: 1, chance: 0.08 }
+    krakenling:
+      guaranteed: { sea_glass: 1 }
+      drops:
+        - { item: prismatic_scale, min: 1, max: 2, chance: 0.35 }
+        - { item: sunken_treasure, min: 1, max: 1, chance: 0.20 }
+    deep_guardian:
+      guaranteed: { prismatic_scale: 2 }
+      drops:
+        - { item: prismatic_scale, min: 1, max: 2, chance: 0.50 }
+        - { item: sunken_treasure, min: 1, max: 1, chance: 0.15 }
+
+# Bestiary progression is configuration-driven so milestone balance can change without code edits.
+bestiary:
+  completion-coins: 0
+  milestones: [10, 50, 100, 250, 500]
+  rewards:
+    10: 100
+    50: 400
+    100: 1000
+    250: 2500
+    500: 5000
+  # Stable keys match the mob registry. Disabled entries retain historical progress.
+  # Unspecified fields inherit global milestones and rewards above.
+  entries:
+    'elite:reef_stalker':
+      name: "Reef Stalker"
+      category: FISHING
+      description: ["A territorial hunter that follows hooked prey.", "Its sea glass is prized by coastal crafters."]
+      milestones: [5, 25, 50, 100, 250]
+      rewards: {5: 75, 25: 300, 50: 750, 100: 1800, 250: 4000}
+      completion-coins: 1500
+    'elite:krakenling':
+      name: "Krakenling"
+      category: FISHING
+      description: ["A young deep-sea terror drawn to enchanted hooks.", "Its ink and pearls fuel advanced fishing gear."]
+      milestones: [3, 15, 30, 75, 150]
+      rewards: {3: 125, 15: 500, 30: 1200, 75: 3000, 150: 6500}
+      completion-coins: 2500
+    'elite:deep_guardian':
+      category: FISHING
+      milestones: [5, 25, 50, 100, 250]
+      rewards: {5: 100, 25: 400, 50: 1000, 100: 2500, 250: 5000}
+      completion-coins: 2500
+    'boss:frost_titan':
+      category: BOSSES
+      milestones: [1, 5, 10, 25, 50]
+      rewards: {1: 250, 5: 1000, 10: 2500, 25: 5000, 50: 10000}
+      completion-coins: 5000
+
+# Gamerules applied to every world on startup.
+gamerules:
+  players-sleeping-percentage: 30   # only 30% of players need to sleep to skip the night
+
+# ── Welcome / first join ─────────────────────────────────────
+welcome:
+  first-join-broadcast: "<gradient:#FDE68A:#F59E0B>✦</gradient> <yellow>{player}</yellow> <gray>just arrived in Aetherfall for the first time! They are traveller <aqua>#{count}</aqua>. Say hi!"
+  first-join-title: "<gradient:#8B5CF6:#22D3EE><bold>Welcome to Aetherfall</bold></gradient>"
+  first-join-subtitle: "<gray>Type <yellow>/menu</yellow> to begin your journey"
+  first-join-commands:
+    - "kit starter {player}"
+  returning-title: "<gradient:#8B5CF6:#22D3EE>Welcome back</gradient>"
+  returning-subtitle: "<gray>{player} · Day streak <gold>{streak}</gold>"
+  join-hints:
+    - "<gray>Open the main menu any time with <yellow>/menu</yellow>."
+
+# ── Daily login rewards ──────────────────────────────────────
+# A 7-day cycle that repeats. Streak saves protect occasional missed days.
+daily:
+  streak-bonus-per-week: 50   # extra coins per completed week of streak (week 2 = +50, week 3 = +100 …)
+  streak-protection:
+    starting-saves: 1
+    max-saves: 2
+    grant-every-cycles: 1
+  rewards:
+    1: { coins: 100,  icon: "IRON_INGOT",       display: "<white>100 coins" }
+    2: { coins: 150,  icon: "IRON_INGOT",       display: "<white>150 coins" }
+    3: { coins: 200,  icon: "GOLD_INGOT",       display: "<white>200 coins + 8 golden carrots", commands: ["give {player} golden_carrot 8"] }
+    4: { coins: 250,  icon: "GOLD_INGOT",       display: "<white>250 coins" }
+    5: { coins: 300,  icon: "DIAMOND",          display: "<white>300 coins + 2 diamonds", commands: ["give {player} diamond 2"] }
+    6: { coins: 400,  icon: "EMERALD",          display: "<white>400 coins" }
+    7: { coins: 750,  icon: "NETHER_STAR",      display: "<gold>750 coins + a Golden Apple + XP", commands: ["give {player} golden_apple 1", "xp add {player} 10 levels"] }
+
+# Long-term goals that rotate every Monday. Progress follows daily quest actions.
+weekly:
+  enabled: true
+  contracts-per-week: 3
+  completion-bonus: 1500
+  pool:
+    miner: { name: "Deep Work", type: BREAK_BLOCK, target: "*_ORE", amount: 128, coins: 700, icon: "DIAMOND_PICKAXE" }
+    builder: { name: "Build It Up", type: PLACE_BLOCK, target: "*", amount: 500, coins: 650, icon: "BRICKS" }
+    hunter: { name: "Monster Hunter", type: KILL_MOB, target: "*", amount: 150, coins: 700, icon: "IRON_SWORD" }
+    crafter: { name: "Master Artisan", type: CRAFT, target: "*", amount: 100, coins: 600, icon: "CRAFTING_TABLE" }
+    harvester: { name: "Bountiful Fields", type: HARVEST, target: "*", amount: 300, coins: 600, icon: "GOLDEN_HOE" }
+    explorer: { name: "Far Horizons", type: WALK, target: "*", amount: 10000, coins: 650, icon: "COMPASS" }
+    fisher: { name: "Tide Chaser", type: FISH, target: "*", amount: 30, coins: 550, icon: "FISHING_ROD" }
+
+# Automated weekly activities. Times use the configured timezone.
+events:
+  enabled: true
+  weekly:
+    - { id: "saturday-boss", day: SATURDAY, time: "20:00", action: WORLD_BOSS, message: "<gradient:#FDE68A:#F59E0B><bold>Saturday World Boss</bold></gradient> <gray>starts now! Rally at the arena." }
+    - { id: "monday-reset", day: MONDAY, time: "12:00", action: BROADCAST, message: "<aqua>✦</aqua> <gray>New weekly contracts are live! Check <yellow>/contracts</yellow>." }
+
+community:
+  points-per-tier: 1000
+
+guilds:
+  contribution-cost: 100
+  contribution-cooldown-seconds: 30
+
+minions:
+  max-per-player: 30
+  miner: { seconds: 60 }
+  farmer: { seconds: 75 }
+  hunter: { seconds: 90 }
+  wood: { seconds: 55 }
+
+farming:
+  mutation-chance: 3
+  adaptive:
+    enabled: true
+    minimum-gap-ms: 250
+    combo-timeout-ms: 12000
+    base-bonus-chance: 0.04
+    level-bonus-chance: 0.002
+    combo-bonus-chance: 0.0015
+    fortune-bonus-chance: 0.002
+    maximum-bonus-chance: 0.28
+
+# ── Daily quests ─────────────────────────────────────────────
+# Types: BREAK_BLOCK, PLACE_BLOCK, HARVEST, KILL_MOB, FISH, CRAFT, SMELT, BREED, ENCHANT, WALK (meters), TRADE
+# targets: material / entity names; "*" matches anything, "*_ORE" style wildcards are allowed.
+quests:
+  per-day: 3
+  all-complete-bonus: 400
+  count-spawner-kills: false
+  pool:
+    stone_breaker:  { name: "Quarry Worker",      type: BREAK_BLOCK, targets: ["STONE", "DEEPSLATE", "COBBLESTONE", "COBBLED_DEEPSLATE", "ANDESITE", "DIORITE", "GRANITE", "TUFF"], amount: 256, coins: 150, icon: "STONE_PICKAXE" }
+    coal_miner:     { name: "Fuel the Forge",     type: BREAK_BLOCK, targets: ["COAL_ORE", "DEEPSLATE_COAL_ORE"], amount: 24, coins: 175, icon: "COAL" }
+    iron_miner:     { name: "Iron Will",          type: BREAK_BLOCK, targets: ["IRON_ORE", "DEEPSLATE_IRON_ORE"], amount: 20, coins: 225, icon: "RAW_IRON" }
+    diamond_miner:  { name: "Diamonds!",          type: BREAK_BLOCK, targets: ["DIAMOND_ORE", "DEEPSLATE_DIAMOND_ORE"], amount: 4, coins: 400, icon: "DIAMOND" }
+    lumberjack:     { name: "Lumberjack",         type: BREAK_BLOCK, targets: ["*_LOG", "*_STEM"], amount: 128, coins: 150, icon: "IRON_AXE" }
+    digger:         { name: "Dig Deep",           type: BREAK_BLOCK, targets: ["DIRT", "GRASS_BLOCK", "SAND", "GRAVEL", "CLAY", "MUD"], amount: 200, coins: 125, icon: "IRON_SHOVEL" }
+    builder:        { name: "Master Builder",     type: PLACE_BLOCK, targets: ["*"], amount: 300, coins: 175, icon: "BRICKS" }
+    farmer_wheat:   { name: "Golden Fields",      type: HARVEST, targets: ["WHEAT"], amount: 64, coins: 150, icon: "WHEAT" }
+    farmer_roots:   { name: "Root Harvest",       type: HARVEST, targets: ["CARROTS", "POTATOES", "BEETROOTS"], amount: 64, coins: 150, icon: "CARROT" }
+    zombie_slayer:  { name: "Undead Purge",       type: KILL_MOB, targets: ["ZOMBIE", "HUSK", "DROWNED", "ZOMBIE_VILLAGER"], amount: 20, coins: 200, icon: "ROTTEN_FLESH" }
+    skeleton_slayer: { name: "Bone Collector",    type: KILL_MOB, targets: ["SKELETON", "STRAY", "BOGGED"], amount: 15, coins: 200, icon: "BONE" }
+    creeper_slayer: { name: "Defuser",            type: KILL_MOB, targets: ["CREEPER"], amount: 8, coins: 225, icon: "GUNPOWDER" }
+    spider_slayer:  { name: "Arachnophobia",      type: KILL_MOB, targets: ["SPIDER", "CAVE_SPIDER"], amount: 12, coins: 175, icon: "STRING" }
+    hunter:         { name: "Hunter-Gatherer",    type: KILL_MOB, targets: ["COW", "PIG", "SHEEP", "CHICKEN", "RABBIT"], amount: 15, coins: 125, icon: "COOKED_BEEF" }
+    angler:         { name: "Gone Fishing",       type: FISH, targets: ["*"], amount: 12, coins: 175, icon: "FISHING_ROD" }
+    crafter:        { name: "Artisan",            type: CRAFT, targets: ["*"], amount: 64, coins: 125, icon: "CRAFTING_TABLE" }
+    smelter:        { name: "Smeltery",           type: SMELT, targets: ["*"], amount: 48, coins: 150, icon: "FURNACE" }
+    breeder:        { name: "Rancher",            type: BREED, targets: ["*"], amount: 8, coins: 150, icon: "WHEAT_SEEDS" }
+    enchanter:      { name: "Arcane Arts",        type: ENCHANT, targets: ["*"], amount: 2, coins: 200, icon: "ENCHANTING_TABLE" }
+    explorer:       { name: "Wanderlust",         type: WALK, targets: ["*"], amount: 2500, coins: 150, icon: "LEATHER_BOOTS" }
+    mithril_miner:  { name: "Mithril Rush",       type: BREAK_BLOCK, targets: ["OXIDIZED_CUT_COPPER"], amount: 16, coins: 250, icon: "PRISMARINE_CRYSTALS" }
+    deep_delver:    { name: "Deep Delver",        type: BREAK_BLOCK, targets: ["WHITE_GLAZED_TERRACOTTA", "BLUE_ICE", "GILDED_BLACKSTONE"], amount: 8, coins: 300, icon: "QUARTZ" }
+    nether_miner:   { name: "Into the Fire",      type: BREAK_BLOCK, targets: ["RAW_COPPER_BLOCK"], amount: 12, coins: 350, icon: "NETHER_BRICK" }
+    end_miner:      { name: "Starlit Harvest",    type: BREAK_BLOCK, targets: ["AMETHYST_BLOCK"], amount: 8, coins: 450, icon: "CHORUS_FRUIT" }
+    trader:         { name: "Merchant",           type: TRADE, targets: ["*"], amount: 5, coins: 175, icon: "EMERALD" }
+
+# ── Playtime ranks ───────────────────────────────────────────
+# Players are "active" unless idle for afk-seconds. Ranks are granted automatically.
+playtime:
+  afk-seconds: 300
+  milestones:
+    - { id: "settler",  hours: 1,   name: "<green>Settler",    commands: ["lp user {player} parent add settler", "acb {player} 500"],  coins: 250 }
+    - { id: "citizen",  hours: 6,   name: "<aqua>Citizen",     commands: ["lp user {player} parent add citizen", "acb {player} 1000"],  coins: 750 }
+    - { id: "veteran",  hours: 24,  name: "<blue>Veteran",     commands: ["lp user {player} parent add veteran", "acb {player} 2000"],  coins: 2000 }
+    - { id: "elder",    hours: 72,  name: "<light_purple>Elder", commands: ["lp user {player} parent add elder", "acb {player} 3000"],  coins: 5000 }
+    - { id: "legend",   hours: 200, name: "<gold>Legend",      commands: ["lp user {player} parent add legend", "acb {player} 5000"],   coins: 15000 }
+    - { id: "mythic",   hours: 500, name: "<gradient:#F472B6:#8B5CF6>Mythic", commands: ["lp user {player} parent add mythic", "acb {player} 10000"], coins: 50000 }
+
+# Rank perks inherit from the rank below them. These are gameplay boosts, not paid power.
+rank-perks:
+  default: { coin-bonus: 0.0, extra-quests: 0, bazaar-tax: 0.0125, bazaar-orders: 21, ah-listings: 14, ah-fee: 0.01, vein-max: 48, timber-max: 160, luck: 1.0, lore: ["Access to the daily loop, claims, voting and Starter kit."] }
+  settler: { coin-bonus: 0.05, bazaar-orders: 24, ah-listings: 16, vein-max: 64, timber-max: 200, lore: ["Weekly Homesteader kit (iron tools/armor, Grappling Hook, Night Vision)", "+500 bonus claim blocks", "+5% quest and daily coin rewards", "24 Bazaar orders · 16 Auction listings", "Expanded vein mining and timber limits"] }
+  citizen: { coin-bonus: 0.10, extra-quests: 1, bazaar-orders: 28, ah-listings: 18, ah-fee: 0.009, vein-max: 72, timber-max: 240, luck: 1.10, lore: ["Weekly Builder & Farmer kit (Mithril Pickaxe, Harvester Hoe, Haste)", "+1,000 bonus claim blocks", "+10% coin rewards", "+1 daily quest", "10% better rare-drop luck", "28 Bazaar orders · 18 Auction listings"] }
+  veteran: { coin-bonus: 0.15, bazaar-orders: 32, ah-listings: 22, ah-fee: 0.008, vein-max: 96, timber-max: 280, luck: 1.15, lore: ["Weekly Deep Delver kit (Titanium Drill, Excavator, Magnet, Tome)", "+2,000 bonus claim blocks", "+15% coin rewards", "32 Bazaar orders · 22 Auction listings", "Reduced Auction fees", "Larger vein and timber limits"] }
+  elder: { coin-bonus: 0.20, extra-quests: 2, bazaar-orders: 38, ah-listings: 26, ah-fee: 0.007, vein-max: 112, timber-max: 320, luck: 1.20, trail: END_ROD, join-announce: "<light_purple>✦</light_purple> <light_purple>{player}</light_purple> <gray>the Elder has returned!", lore: ["Weekly Adventurer kit (Frostbite Blade, Vampiric Fang, Lucky Charm, Bow)", "&-colour codes in chat", "+3,000 bonus claim blocks", "+20% coin rewards", "+2 daily quests", "End-rod particle trail (toggle with /trail)", "38 Bazaar orders · 26 Auction listings"] }
+  legend: { coin-bonus: 0.30, bazaar-orders: 45, ah-listings: 32, ah-fee: 0.006, vein-max: 128, timber-max: 400, luck: 1.30, trail: SOUL_FIRE_FLAME, lore: ["Weekly Enchanter & Nether kit (Void Blade, Hurricane Bow, Aether Apple, Sigil)", "+5,000 bonus claim blocks", "+30% coin rewards", "30% better rare-drop luck", "Soul-fire particle trail", "45 Bazaar orders · 32 Auction listings"] }
+  mythic: { coin-bonus: 0.40, extra-quests: 3, bazaar-orders: 55, ah-listings: 40, ah-fee: 0.005, vein-max: 160, timber-max: 500, luck: 1.50, trail: DRAGON_BREATH, join-announce: "<light_purple>✦</light_purple> <gradient:#F472B6:#8B5CF6>{player}</gradient> <gray>the Mythic has arrived!", lore: ["Weekly Astral Paragon kit (Elytra, Shulker, Starfall, Astral Staff, Totem)", "+10,000 bonus claim blocks", "+40% coin rewards", "+3 daily quests", "50% better rare-drop luck", "Dragon-breath particle trail", "55 Bazaar orders · 40 Auction listings"] }
+
+# ── Chat & tab formatting ────────────────────────────────────
+# Chat: [STAFF] [Rank] Name » message. Hover a name for stats, click it to /msg. "@name" pings a player,
+# "[item]" (or [i]) shows your held item. The same badges are used in the TAB list and above heads
+# (%aether_prefix%, %aether_name_color%, %aether_rank_weight%). Colours: names like "gold" or hex "#FFAA00".
+chat-format:
+  enabled: true
+  format: "<staff><rank><name><dark_gray> » </dark_gray><message>"
+  show-rank-with-staff: true
+  mentions: true
+  item-tag: true
+  color-codes-from: elder # this rank and up (and all staff) may use &a-style colour codes in chat
+  # Staff tags — first match wins. LuckPerms gives every member of a group the permission group.<name>.
+  staff:
+    owner:     { permission: group.owner,     weight: 130, name-color: "#FF5555", badge: "<dark_gray>[</dark_gray><gradient:#FF3D3D:#FFB347><bold>OWNER</bold></gradient><dark_gray>]</dark_gray>" }
+    admin:     { permission: group.admin,     weight: 120, name-color: "#FF5555", badge: "<dark_gray>[</dark_gray><red><bold>ADMIN</bold></red><dark_gray>]</dark_gray>" }
+    moderator: { permission: group.moderator, weight: 110, name-color: "#55FF55", badge: "<dark_gray>[</dark_gray><dark_green><bold>MOD</bold></dark_green><dark_gray>]</dark_gray>" }
+    helper:    { permission: group.helper,    weight: 100, name-color: "#FFFF55", badge: "<dark_gray>[</dark_gray><yellow><bold>HELPER</bold></yellow><dark_gray>]</dark_gray>" }
+  # Playtime ranks — anything a rank leaves out is inherited from the rank below.
+  ranks:
+    default: { badge: "",                                                                       name-color: "#AAAAAA", message-color: "#BFBFBF" }
+    settler: { badge: "<dark_gray>[</dark_gray><green>Settler</green><dark_gray>]</dark_gray>",        name-color: "#7CE38B", message-color: "#FFFFFF" }
+    citizen: { badge: "<dark_gray>[</dark_gray><aqua>Citizen</aqua><dark_gray>]</dark_gray>",          name-color: "#6FE3F0" }
+    veteran: { badge: "<dark_gray>[</dark_gray><blue>⚔ Veteran</blue><dark_gray>]</dark_gray>",        name-color: "#7FA8FF" }
+    elder:   { badge: "<dark_gray>[</dark_gray><light_purple>✦ Elder</light_purple><dark_gray>]</dark_gray>", name-color: "#E08CFF" }
+    legend:  { badge: "<dark_gray>[</dark_gray><gradient:#FFD24D:#FF9A1F>★ Legend</gradient><dark_gray>]</dark_gray>", name-color: "#FFC857" }
+    mythic:  { badge: "<dark_gray>[</dark_gray><gradient:#F472B6:#8B5CF6><bold>✪ MYTHIC</bold></gradient><dark_gray>]</dark_gray>", name-color: "#F07AE0", message-color: "#FBEAFF" }
+
+# ── Timber & Vein Miner ──────────────────────────────────────
+# Toggle per player in /menu. Both respect claims/regions because every block goes through the normal break event.
+timber:
+  enabled: true
+  require-sneak: false      # true = only while sneaking
+  max-logs: 160
+  min-natural-leaves: 4     # player-built log houses have no natural leaves, so they are never felled
+  replant: true
+veinminer:
+  enabled: true
+  require-sneak: true
+  max-blocks: 48
+
+# ── Voting ───────────────────────────────────────────────────
+# Requires NuVotifier. Register your server on these lists and give them your Votifier key.
+voting:
+  coins: 150
+  commands: []                 # extra per-vote commands, e.g. ["give {player} diamond 1"]
+  sites:
+    - { name: "MinecraftServers.org",  url: "https://minecraftservers.org/vote/YOUR_ID" }
+    - { name: "Minecraft-MP",          url: "https://minecraft-mp.com/server/YOUR_ID/vote/" }
+    - { name: "PlanetMinecraft",       url: "https://www.planetminecraft.com/server/YOUR_SLUG/vote/" }
+    - { name: "TopG",                  url: "https://topg.org/minecraft-servers/server-YOUR_ID" }
+    - { name: "Minecraft-Server-List", url: "https://minecraft-server-list.com/server/YOUR_ID/vote/" }
+  party:
+    votes-needed: 50           # every 50 votes server-wide, everyone online gets a reward
+    coins: 500
+    commands: ["give {player} experience_bottle 16"]
+
+# ── Scheduled restarts ───────────────────────────────────────
+# start.bat / start.sh restart the server and take a backup while it is offline.
+restarts:
+  enabled: true
+  times: ["05:00"]             # 24h clock in the timezone above; add more e.g. ["05:00", "17:00"]
+  warnings: [900, 600, 300, 60, 30, 10, 5, 4, 3, 2, 1]
+
+# Custom item textures (served via built-in HTTP server or BlueMap web server).
+# port: configurable HTTP port for texture pack hosting (default: 8100).
+# host: bind interface (0.0.0.0 for all interfaces).
+# external-ip: external domain or IP sent to players (leave empty to auto-detect from server IP/map-url/localhost).
+# url: explicit URL override (leave empty to auto-generate: http://<host>:<port>/aetherfall-pack.zip).
+resource-pack:
+  enabled: true
+  host-server: true
+  port: 8100
+  host: "0.0.0.0"
+  external-ip: ""
+  url: ""
+  required: false
+  prompt: "<gradient:#8B5CF6:#22D3EE>Aetherfall</gradient> <gray>custom item textures — recommended!"
+
+# ── Crop growth speed ────────────────────────────────────────
+# Accelerates crop growth in chunks loaded/rendered by active players (around 350% normal speed).
+crop-growth:
+  enabled: true
+  multiplier: 3.5
+
+
+# ── Chat filter ──────────────────────────────────────────────
+# Blocked words are starred out (any word starting with one of these). Staff bypass it.
+# Add slurs and anything else your community shouldn't see; /aether reload applies changes.
+chat-filter:
+  enabled: true
+  words: [fuck, shit, bitch, cunt, dick, pussy, whore]
+
+# ── Auto announcer ───────────────────────────────────────────
+announcer:
+  interval-seconds: 360
+  messages:
+    - "<gray>Claim land to protect your builds: grab a <yellow>golden shovel</yellow> and right-click two corners. <dark_gray>(/claimhelp)"
+    - "<gray>Log in every day for bigger rewards — your streak multiplies coins! <yellow>/daily"
+    - "<gray>Fresh <yellow>daily quests</yellow> every day at midnight UTC. <yellow>/quests"
+    - "<gray>Chop a tree bottom-up and the whole thing falls. Sneak-mine ores to vein-mine them!"
+    - "<gray>Bedrock players can join too — tell your friends on console & mobile!"
+    - "<gray>Level up your skills by just playing. See them with <yellow>/skills"
+    - "<gray>Died? Your items wait in a <yellow>grave</yellow> where you fell."
+    - "<gray>Explore the live web map with <yellow>/map"
+    - "<gray>Vote for us every day with <yellow>/vote</yellow> — each vote pays coins and brings the <light_purple>Vote Party</light_purple> closer!"
+    - "<gray>Join our community Discord: <click:open_url:'{discord}'><aqua><u>{discord}</u></aqua></click>"
+
+# ── Chat games ───────────────────────────────────────────────
+chatgames:
+  interval-seconds: 540
+  timeout-seconds: 60
+  min-players: 2
+  coins: 100
+  words: [diamond, creeper, obsidian, netherite, enchantment, beacon, elytra, village, redstone, lantern, amethyst,
+          blaze, trident, shulker, emerald, pillager, stronghold, warden, sculk, axolotl, allay, bamboo, respawn,
+          lodestone, cartography, archaeology, sniffer, breeze, crossbow, campfire, spyglass, copper, armadillo]
+
+# ── Messages ─────────────────────────────────────────────────
+messages:
+  no-permission: "<red>You don't have permission to do that."
+  players-only: "<red>Only players can use this."
+  reloaded: "<green>AetherCore reloaded."
+  daily-claimed: "<green>You claimed day <gold>{day}</gold> of your streak! <gray>(+{coins} coins) · Streak: <gold>{streak}"
+  daily-already: "<gray>You've already claimed today's reward. Come back in <yellow>{time}</yellow>!"
+  daily-available: "<gold>✦</gold> <yellow>Your daily reward is ready!</yellow> <gray>Claim it with <click:run_command:'/daily'><hover:show_text:'Click to open'><yellow><u>/daily</u></yellow></hover></click>"
+  daily-streak-lost: "<red>Your streak was reset — you missed a day. Start again today!"
+  daily-streak-protected: "<green>Streak protection used.</green> <gray>Your streak continues. Saves left: <gold>{saves}</gold>."
+  daily-streak-save-earned: "<gold>✦ You earned a streak save!</gold> <gray>Saves available: <gold>{saves}</gold>."
+  quest-progress: "<gray>{quest}: <white>{progress}</white>/<white>{amount}</white>"
+  quest-complete: "<green>✔ Quest complete:</green> <yellow>{quest}</yellow> <gray>(+{coins} coins)"
+  quest-all-complete: "<gold>★ All daily quests complete!</gold> <gray>Bonus: <yellow>+{coins} coins</yellow>"
+  milestone-reached: "<gold>★</gold> <yellow>{player}</yellow> <gray>ranked up to</gray> {rank}<gray>! <dark_gray>({hours}h played)"
+  milestone-self: "<gray>You earned <yellow>{coins} coins</yellow> for reaching {rank}<gray>."
+  playtime-self: "<gray>Playtime: <yellow>{time}</yellow>. {next}"
+  playtime-other: "<gray>{player}'s playtime: <yellow>{time}</yellow>."
+  playtime-next: "<gray>Next rank {rank} <gray>in <yellow>{time}</yellow>."
+  playtime-max: "<gold>You've reached the highest rank. Legendary!"
+  player-not-found: "<red>That player isn't online."
+  toggle-timber: "<gray>Timber is now {state}<gray>."
+  toggle-vein: "<gray>Vein Miner is now {state}<gray>."
+  top-header: "<gradient:#8B5CF6:#22D3EE><bold>Top {board}</bold></gradient>"
+  top-line: "<gray>#{rank} <white>{player}</white> <dark_gray>—</dark_gray> <yellow>{value}"
+  chatgame-unscramble: "<light_purple>Chat Game!</light_purple> <gray>First to unscramble <yellow><bold>{puzzle}</bold></yellow> wins <gold>{coins} coins</gold>!"
+  chatgame-math: "<light_purple>Chat Game!</light_purple> <gray>First to solve <yellow><bold>{puzzle}</bold></yellow> wins <gold>{coins} coins</gold>!"
+  chatgame-type: "<light_purple>Chat Game!</light_purple> <gray>First to type <yellow><bold>{puzzle}</bold></yellow> wins <gold>{coins} coins</gold>!"
+  chatgame-won: "<light_purple>Chat Game:</light_purple> <yellow>{player}</yellow> <gray>got it in <white>{seconds}s</white>! The answer was <yellow>{answer}</yellow>."
+  vote-header: "<gradient:#F472B6:#8B5CF6><bold>Vote for Aetherfall</bold></gradient> <gray>— <gold>{coins} coins</gold> per vote, every site, every day:"
+  vote-broadcast: "<light_purple>♥</light_purple> <yellow>{player}</yellow> <gray>voted on <white>{service}</white> and earned <gold>{coins} coins</gold>! <dark_gray>(/vote)"
+  vote-party-progress: "<light_purple>Vote Party</light_purple> <gray>in <yellow>{left}</yellow> more votes! <dark_gray>(/vote)"
+  vote-party: "<gradient:#F472B6:#8B5CF6><bold>VOTE PARTY!</bold></gradient> <gray>Everyone online gets <gold>{coins} coins</gold> and a treat. Thank you for voting!"
+  chatgame-timeout: "<light_purple>Chat Game:</light_purple> <gray>Nobody got it! The answer was <yellow>{answer}</yellow>."
